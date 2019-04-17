@@ -2,131 +2,7 @@
 <html>
 <head>
     <title>~ F R E S H ~</title>
-
-    <style>
-
-      *
-      {
-        font-family: Trebuchet MS;
-      }
-      body
-      {
-        overflow-x: hidden;
-        background: url("coolbg.jpg");
-      }
-
-      body *
-      {
-        top:-00px;
-      }
-
-      p,ul
-      {
-        top:50%;
-        z-index:2;
-        height:10%;
-      }
-
-      article
-      {
-      	/*background:url("coolbg.jpg");*/
-        background-color: rgba(120,190,229,0.9);
-        box-shadow: 5px 5px 5px rgba(100,100,200);
-        opacity: 1;
-        border-radius:1%;
-        border-color: white;
-        border-style:ridge;
-        border-width: 10%;
-        z-index:2;
-      	width:60%;
-      	margin-left:30%;
-      	margin-right:auto;
-        margin-top:10%;
-        margin-bottom: 10%;
-      	display: flex;
-      	flex-direction:column;
-      	justify-content:space-between;
-        position:relative;
-        padding: 0px;
-      }
-      p
-      {
-        margin:0px;
-        padding:0px;
-
-      }
-
-      .textuel
-      {
-        padding:30px;
-      }
-
-      .sidenav {
-        height: 60%;
-        width: 15%;
-        position: fixed;
-        z-index: 5;
-        top: 40%;
-        left: 0;
-        background-color:rgba(120,190,229,0.9);
-        overflow-x: hidden;
-        padding-top: 20px;
-        text-align: center;
-      }
-
-      .sidenav a {
-          padding: 6px 8px 6px 16px;
-          text-decoration: none;
-          font-size: 25px;
-          color: #00AAFF;
-          display: block;
-      }
-
-      .sidenav a:hover {
-          color: #f1f1f1;
-      }
-
-      .cartographie {
-      	background-image: url("sunset.jpg");
-        height:500px;
-        width:100%;
-        align-self:auto;
-      	background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding: 0px;
-      }
-
-      .video {
-        padding-bottom: 10%;
-        margin-bottom: 10%;
-        text-align: center;
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      article .illustration
-      {
-        width: 70%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20%;
-
-      }
-
-
-
-      h1
-      {
-        text-shadow: rgb(0,0,0,0.5) 2px 2px;
-      }
-
-
-
-    </style>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <header>
@@ -134,10 +10,8 @@
 </header>
 
 <body>
-  <img id= "cooltitle" width="68%" src="cooltxt.png" style="margin-top:10%;position:relative; z-index:10; left: 16%;" />
 
-
-    <img id= "u0"  src="3240dehaut.png"  height="3240 px" style="position: absolute;left:25%; z-index:1;"/>
+    <img id= "u0"  src="3240dehaut.png"  height="3240px" style="position: absolute;left:25%; z-index:1;"/>
 
 
 
@@ -147,17 +21,27 @@
   <article>
 
     <div class='textuel'>
-    <p>
-      <h1>Welcome to my website !</h1>
+      <p>
+        <h1>Welcome to my website !</h1>
         My name is Corentin Dumery and I am currently studying at Telecom ParisTech. More precisely, I'm attending 3D graphics and theoretical computer science courses.
-        My interests include computers, video games, science, writing, life, the Earth, and everything.
-
-    </p>
-    </div>
-    <div class="cartographie">
+        My interests include computers, video games, science, writing, life, the universe, and everything. <br>
+        This page is the place where I'm having fun learning web development on my free time.
+        You will find information about me, what I like, and nonsense that was born from my curiosity as I learned HTML/CSS/JS.
+      </p>
     </div>
 
   </article>
+
+  <article class="jeu">
+    <h1> Help this snail reach the salad by clicking on him ! </h1>
+
+    <mycanvas id="snailgame">
+      <img id= "snail"  src="snail.png"  height="80px" onclick= "snail()" style="position: absolute;left:2%;"/>
+      <img id= "salad"  src="salad.png"  height="60px" style="position: absolute; right:50px"/>
+    </mycanvas>
+
+  </article>
+
   <article style="top:0px;">
     <div class="textuel">
       <p>
@@ -168,6 +52,23 @@
       </p>
     </div>
   </article>
+
+  <article class = "jeu">
+    <h1>Turn the sound on</h1>
+    <div class="grid-container">
+     <div id ="audio0" class="audioTile" onmouseover="playTruc(0)"> </div>
+     <div id ="audio1" class="audioTile" onmouseover="playTruc(1)"> </div>
+     <div id ="audio2" class="audioTile" onmouseover="playTruc(2)"> </div>
+     <div id ="audio3" class="audioTile" onmouseover="playTruc(3)"> </div>
+     <div id ="audio4" class="audioTile" onmouseover="playTruc(4)"> </div>
+     <div id ="audio5" class="audioTile" onmouseover="playTruc(5)"> </div>
+     <div id ="audio6" class="audioTile" onmouseover="playTruc(6)"> </div>
+     <div id ="audio7" class="audioTile" onmouseover="playTruc(7)"> </div>
+     <div id ="audio8" class="audioTile" onmouseover="playTruc(8)"> </div>
+    </div>
+  </article>
+
+
   <article style="top:0px;">
     <div class="textuel">
       <p>
@@ -227,27 +128,8 @@
 
 
 
-
-
-
-    <script>
-        function repeat(){
-          var txt = document.getElementById('u0').style.top ;
-          var buff="";
-          var x=0;
-          for (var i=0;i<txt.length-1;i++){
-            if (txt[i]!="p"){
-              buff += txt[i];
-            }
-            else {
-              x=parseInt(buff)-2;
-              if (x <-1620) {  x=0; }
-              break;
-            }
-          }
-          document.getElementById('u0').style.top= x+"px";
-        }
-        setInterval(repeat, 30);
-    </script>
 </body>
+
+<script src="script.js"></script>
+
 </html>

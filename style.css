@@ -1,0 +1,100 @@
+*
+{
+  font-family: Trebuchet MS;
+}
+body
+{
+  overflow-x: hidden;
+  background: url("coolbg.jpg");
+}
+
+p,ul
+{
+  z-index:2;
+}
+
+article
+{
+  background-color: rgba(120,190,229,0.9);
+  box-shadow: 5px 5px 5px rgba(100,100,200);
+  opacity: 1;
+  z-index:2;
+  width:60%;
+  margin-left:20%;
+  margin-right:auto;
+  margin-top:10%;
+  margin-bottom: 10%;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+  position:relative;
+  max-width: 800px;
+}
+
+
+.textuel
+{
+  padding:15px;
+}
+
+
+.video {
+
+  text-align: center;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+}
+
+#u0
+{
+  opacity: 0.7;
+}
+
+h1
+{
+  text-shadow: rgb(0,0,0,0.5) 2px 1px;
+}
+mycanvas
+{
+  height: 200px;
+  margin: 10px;
+  background-color: white;
+}
+
+.jeu h1
+{
+  font-size: 3em;
+  text-align: center;
+}
+
+#snailgame *
+{
+  bottom: 15%;
+  opacity: 1;
+}
+
+#snailgame
+{
+  background: url("grass0.png");
+  background-size: 100%;
+  border-radius : 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  text-align: center;
+
+}
+
+
+.audioTile
+{
+  border-radius: 10px;
+  height : 50px;
+  margin : 5px;
+  background-color: rgba(150,220,255,1);
+}
