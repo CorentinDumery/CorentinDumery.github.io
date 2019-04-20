@@ -1,5 +1,5 @@
 
-
+var efficacite = 1;
 
 function repeat(){
   var txt = document.getElementById('u0').style.top ;
@@ -10,7 +10,7 @@ function repeat(){
       buff += txt[i];
     }
     else {
-      x=parseInt(buff)-2;
+      x=parseInt(buff)-2*efficacite;
       if (x <-1620) {  x=0; }
       break;
     }
@@ -18,7 +18,7 @@ function repeat(){
   document.getElementById('u0').style.top= x+"px";
 }
 
-setInterval(repeat, 30);
+setInterval(repeat, 30*efficacite);
 
 const snail0 = document.getElementById("snail");
 var snailx = parseInt(snail0.style.left);
@@ -26,7 +26,6 @@ var count = 1;
 
 function snail(){
   snailx = snailx + 10/count;
-  console.log(count);
   count ++;
   snail0.style.setProperty("left", snailx+"%");
   if (snailx > 60) {
@@ -69,3 +68,23 @@ function playTruc(n) {
   }, 400);
 
 }
+
+
+(function() {
+    document.onmousemove = handleMouseMove;
+    function handleMouseMove(event) {
+        console.log("Moving");
+        var eventDoc, doc, body;
+
+        event = event || window.event;
+
+        // Use event.pageX / event.pageY here
+        var machin = document.getElementById("testtruc");
+        console.log(event.pageX);
+        machin.style.left = event.pageX;
+        machin.style.setProperty("left", event.pageX-10+"px");
+        machin.style.setProperty("top", event.pageY-10+"px");
+        console.log(machin.style.left);
+    }
+})();
+
