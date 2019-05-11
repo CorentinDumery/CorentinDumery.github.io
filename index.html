@@ -33,12 +33,33 @@
   </article>
 
   <article class="jeu">
-    <h1> Help this snail reach the salad by clicking on him ! </h1>
 
-    <mycanvas id="snailgame">
-      <img id= "snail"  src="snail.png"  height="80px" onclick= "snail()" style="position: absolute;left:2%;"/>
-      <img id= "salad"  src="salad.png"  height="60px" style="position: absolute; right:50px"/>
+    <h1> It's time to duel ! </h1>
+    <h2 id="consigne"> The first one to reach the other's position wins. </h2>
+    <div class="twoColumns" background-color:"white">
+
+    <h2> Your position </h2>
+    <h2> My position </h2>
+    <h1 id="leftpos"> 10 </h1>
+    <h1 id="rightpos"> 90 </h1>
+    <div class="grid-container-4" id="duelbuttonpad">
+      <button class="duelbutton" onclick="plus(-1)" type="button">  -1  </button>
+      <button class="duelbutton" onclick="plus(1)" type="button">  +1  </button>
+      <button class="duelbutton" onclick="plus(2)" type="button">  +2  </button>
+      <button class="duelbutton" onclick="plus(3)" type="button">  +3  </button>
+
+    </div>
+    <h3 id="mymove"> My latest move : 0 </h3>
+
+
+    </div>
+
+
+    <mycanvas id="duel">
+      <img id= "duel1"  src="duelliste.png" />
+      <img id= "duel2"  src="duelliste.png" />
     </mycanvas>
+
 
   </article>
 
@@ -80,6 +101,17 @@
         <iframe class = "video" width="560" height="315" src="https://www.youtube.com/embed/YgApnVLuq7c" frameborder="0" allowfullscreen></iframe>
       </p>
     </div>
+  </article>
+
+  <article class="jeu">
+
+    <h1> Help the snail reach the salad by clicking on him ! </h1>
+
+    <mycanvas id="snailgame">
+      <img id= "snail"  src="snail.png"  height="80px" onclick= "snail()" style="position: absolute;left:2%;"/>
+      <img id= "salad"  src="salad.png"  height="60px" style="position: absolute; right:50px"/>
+    </mycanvas>
+
   </article>
 
   <article style="top:0px;">
@@ -133,4 +165,3 @@
 <script src="script.js"></script>
 
 </html>
-

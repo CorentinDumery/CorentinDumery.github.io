@@ -65,11 +65,17 @@ mycanvas
   height: 200px;
   margin: 10px;
   background-color: white;
+  padding-right: 15%;
 }
 
 .jeu h1
 {
   font-size: 3em;
+  text-align: center;
+}
+
+.jeu h2
+{
   text-align: center;
 }
 
@@ -86,12 +92,32 @@ mycanvas
   border-radius : 5px;
 }
 
+#duel
+{
+  background: url("lieu.jpg");
+  background-size: 100%;
+  border-radius : 5px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px;
   text-align: center;
+}
 
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  text-align: center;
 }
 
 
@@ -110,3 +136,46 @@ mycanvas
   pointer-events: none;
 }
 
+.duelbutton
+{
+
+  margin:5px;
+  border: 0;
+  height: 2.5em;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  background-color: rgba(0, 220, 0, 1);
+  background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),  inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.duelbutton:active
+{
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+#duel1, #duel2
+{
+  height: 80px;
+  position: relative;
+  top: 40%;
+}
+
+#duel1
+{
+  transform: scale(-1, 1);
+  left: 10%;
+}
+
+#duel2
+{
+  left: 85%;
+}
+
+#duelbuttonpad
+{
+
+}
