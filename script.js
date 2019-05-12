@@ -35,7 +35,7 @@ function plus(n){
     else reponse = 4-n;
   }
   else {
-    reponse = 1;
+    reponse = 1+Math.floor(Math.random() * Math.floor(3));
   }
   //fin de l'"IA"
   rightpos -= reponse;
@@ -134,3 +134,4 @@ function playTruc(n) {
         machin.style.setProperty("top", event.pageY-10+"px");
     }
 })();
+
