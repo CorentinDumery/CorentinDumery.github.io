@@ -12,6 +12,22 @@ var rightpos = 90;
 
 over = 0;
 
+
+(function() {
+    document.onmousemove = handleMouseMove;
+    function handleMouseMove(event) {
+        var eventDoc, doc, body;
+
+        event = event || window.event;
+
+        // Use event.pageX / event.pageY here
+        var machin = document.getElementById("testtruc");
+        machin.style.left = event.pageX;
+        machin.style.setProperty("left", event.pageX-10+"px");
+        machin.style.setProperty("top", event.pageY-10+"px");
+    }
+})();
+
 function plus(n){
   if (over) return;
   leftpos += n;
@@ -91,15 +107,15 @@ var afterBg = "rgba(150,220,255,1)";
 
 function playTruc(n) {
   var audio;
-  if (n==0) audio = new Audio("door.mp3");
-  if (n==1) audio = new Audio("bell0.mp3");
-  if (n==2) audio = new Audio("bowl.mp3");
-  if (n==3) audio = new Audio("wink.mp3");
-  if (n==4) audio = new Audio("slight.mp3");
-  if (n==5) audio = new Audio("idea.mp3");
-  if (n==6) audio = new Audio("bell1.mp3");
-  if (n==7) audio = new Audio("ding.mp3");
-  if (n==8) audio = new Audio("metal.mp3");
+  if (n==0) audio = new Audio("sound/door.mp3");
+  if (n==1) audio = new Audio("sound/bell0.mp3");
+  if (n==2) audio = new Audio("sound/bowl.mp3");
+  if (n==3) audio = new Audio("sound/wink.mp3");
+  if (n==4) audio = new Audio("sound/slight.mp3");
+  if (n==5) audio = new Audio("sound/idea.mp3");
+  if (n==6) audio = new Audio("sound/bell1.mp3");
+  if (n==7) audio = new Audio("sound/ding.mp3");
+  if (n==8) audio = new Audio("sound/metal.mp3");
 
   if (n==0) var obj = document.getElementById('audio0');
   if (n==1) var obj = document.getElementById('audio1');
@@ -118,20 +134,3 @@ function playTruc(n) {
   }, 400);
 
 }
-
-
-(function() {
-    document.onmousemove = handleMouseMove;
-    function handleMouseMove(event) {
-        var eventDoc, doc, body;
-
-        event = event || window.event;
-
-        // Use event.pageX / event.pageY here
-        var machin = document.getElementById("testtruc");
-        machin.style.left = event.pageX;
-        machin.style.setProperty("left", event.pageX-10+"px");
-        machin.style.setProperty("top", event.pageY-10+"px");
-    }
-})();
-

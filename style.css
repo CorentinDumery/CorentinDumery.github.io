@@ -6,10 +6,12 @@
 body
 {
   overflow-x: hidden;
-  background: url("coolbg.jpg");
+  background: url("images/coolbg.jpg");
   cursor:none;
 
 }
+
+
 
 p,ul
 {
@@ -87,14 +89,14 @@ mycanvas
 
 #snailgame
 {
-  background: url("grass0.png");
+  background: url("images/grass0.png");
   background-size: 100%;
   border-radius : 5px;
 }
 
 #duel
 {
-  background: url("lieu.jpg");
+  background: url("images/lieu.jpg");
   background-size: 100%;
   border-radius : 5px;
 }
@@ -173,6 +175,11 @@ mycanvas
 #duel2
 {
   left: 85%;
+}
+
+#potato
+{
+  margin-left: 8%;
 }
 
 #duelbuttonpad

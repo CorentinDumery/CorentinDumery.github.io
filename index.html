@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>~ F R E S H ~</title>
+  <title>Chez Corentin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <header>
-  <img id= "cooltop" width = "110%" src="coolwater.jpg" style="position:absolute; z-index:1;left:-5%;top:-8px" />
+  <img id= "cooltop" width = "110%" src="images/coolwater.jpg" style="position:absolute; z-index:1;left:-5%;top:-8px" />
 </header>
 
 <body>
 
-  <img id= "u0"  src="3240dehaut.png"  height="3240px" style="position: absolute;left:25%; z-index:1;"/>
+  <img id= "u0"  src="images/3240dehaut.png"  height="3240px" style="position: absolute;left:25%; z-index:1;"/>
 
 
-  <img id="testtruc" src = "bulle.png" width ="1%" height = "1%" position:"absolute" style="z-index:10; left:0px">
-
-
+  <img id="testtruc" src = "images/bulle.png" width ="1%" height = "1%" position:"absolute" style="z-index:10; left:0px">
 
   <article>
 
     <div class='textuel'>
       <p>
         <h1>Welcome to my website !</h1>
-        My name is Corentin Dumery and I am currently studying at Telecom ParisTech. More precisely, I'm attending 3D graphics and theoretical computer science courses.
+        My name is Corentin Dumery and I am currently studying at Telecom ParisTech and National University of Singapore.
+        More precisely, I'm attending mostly 3D graphics and theoretical computer science courses.
         My interests include computers, video games, science, writing, life, the universe, and everything. <br>
         This page is the place where I'm having fun learning web development on my free time.
         You will find information about me, what I like, and nonsense that was born from my curiosity as I learned HTML/CSS/JS.
@@ -32,63 +31,31 @@
 
   </article>
 
-  <article class="jeu">
-
-    <h1> It's time to duel ! </h1>
-    <h2 id="consigne"> The first one to reach the other's position wins. </h2>
-    <div class="twoColumns" background-color:"white">
-
-    <h2> Your position </h2>
-    <h2> My position </h2>
-    <h1 id="leftpos"> 10 </h1>
-    <h1 id="rightpos"> 90 </h1>
-    <div class="grid-container-4" id="duelbuttonpad">
-      <button class="duelbutton" onclick="plus(-1)" type="button">  -1  </button>
-      <button class="duelbutton" onclick="plus(1)" type="button">  +1  </button>
-      <button class="duelbutton" onclick="plus(2)" type="button">  +2  </button>
-      <button class="duelbutton" onclick="plus(3)" type="button">  +3  </button>
-
+  <article style="top:0px;">
+    <div class="textuel">
+      <p>
+        <h1>B-Mesh Modeller</h1>
+        We created a 3D modelling software based on a novel approach described in a research paper.
+        The idea is to create an initial mesh in only a few minutes by placing spheres in 3D to represent
+         the skeleton of the modelled object. The user can freely create and customize the mesh. It can be
+         modified in real-time.
+         (<a href="https://github.com/CorentinDumery/Bmesh">link to the project</a></li>) <br/>  <br/>
+        <iframe class = "video" width="560" height="315" src="https://www.youtube.com/embed/_TSeF4pfgXs" frameborder="0" allowfullscreen></iframe>
+      </p>
     </div>
-    <h3 id="mymove"> My latest move : 0 </h3>
-
-
-    </div>
-
-
-    <mycanvas id="duel">
-      <img id= "duel1"  src="duelliste.png" />
-      <img id= "duel2"  src="duelliste.png" />
-    </mycanvas>
-
-
   </article>
 
   <article style="top:0px;">
     <div class="textuel">
       <p>
-        <h1>Publications</h1>
-        Maybe I'm getting a bit ahead of myself. There is no publication here yet, but I really hope I'll gather enough energy
-        to get a PhD and enter the fascinating and growing world of research one day. I am currently interested in 3D modeling,
-        theoretical computer science, AI, embedded systems, signal processing, ...
+        <h1>Potato Generator</h1>
+        Simple project that generates a 3D potatoïd based on input parameters. Perturbations with a given frequency, amplitude and
+        direction are applied to a sphere to create the illusion of a natural object.
+         (<a href="https://github.com/CorentinDumery/PotatoGenerator">link to the project</a></li>) <br/>  <br/>
+        <img id="potato" src="https://raw.githubusercontent.com/CorentinDumery/PotatoGenerator/master/images/pebble.PNG" align="middle">
       </p>
     </div>
   </article>
-
-  <article class = "jeu">
-    <h1>Turn the sound on</h1>
-    <div class="grid-container">
-      <div id ="audio0" class="audioTile" onmouseover="playTruc(0)"> </div>
-      <div id ="audio1" class="audioTile" onmouseover="playTruc(1)"> </div>
-      <div id ="audio2" class="audioTile" onmouseover="playTruc(2)"> </div>
-      <div id ="audio3" class="audioTile" onmouseover="playTruc(3)"> </div>
-      <div id ="audio4" class="audioTile" onmouseover="playTruc(4)"> </div>
-      <div id ="audio5" class="audioTile" onmouseover="playTruc(5)"> </div>
-      <div id ="audio6" class="audioTile" onmouseover="playTruc(6)"> </div>
-      <div id ="audio7" class="audioTile" onmouseover="playTruc(7)"> </div>
-      <div id ="audio8" class="audioTile" onmouseover="playTruc(8)"> </div>
-    </div>
-  </article>
-
 
   <article style="top:0px;">
     <div class="textuel">
@@ -103,16 +70,6 @@
     </div>
   </article>
 
-  <article class="jeu">
-
-    <h1> Help the snail reach the salad by clicking on him ! </h1>
-
-    <mycanvas id="snailgame">
-      <img id= "snail"  src="snail.png"  height="80px" onclick= "snail()" style="position: absolute;left:2%;"/>
-      <img id= "salad"  src="salad.png"  height="60px" style="position: absolute; right:50px"/>
-    </mycanvas>
-
-  </article>
 
   <article style="top:0px;">
     <div class="textuel">
@@ -146,15 +103,24 @@
       <p>
         <h1>Cool things that you should check out</h1>
         <ul>
-          <li><a href="http://radio.garden/live/seoul/kmstudio/">A radio from South Korea</a></li>
-          <li><a href="http://zombo.com/">Zombocom</a></li>
+          <li><a href="https://radio.garden/listen/himal-radio-nepali-filmy/U5RVnP7G">A radio from Kathmandu</a></li>
           <li><a href="https://www.youtube.com/watch?v=IBGsE6IammQ">Short stories</a></li>
           <li><a href="https://www.youtube.com/watch?v=OrR1TGQY20Y">Cherry Pepsi</a></li>
+          <li><a href="https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf">Intel 64 and IA-32 Architectures Software Developer’s Manual</a></li>
+          <li><a href="http://www.cmls.polytechnique.fr/perso/tringali/documents/st_exupery_le_petit_prince.pdf">Le Petit Prince</a></li>
         </ul>
       </p>
     </div>
   </article>
 
+  <article style="top:0px;">
+    <div class="textuel">
+      <p>
+        <h1>There's more </h1>
+        Check out this website's <a href="games.html"> sandbox </a>.
+      </p>
+    </div>
+  </article>
 
 
 
