@@ -177,9 +177,11 @@ mycanvas
   left: 85%;
 }
 
-#potato
+.centerPic
 {
-  margin-left: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 #duelbuttonpad
