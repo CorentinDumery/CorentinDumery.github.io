@@ -1,8 +1,28 @@
+:root {
+  /* Main color: set by background image */
+  /* Primary: 5DC7E5 */
+  /* Secondary color: article background */
+  /* Text color: for articles */ 
+
+  /* Old style */
+  --secondary-bg-color: rgba(120,190,229,0.9);
+  --text-color: rgba(0,0,0,1.0);
+
+  /* Vendee style */
+  --secondary-bg-color: rgba(255,255,255,0.99);
+  --text-color: rgba(44,66,63,1.0);
+
+  /* Dark mode */
+  /*--secondary-bg-color:rgba(38,40,42,1.0);
+  --text-color: rgba(255,255,255,0.99);*/
+}
+
 *
 {
   font-family: Trebuchet MS;
-
+  color: var(--text-color);
 }
+
 body
 {
   overflow-x: hidden;
@@ -10,8 +30,6 @@ body
   cursor:none;
 
 }
-
-
 
 p,ul
 {
@@ -21,7 +39,7 @@ p,ul
 article
 {
 
-  background-color: rgba(120,190,229,0.9);
+  background-color: var(--secondary-bg-color);
   box-shadow: 5px 5px 5px rgba(100,100,200);
   opacity: 1;
   z-index:2;
@@ -132,7 +150,7 @@ mycanvas
 }
 
 
-#testtruc
+#moving_bubbles
 {
   position: relative;
   pointer-events: none;
