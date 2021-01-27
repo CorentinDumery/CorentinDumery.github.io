@@ -68,25 +68,6 @@ function plus(n){
   document.getElementById('mymove').innerHTML = "My latest move : "+reponse;
 }
 
-function repeat(){
-  var txt = document.getElementById('u0').style.top ;
-  var buff="";
-  var x=0;
-  for (var i=0;i<txt.length-1;i++){
-    if (txt[i]!="p"){
-      buff += txt[i];
-    }
-    else {
-      x=parseInt(buff)-2*efficacite;
-      if (x <-1620) {  x=0; }
-      break;
-    }
-  }
-  document.getElementById('u0').style.top= x+"px";
-}
-
-setInterval(repeat, 30*efficacite);
-
 const snail0 = document.getElementById("snail");
 var snailx = parseInt(snail0.style.left);
 var count = 1;
