@@ -85,13 +85,11 @@ article
   background: url("images/bubblegif.gif");
   background-size: 45%;
 
-
-  image-rendering: pixelated; 
-  image-rendering: -moz-crisp-edges;          /* Firefox                        */
-  image-rendering: -o-crisp-edges;            /* Opera                          */
-  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-  -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+  /* see https://caniuse.com/css-crisp-edges */
+  image-rendering: -moz-crisp-edges;          /* Firefox */
+  image-rendering: -o-crisp-edges;            /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Chrome */
+  image-rendering: pixelated;
 
   
   color: #eee;
