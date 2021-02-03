@@ -19,7 +19,7 @@
 body {
   overflow-x: hidden;
   background: #5dc7f1;
-  cursor: none;
+  cursor: url('images/cursor.png'), auto;	
 }
 
 p, ul {
@@ -89,12 +89,7 @@ article {
 }
 
 h1 {
-  text-shadow: rgb(0, 0, 0, 0.5) 2px 1px;
-}
-
-#moving_bubble_cursor {
-  position: relative;
-  pointer-events: none;
+  text-shadow: rgb(0, 0, 0, 0.5) 1px 1px;
 }
 
 .centered_pic {
