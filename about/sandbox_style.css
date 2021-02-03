@@ -1,0 +1,114 @@
+/* GENERAL */
+
+.article_game h1 {
+    font-size: 3em;
+}
+
+.article_game {
+    text-align: center;
+}
+
+.grid-2-cols {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-3-cols {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-4-cols {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    text-align: center;
+}
+
+/* DUEL */
+
+#duel {
+    background: url("../images/lieu.jpg");
+    background-size: 100%;
+    border-radius: 5px;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#duel1, #duel2 {
+    height: 80px;
+    position: relative;
+    top: 10%;
+}
+
+#duel1 {
+    transform: scale(-1, 1);
+    left: 10%;
+}
+
+#duel2 {
+    left: 65%;
+}
+
+.duelbutton {
+    margin: 5px;
+    border: 0;
+    height: 2.5em;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    background-color: rgba(0, 220, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.duelbutton:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+/* AUDIO TILES */
+
+.audioTile {
+    border-radius: 10px;
+    height: 50px;
+    margin: 5px;
+    background-color: rgba(150, 220, 255, 1);
+}
+
+/* SNAIL */
+
+#snailgame * {
+    bottom: 15%;
+    opacity: 1;
+}
+
+#snailgame {
+    padding-top: 20%;
+    box-sizing: border-box;
+    display: flex;
+    padding-right: 15%;
+    background: url("../images/grass0.png");
+    background-size: 100%;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    min-height: 10%;
+}
+
+#snail {
+    bottom: 10%;
+    height:80px; 
+    position: absolute;
+}
+
+#salad {
+    height:60px;
+    position: absolute; 
+    right:10%;
+}

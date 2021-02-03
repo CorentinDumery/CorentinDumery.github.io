@@ -1,192 +1,214 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Chez Corentin</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <header>
-  <img id= "cooltop" width = "110%" src="images/coolwater.jpg" style="position:absolute; z-index:1;left:-5%;top:-8px" />
+  <img id="cooltop" width="110%" src="images/coolwater.jpg" style="position:absolute; z-index:1;left:-5%;top:-8px" />
 </header>
 
 <body>
 
   <div class="bubbles_background"></div>
 
-  <img id="moving_bubble_cursor" src = "images/bulle.png" width ="1%"  position:"absolute" style="z-index:10; left:0px">
+  <img id="moving_bubble_cursor" src="images/bulle.png" width="1%" position:"absolute" style="z-index:10; left:-100px">
 
   <article>
-
-    <div class='textuel'>
+    <div class="article_text">
       <p>
-        <h1>Welcome to my website !</h1>
-        My name is Corentin Dumery. I'm a Computer Graphics enthusiast and I just graduated from Télécom Paris / National University of Singapore,
-        where I attended 3D graphics, complexity and data science courses.
-        My interests include computers, video games, science, writing, life, the universe, and everything. 
-        On this page you will find information about some of the  projects I've worked on.
-	<br/> <br/>
-	<img id="circle_cv" src="images/circle_cv_photo.PNG" class="centerPic"  width ="33%">
+      <h1>Welcome to my website !</h1>
+      My name is Corentin Dumery. I'm a Computer Graphics enthusiast and I just graduated from Télécom Paris / National
+      University of Singapore,
+      where I attended 3D graphics, complexity and data science courses.
+      My interests include computers, video games, science, writing, life, the universe, and everything.
+      On this page you will find information about some of the projects I've worked on.
+      <br /> <br />
       </p>
     </div>
-
+    <img id="circle_cv" src="images/circle_cv_photo.PNG" class="centerPic" width="33%">
   </article>
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>B-Mesh Modeller</h1>
-        With two friends from Télécom Paris, we created a 3D modelling software based on a novel approach described in <a href="https://pdfs.semanticscholar.org/2009/3aea25b50e59c63998ba0377371c59bf007f.pdf">a research paper</a>.
-        The idea is to create an initial mesh in only a few minutes by placing spheres in 3D to represent
-         the skeleton of the modelled object. The user can freely create and customize the mesh. It can be
-         modified in real-time.
-         (<a href="https://github.com/CorentinDumery/Bmesh">link to the project</a></li>) <br/>  <br/>
+      <h1>B-Mesh Modeller</h1>
+      With two friends from Télécom Paris, we created a 3D modelling software based on a novel approach described in <a
+        href="https://pdfs.semanticscholar.org/2009/3aea25b50e59c63998ba0377371c59bf007f.pdf">a research paper</a>.
+      The idea is to create an initial mesh in only a few minutes by placing spheres in 3D to represent
+      the skeleton of the modelled object. The user can freely create and customize the mesh. It can be
+      modified in real-time.
+      (<a href="https://github.com/CorentinDumery/Bmesh">link to the project</a></li>) <br /> <br />
 
-         <img id="bmesh_ex" src="images/bmesh_example.PNG" align="middle" width ="100%">
-        <br><br><br>
-        <iframe class = "video" width="560" height="315" src="https://www.youtube.com/embed/_TSeF4pfgXs" frameborder="0" allowfullscreen></iframe>
-      </p>
-    </div>
-  </article>
-
-  <article style="top:0px;">
-    <div class="textuel">
-      <p>
-        <h1>Aesthetic functions</h1>
-        This is a fun little project to explore the artistic side of two-dimensional functions. All you have to do is enter a
-        math function and play with the sliders to generate some stunning artworks.
-        Any function works, no matter how complex, but even on simpler ones the results are often surprising.
-        If you do try it out, please send me your creations!
-         (<a href="https://github.com/CorentinDumery/colorExplorer">link to the project</a></li>) <br/>  <br/>
-
-        <img id="color_ex0" src="images/blackhole.png" align="middle" width ="100%">
-        <br><br>
-        <img id="color_ex1" src="images/sea_floor.png" align="middle" width ="100%">
+      <img id="bmesh_ex" src="images/bmesh_example.PNG" align="middle" width="100%">
+      <br><br><br>
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/_TSeF4pfgXs" frameborder="0"
+        allowfullscreen></iframe>
       </p>
     </div>
   </article>
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>Evaluation of a Spectral Data Transformation Method for Meaningful Mesh Segmentation</h1>
-        I wanted to see if I could transform a 3D mesh in a weaningful way to make 3D segmentation easier.
-        To evaluate this transformation, I used
-        <a href="https://segeval.cs.princeton.edu/">this awesome dataset</a></li> which includes human-generated ground truth segmentation,
-        and used simple clustering algorithms to generate a segmentation. By comparing results with the ground truth, I was able to measure the
-        efficiency of this approach and identify the circumstances under which it's useful. For more detail, here is
-        <a href="https://github.com/CorentinDumery/3DTransformation/blob/master/Evaluation%20of%20a%20Spectral%20Data%20Transformation%20Method%20for%20Meaningful%20Mesh%20Segmentation.pdf">a link to the complete study</a></li>.
-        You can also take a look at
-         <a href="https://github.com/CorentinDumery/3DTransformation">the project on github</a></li>. <br/>  <br/>
-        <img id="glassesSeg" src="images/glassesCl.png" align="middle" width ="100%">
+      <h1>Aesthetic functions</h1>
+      This is a fun little project to explore the artistic side of two-dimensional functions. All you have to do is
+      enter a
+      math function and play with the sliders to generate some stunning artworks.
+      Any function works, no matter how complex, but even on simpler ones the results are often surprising.
+      If you do try it out, please send me your creations!
+      (<a href="https://github.com/CorentinDumery/colorExplorer">link to the project</a></li>) <br /> <br />
+
+      <img id="color_ex0" src="images/blackhole.png" align="middle" width="100%">
+      <br><br>
+      <img id="color_ex1" src="images/sea_floor.png" align="middle" width="100%">
       </p>
     </div>
   </article>
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>Design of Implants for Skull Reconstructive Surgery</h1>
-        This project aims to make 3D skull implant generation as easy as possible. The idea is to input a mesh derived from a CT scan and use two edge loops
-        to specify the part of the skull where an implant should be generated. The skull layer is then reconstructed to make a perfect-fit implant. Then, a
-        flattening algorithm is used to flatten each layer of the implant to make it suitable for implant 3D printing. Cutting path are added to release some
-        flattening constraints. For more detail, please read
-        <a href="dissertation.pdf" download>my master thesis</a>. This work was done for the National University of Singapore in collaboration with
-        <a href="https://www.osteopore.com/">Osteopore</a></li>,
-        and uses a patented software from NUS to reconstruct the outer layer of the skull using symmetry constraints.
-        <br/> <br/>
-        <img id="defectS" class="centerPic"  src="images/defectSkull.png"  width ="80%">
-        <img id="implant" class="centerPic" src="images/implant.png" width ="80%">
+      <h1>Evaluation of a Spectral Data Transformation Method for Meaningful Mesh Segmentation</h1>
+      I wanted to see if I could transform a 3D mesh in a weaningful way to make 3D segmentation easier.
+      To evaluate this transformation, I used
+      <a href="https://segeval.cs.princeton.edu/">this awesome dataset</a></li> which includes human-generated ground
+      truth segmentation,
+      and used simple clustering algorithms to generate a segmentation. By comparing results with the ground truth, I
+      was able to measure the
+      efficiency of this approach and identify the circumstances under which it's useful. For more detail, here is
+      <a
+        href="https://github.com/CorentinDumery/3DTransformation/blob/master/Evaluation%20of%20a%20Spectral%20Data%20Transformation%20Method%20for%20Meaningful%20Mesh%20Segmentation.pdf">a
+        link to the complete study</a></li>.
+      You can also take a look at
+      <a href="https://github.com/CorentinDumery/3DTransformation">the project on github</a></li>. <br /> <br />
+      <img id="glassesSeg" src="images/glassesCl.png" align="middle" width="100%">
       </p>
     </div>
   </article>
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>The Cachou Factory</h1>
-        Here is  a short 3D animation I made using Blender. It's about Cachous. I followed
-        <a href="https://www.youtube.com/watch?v=67jBz8pzMcg"> a pretty simple tutorial</a>, don't be afraid to try it yourself !
-         </li> <br/>  <br/>
-         <iframe class = "video" width="560" height="315" src="https://www.youtube.com/embed/_Y-Lkw6hR30" frameborder="0" allowfullscreen></iframe>
+      <h1>Design of Implants for Skull Reconstructive Surgery</h1>
+      This project aims to make 3D skull implant generation as easy as possible. The idea is to input a mesh derived
+      from a CT scan and use two edge loops
+      to specify the part of the skull where an implant should be generated. The skull layer is then reconstructed to
+      make a perfect-fit implant. Then, a
+      flattening algorithm is used to flatten each layer of the implant to make it suitable for implant 3D printing.
+      Cutting path are added to release some
+      flattening constraints. For more detail, please read
+      <a href="dissertation.pdf" download>my master thesis</a>. This work was done for the National University of
+      Singapore in collaboration with
+      <a href="https://www.osteopore.com/">Osteopore</a></li>,
+      and uses a patented software from NUS to reconstruct the outer layer of the skull using symmetry constraints.
+      <br /> <br />
+      <img id="defectS" class="centerPic" src="images/defectSkull.png" width="80%">
+      <img id="implant" class="centerPic" src="images/implant.png" width="80%">
       </p>
     </div>
   </article>
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>Potato Generator</h1>
-        Simple project that generates a 3D potatoïd based on input parameters. Perturbations with a given frequency, amplitude and
-        direction are applied to a sphere to create the illusion of a natural object.
-         (<a href="https://github.com/CorentinDumery/PotatoGenerator">link to the project</a></li>) <br/>  <br/>
-        <div>
-        <img id="potato" class="centerPic" src="images/potato.gif" width ="70%">
+      <h1>The Cachou Factory</h1>
+      Here is a short 3D animation I made using Blender. It's about Cachous. I followed
+      <a href="https://www.youtube.com/watch?v=67jBz8pzMcg"> a pretty simple tutorial</a>, don't be afraid to try it
+      yourself !
+      </li> <br /> <br />
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/_Y-Lkw6hR30" frameborder="0"
+        allowfullscreen></iframe>
+      </p>
+    </div>
+  </article>
+
+  <article>
+    <div class="article_text">
+      <p>
+      <h1>Potato Generator</h1>
+      Simple project that generates a 3D potatoïd based on input parameters. Perturbations with a given frequency,
+      amplitude and
+      direction are applied to a sphere to create the illusion of a natural object.
+      (<a href="https://github.com/CorentinDumery/PotatoGenerator">link to the project</a></li>) <br /> <br />
+      <div>
+        <img id="potato" class="centerPic" src="images/potato.gif" width="70%">
       </div>
       </p>
     </div>
   </article>
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>[FRENCH] Modélisation agricole et optimisation de la répartition des surfaces</h1>
-        Here's a video I made when I was 19 showing the different steps in my research trying to optimize the area allocation of
-        an agricultural exploitation. It's in French and quite simple since this was done very early during my studies, but if
-        you have any questions I'd be more than willing to speak about it with you. It was a fun experience and I enjoyed the
-        freedom that I was given on this project.<br/>  <br/>
-        <iframe class = "video" width="560" height="315" src="https://www.youtube.com/embed/YgApnVLuq7c" frameborder="0" allowfullscreen></iframe>
+      <h1>[FRENCH] Modélisation agricole et optimisation de la répartition des surfaces</h1>
+      Here's a video I made when I was 19 showing the different steps in my research trying to optimize the area
+      allocation of
+      an agricultural exploitation. It's in French and quite simple since this was done very early during my studies,
+      but if
+      you have any questions I'd be more than willing to speak about it with you. It was a fun experience and I enjoyed
+      the
+      freedom that I was given on this project.<br /> <br />
+      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YgApnVLuq7c" frameborder="0"
+        allowfullscreen></iframe>
       </p>
     </div>
   </article>
 
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>More information</h1>
-        For more information, feel free to contact me at corentin.dumery at gmail.com.
-        You can also download my resume <a href="CV_DUMERY.pdf" download>here</a>.
+      <h1>More information</h1>
+      For more information, feel free to contact me at corentin.dumery at gmail.com.
+      You can also download my resume <a href="CV_DUMERY.pdf" download>here</a>.
       </p>
     </div>
   </article>
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>Add me !</h1>
-        <ul>
-          <li><a href="https://projecteuler.net/">Project Euler</a> friend key : 936617_OqDlWC0FVRsdOz15xHVaJ0lCcAimjNKn</a></li>
-          <li><a href="https://www.codingame.com/profile/3193e7999321db689a5475ae250b7e298616622">Codingame</a></li>
-          <li><a href="https://www.youtube.com/channel/UCEiDor6J3-FmC9I1Sv-AKtQ/featured">Youtube</a></li>
-          <li><a href="https://github.com/CorentinDumery/">Github</a></li>
+      <h1>Add me !</h1>
+      <ul>
+        <li><a href="https://projecteuler.net/">Project Euler</a> friend key :
+          936617_OqDlWC0FVRsdOz15xHVaJ0lCcAimjNKn</a></li>
+        <li><a href="https://www.codingame.com/profile/3193e7999321db689a5475ae250b7e298616622">Codingame</a></li>
+        <li><a href="https://www.youtube.com/channel/UCEiDor6J3-FmC9I1Sv-AKtQ/featured">Youtube</a></li>
+        <li><a href="https://github.com/CorentinDumery/">Github</a></li>
 
-        </ul>
+      </ul>
       </p>
     </div>
   </article>
 
 
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>Cool things that you should check out</h1>
-        <ul>
-          <li><a href="https://radio.garden/listen/himal-radio-nepali-filmy/U5RVnP7G">A radio from Kathmandu</a></li>
-          <li><a href="https://www.youtube.com/watch?v=IBGsE6IammQ">Short stories</a></li>
-          <li><a href="https://www.youtube.com/watch?v=OrR1TGQY20Y">Cherry Pepsi</a></li>
-          <li><a href="https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf">Intel 64 and IA-32 Architectures Software Developer’s Manual</a></li>
-          <li><a href="http://www.cmls.polytechnique.fr/perso/tringali/documents/st_exupery_le_petit_prince.pdf">Le Petit Prince</a></li>
-        </ul>
+      <h1>Cool things that you should check out</h1>
+      <ul>
+        <li><a href="https://radio.garden/listen/himal-radio-nepali-filmy/U5RVnP7G">A radio from Kathmandu</a></li>
+        <li><a href="https://www.youtube.com/watch?v=IBGsE6IammQ">Short stories</a></li>
+        <li><a href="https://www.youtube.com/watch?v=OrR1TGQY20Y">Cherry Pepsi</a></li>
+        <li><a
+            href="https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf">Intel
+            64 and IA-32 Architectures Software Developer’s Manual</a></li>
+        <li><a href="http://www.cmls.polytechnique.fr/perso/tringali/documents/st_exupery_le_petit_prince.pdf">Le Petit
+            Prince</a></li>
+      </ul>
       </p>
     </div>
   </article>
 
-  <article style="top:0px;">
-    <div class="textuel">
+  <article>
+    <div class="article_text">
       <p>
-        <h1>There's more </h1>
-        Check out this website's <a href="games.html"> sandbox</a>.
+      <h1>There's more </h1>
+      Check out this website's <a href="about/sandbox.html"> sandbox</a>.
       </p>
     </div>
   </article>

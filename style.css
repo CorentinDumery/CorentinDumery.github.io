@@ -2,68 +2,52 @@
   /* Main color: set by background image */
   /* Primary: 5DC7E5 */
   /* Secondary color: article background */
-  /* Text color: for articles */ 
-
+  /* Text color: for articles */
   /* Old style */
-  --secondary-bg-color: rgba(120,190,229,0.9);
-  --text-color: rgba(0,0,0,1.0);
-
+  /*--secondary-bg-color: rgba(120, 190, 229, 0.9);
+  --text-color: rgba(0, 0, 0, 1.0);*/
   /* Vendee style */
-  --secondary-bg-color: rgba(255,255,255,0.99);
-  --text-color: rgba(44,66,63,1.0);
-
+  --secondary-bg-color: rgba(255, 255, 255, 0.99);
+  --text-color: rgba(44, 66, 63, 1.0);
   /* Dark mode */
   /*--secondary-bg-color:rgba(38,40,42,1.0);
   --text-color: rgba(255,255,255,0.99);*/
-}
-
-*
-{
   font-family: Trebuchet MS;
   color: var(--text-color);
 }
 
-body
-{
+body {
   overflow-x: hidden;
-  background: #5dc7f1; 
-  cursor:none;
-
+  background: #5dc7f1;
+  cursor: none;
 }
 
-p,ul
-{
-  z-index:2;
+p, ul {
+  z-index: 2;
 }
 
-article
-{
-
+article {
+  padding: 15px;
+  border-radius: 5px;
   background-color: var(--secondary-bg-color);
-  box-shadow: 5px 5px 5px rgba(100,100,200);
+  box-shadow: 5px 5px 5px rgba(100, 100, 200);
   opacity: 1;
-  z-index:2;
-  width:60%;
-  margin-left:20%;
-  margin-right:auto;
-  margin-top:10%;
+  z-index: 2;
+  width: 60%;
+  max-width: 800px;
+  margin-left: 20%;
+  margin-right: auto;
+  margin-top: 10%;
   margin-bottom: 10%;
   display: flex;
-  flex-direction:column;
-  justify-content:space-between;
-  position:relative;
-  max-width: 800px;
-}
-
-.textuel
-{
-  padding:15px;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 
 .video {
-
   text-align: center;
-  display:block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 90%;
@@ -72,174 +56,53 @@ article
 .bubbles_background {
   opacity: 0.7;
   position: absolute;
-  left:0%; 
+  left: 0%;
   top: 0%;
-  z-index:1;
-
+  z-index: 1;
   /* Mode png
   background: url("images/bubbles0.png");
-  animation: animation 100s linear infinite;
+  animation: png_animation 100s linear infinite;
   */
-
   /* Mode gif */
   background: url("images/bubblegif.gif");
   background-size: 45%;
-
-  /* see https://caniuse.com/css-crisp-edges */
-  image-rendering: -moz-crisp-edges;          /* Firefox */
-  image-rendering: -o-crisp-edges;            /* Opera */
-  image-rendering: -webkit-optimize-contrast; /* Chrome */
+  /* Prevent interpolation, see https://caniuse.com/css-crisp-edges */
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
   image-rendering: pixelated;
-
-  
-  color: #eee;
-  width: 100%;
+  width: 110%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   perspective: 1000px;
   perspective-origin: 50% 50%;
-  
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-  mask-image: -webkit-gradient(linear, left top, left bottom, 
-    from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+  mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
 }
 
-/*@keyframes animation {
+@keyframes png_animation {
    100%{
     background-position:0px -3000px;
   }
-}*/
-
-h1
-{
-  text-shadow: rgb(0,0,0,0.5) 2px 1px;
-}
-mycanvas
-{
-  height: 200px;
-  margin: 10px;
-  background-color: white;
-  padding-right: 15%;
 }
 
-.jeu h1
-{
-  font-size: 3em;
-  text-align: center;
+h1 {
+  text-shadow: rgb(0, 0, 0, 0.5) 2px 1px;
 }
 
-.jeu h2
-{
-  text-align: center;
-}
-
-#snailgame *
-{
-  bottom: 15%;
-  opacity: 1;
-}
-
-#snailgame
-{
-  background: url("images/grass0.png");
-  background-size: 100%;
-  border-radius : 5px;
-}
-
-#duel
-{
-  background: url("images/lieu.jpg");
-  background-size: 100%;
-  border-radius : 5px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  text-align: center;
-}
-
-.grid-container-4 {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding: 10px;
-  text-align: center;
-}
-
-.twoColumns {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-  text-align: center;
-}
-
-
-.audioTile
-{
-  border-radius: 10px;
-  height : 50px;
-  margin : 5px;
-  background-color: rgba(150,220,255,1);
-}
-
-
-#moving_bubble_cursor
-{
+#moving_bubble_cursor {
   position: relative;
   pointer-events: none;
 }
 
-.duelbutton
-{
-
-  margin:5px;
-  border: 0;
-  height: 2.5em;
-  text-align: center;
-  color: #fff;
-  border-radius: 10px;
-  background-color: rgba(0, 220, 0, 1);
-  background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),  inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
-
-.duelbutton:active
-{
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-
-#duel1, #duel2
-{
-  height: 80px;
-  position: relative;
-  top: 40%;
-}
-
-#duel1
-{
-  transform: scale(-1, 1);
-  left: 10%;
-}
-
-#duel2
-{
-  left: 85%;
-}
-
-.centerPic
-{
+.centerPic {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
-#duelbuttonpad
-{
-
+#circle_cv {
+  margin-bottom: 10px;
 }
