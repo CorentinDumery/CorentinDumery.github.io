@@ -32,7 +32,7 @@
 /* DUEL */
 
 #duel {
-    background: url("../images/lieu.jpg");
+    background: url("../images/sandbox/lieu.jpg");
     background-size: 100%;
     border-radius: 5px;
     height: 100px;
@@ -93,7 +93,7 @@
     box-sizing: border-box;
     display: flex;
     padding-right: 15%;
-    background: url("../images/grass0.png");
+    background: url("../images/sandbox/grass0.png");
     background-size: 100%;
     border-radius: 5px;
     width: 100%;
