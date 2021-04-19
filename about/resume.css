@@ -1,0 +1,42 @@
+resume_entry {
+  display: flex;
+  flex-direction: row;
+  background-color: #EEE;
+  padding:1%;
+  margin-bottom: 1%;
+}
+
+resume_entry * {
+  padding: 0.0em;
+}
+
+resume_entry date_range {
+  flex: 5;
+  text-align: right;
+  margin: auto;
+}
+
+resume_entry logo {
+  flex: 5;
+  padding: 0;
+  margin: auto;
+}
+
+resume_entry gap {
+  flex: 1;
+}
+
+resume_entry logo * {
+  max-width: 100%;
+  height: auto;
+}
+
+resume_entry description {
+  flex: 30;
+  line-height: 1.3em;
+}
+
+description h1, h2, h3, h4 {
+  display:inline;
+  padding-bottom: 2em;
+}

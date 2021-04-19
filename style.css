@@ -34,6 +34,85 @@ p, ul {
   z-index: 2;
 }
 
+menubar {
+  text-align: left;
+  top: 20%;
+  left: 3%;
+  background-color: #AAA;
+  border-radius: 5px;
+  opacity: 1;
+  z-index: 2;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: auto;
+  margin-top: 0%;
+  margin-bottom: 5%;
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+menubar a, submenubar, submenubar a {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(255, 255, 255);
+  text-align: left;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 0.0em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  padding: 0.0em;
+  padding-left: 0.2em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+submenubar {
+  margin-left: 15%;
+  width: 85%;
+}
+
+submenubar a {
+  display: block;
+  font-size: 0.75em;
+}
+
+menubar a:hover {
+  color: #ffffff;
+}
+
+a moving {
+  /* inspired from http://karim.naaji.fr/ */
+  padding: 1%;
+  display: block;
+  position: relative;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+}
+
+a:hover moving {
+  background: #555;
+  -webkit-transform: translate3d( 10%, 0px, 0px) rotateX( 0deg);
+  -moz-transform: translate3d( 10%, 0px, 0px) rotateX( 0deg);
+}
+
+a:hover moving::before {
+  content: ">";
+  position: absolute;
+  /*absolute for outside span, relative inside*/
+  left: -5%;
+  color: #000
+}
+
+.current_menubar {
+  background: #555;
+  color: #FFF;
+}
+
 article {
   padding: 15px;
   border-radius: 5px;
@@ -43,7 +122,7 @@ article {
   z-index: 2;
   width: 60%;
   max-width: 900px;
-  margin-left: 20%;
+  margin-left: 30%;
   margin-right: auto;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -51,6 +130,7 @@ article {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  line-height: 1.3em;
 }
 
 .bubbles_background {
@@ -118,4 +198,12 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+image_legend {
+  padding-top: 0.5em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
 }

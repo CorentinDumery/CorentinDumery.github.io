@@ -1,0 +1,45 @@
+riddle {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 1.5em;
+}
+
+hidden {
+    background-color: #000;
+    color: #000;
+    padding: 0.1em;
+}
+
+hidden:hover {
+    color: #FFF;
+}
+
+.illustration {
+    display: block;
+    margin:auto;
+    width: 100%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+.formula {
+    display:block;
+    margin:auto;
+    max-width: 90%;
+    padding: 0.8em;
+}
+
+.pixel_art {
+    display:block;
+    margin:auto;
+    width: 60%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+  }

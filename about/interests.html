@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chez Corentin</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+
+<header>
+  <img id="cool_header" src="../images/coolwater.jpg"/>
+</header>
+
+<body>
+  <menubar>
+    <a href="../index.html"><moving>Corentin Dumery</moving></a>
+    <a href="interests.html" class="current_menubar"> <moving> Research interests </moving></a>
+    <submenubar>
+      <a href="#parametrization"> <moving> Mesh parametrization</moving></a>
+      <a href="#computational"> <moving> Computational Geometry </moving></a>
+      <a href="#shape"> <moving> Shape analysis </moving></a>
+    </submenubar>
+    <a href="resume.html"> <moving> Resume  </moving> </a>
+    <a href="gallery.html"> <moving> Gallery </moving> </a>
+    <a href="blog.html"> <moving> Blog </moving></a>
+    
+  </menubar>
+  <div class="bubbles_background"></div>
+
+  <article>
+    <div class="article_text" id="parametrization">
+      <p>
+      <h1>Mesh parametrization</h1>
+
+      Finding a (bijective) mapping from an input mesh to a parametric domain.
+      Most notably, UV mapping (or mesh flattening), commonly used for texturing,
+      or polycube mapping, used as a pre-processing step for hexahedral meshing.
+
+      <br /> <br />
+      </p>
+    </div>
+    <img src="../images/interests/cutting_semi_sphere.png" width="100%" class="centered_pic">
+    <image_legend>UV mapping of a semi-sphere with varying numbers of cuts.</image_legend>
+  </article>
+
+  <article>
+    <div class="article_text" id="computational">
+      <p>
+      <h1>Computational Geometry</h1>
+      
+      The study of algorithms which can be stated in terms of geometry.
+      Real-world meshes are often comprised of hundreds of thousands of triangles,
+      making computational complexity a key issue.
+
+      <br /> <br />
+      </p>
+    </div>
+    <img src="../images/interests/sampled_fertility_white.png" width="100%" class="centered_pic">
+    <image_legend>Poisson sampling of "fertility" with limited time complexity using an octree.</image_legend>
+  </article>
+
+  <article>
+    <div class="article_text" id="shape">
+      <p>
+      <h1>Shape modelling</h1>
+      
+      Modeling, simulating and processing digital representations of shapes and their properties,
+      ranging from mesh simplification to shape deformation.
+
+      <br /> <br />
+      </p>
+    </div>
+    <img src="../images/interests/hand_seg.png" width="100%" class="centered_pic">
+    <image_legend>Semantic mesh segmentation of hand model using data transformation and clustering.</image_legend>
+  </article>
+
+  <article>
+    <div class="article_text" id="wip">
+      <p>
+      <h1>Work in progress</h1>
+
+      I'm looking to expand this list and refine my existing interests with a PhD
+      starting in 2021/2022/2023.
+
+      <br /> <br />
+      </p>
+    </div>
+  </article>
+
+  <!--
+  <article>
+    <div class="article_text">
+      <p>
+        <h1>Other</h1>
+        Kalman filtering, operations research, 3D computer vision, 
+        machine learning & optimization, rendering, photogrammetry.
+        <br /> <br />
+      </p>
+    </div>
+  </article>
+  -->
+
+</body>
+
+</html>

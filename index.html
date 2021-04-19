@@ -6,13 +6,33 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
+
 <header>
   <img id="cool_header" src="images/coolwater.jpg"/>
 </header>
 
 <body>
-
+  
+  <menubar>
+    <a href="index.html" class="current_menubar"><moving>Corentin Dumery</moving></a>
+    <submenubar>
+      <a href="#bmesh_article"> <moving> B-Mesh Modeller </moving></a>
+      <a href="#aesthetic_article"> <moving> Aesthetic functions </moving></a>
+      <a href="#cow_article"> <moving> Cow texture generator </moving></a>
+      <a href="#transformation_article"> <moving> 3D Mesh Segmentation </moving></a>
+      <a href="#skull_article"> <moving> Skull implants </moving></a>
+      <a href="#potato_article"> <moving> Potato generator </moving></a>
+      <a href="#tipe_article"> <moving> Crop/Area allocation </moving></a>
+    </submenubar>
+    <a href="about/interests.html" download> <moving> Research interests </moving></a>
+    <a href="about/resume.html"> <moving> Resume  </moving> </a>
+    <a href="about/gallery.html"> <moving> Gallery </moving> </a>
+    <a href="about/blog.html"> <moving> Blog </moving></a>
+  </menubar>
+  
   <div class="bubbles_background"></div>
+
+  
 
   <article>
     <div class="article_text">
@@ -23,6 +43,7 @@
       where I attended 3D graphics, complexity and data science courses.
       My interests include computers, video games, science, writing, life, the universe, and everything.
       On this page you will find information about some of the projects I've worked on.
+      <!--TODO rewrite-->
       <br /> <br />
       </p>
     </div>
@@ -30,7 +51,7 @@
   </article>
 
   <article>
-    <div class="article_text">
+    <div class="article_text" id="bmesh_article">
       <p>
       <h1>B-Mesh Modeller</h1>
       With two friends from Télécom Paris, we created a 3D modelling software based on a novel approach described in <a
@@ -50,7 +71,7 @@
   </article>
 
   <article>
-    <div class="article_text">
+    <div class="article_text" id="aesthetic_article">
       <p>
       <h1>Aesthetic functions</h1>
       This is a fun little project to explore the artistic side of two-dimensional functions. All you have to do is
@@ -69,7 +90,7 @@
 
 
   <article>
-    <div class="article_text">
+    <div class="article_text" id="cow_article">
       <p>
       <h1>Cow Texture generator</h1>
       Ever felt the need to have an infinite supply of cow pattern textures ? <br /><br />
@@ -93,7 +114,7 @@
   </article>
 
   <article>
-    <div class="article_text">
+    <div class="article_text"  id="transformation_article">
       <p>
       <h1>Evaluation of a Spectral Data Transformation Method for Meaningful Mesh Segmentation</h1>
       I wanted to see if I could transform a 3D mesh in a weaningful way to make 3D segmentation easier.
@@ -114,7 +135,7 @@
   </article>
 
   <article>
-    <div class="article_text">
+    <div class="article_text" id="skull_article">
       <p>
       <h1>Design of Implants for Skull Reconstructive Surgery</h1>
       This project aims to make 3D skull implant generation as easy as possible. The idea is to input a mesh derived
@@ -136,23 +157,7 @@
   </article>
 
   <article>
-    <div class="article_text">
-      <p>
-      <h1>The Cachou Factory</h1>
-      Here is a short 3D animation I made using Blender. It's about Cachous. I followed
-      <a href="https://www.youtube.com/watch?v=67jBz8pzMcg"> a pretty simple tutorial</a>, don't be afraid to try it
-      yourself !
-      </li> <br /> <br />
-      <div class="video_container">
-        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/_Y-Lkw6hR30" frameborder="0"
-          allowfullscreen></iframe>
-      </div>
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <div class="article_text">
+    <div class="article_text" id="potato_article">
       <p>
       <h1>Potato Generator</h1>
       Simple project that generates a 3D potatoïd based on input parameters. Perturbations with a given frequency,
@@ -167,32 +172,7 @@
   </article>
 
   <article>
-    <div class="article_text">
-      <p>
-      <h1>Global Game Jam 2021</h1>
-
-      In less than 48 hours, we created a 2D platformer where you try to escape from a haunted manor
-      <b>using a magic flashlight coming from your mouse that magically stops ghosts from moving</b>.
-      Help your avatar find the key as best as you can, but remember that you have a single flashlight that you'll need
-      both to find your way and to stop the ghosts from hugging you.
-      <br />
-      Our team was composed of one music composer and two software engineers who had never used a game engine before.
-      We got familiar with the Godot Engine on the fly and successfully delivered our game within the time limit.
-      <br /><br />
-      Try it here:
-      <a href="https://github.com/CorentinDumery/WeWillFindYouUwU/tree/main/executables">Download for
-        Linux/Windows/Mac</a>
-      <br />
-      Hack it here: <a href="https://github.com/CorentinDumery/WeWillFindYouUwU">Github repository</a>
-      <br /> <br />
-      <img id="uwu_demo" class="centered_pic" src="images/uwu_demo.gif" width="100%">
-      </p>
-    </div>
-  </article>
-
-
-  <article>
-    <div class="article_text">
+    <div class="article_text" id="tipe_article">
       <p>
       <h1>[FRENCH] Modélisation agricole et optimisation de la répartition des surfaces</h1>
       Here's a video I made when I was 19 showing the different steps in my research trying to optimize the area
@@ -222,23 +202,6 @@
   <article>
     <div class="article_text">
       <p>
-      <h1>Add me !</h1>
-      <ul>
-        <li><a href="https://www.youtube.com/channel/UCEiDor6J3-FmC9I1Sv-AKtQ/featured">Youtube</a></li>
-        <li><a href="https://github.com/CorentinDumery/">Github</a></li>
-        <li><a href="https://projecteuler.net/">Project Euler</a> friend key :
-          936617_OqDlWC0FVRsdOz15xHVaJ0lCcAimjNKn</a></li>
-        <li><a href="https://www.codingame.com/profile/3193e7999321db689a5475ae250b7e298616622">Codingame</a></li>
-      </ul>
-      </p>
-    </div>
-  </article>
-
-
-
-  <article>
-    <div class="article_text">
-      <p>
       <h1>Cool things that you should check out</h1>
       <ul>
         <li><a href="https://www.youtube.com/watch?v=l0vrsO3_HpU">Plantasia, earth music for plants and the people who
@@ -259,16 +222,5 @@
     </div>
   </article>
 
-  <article>
-    <div class="article_text">
-      <p>
-      <h1>There's more </h1>
-      Check out this website's <a href="about/sandbox.html"> sandbox</a>.
-      </p>
-    </div>
-  </article>
-
-
 </body>
-
 </html>
