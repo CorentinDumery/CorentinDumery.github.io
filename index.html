@@ -2,13 +2,12 @@
 <html>
 
 <head>
-  <title>Chez Corentin</title>
+  <title>Corentin Dumery</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 
 <header>
-  <img id="cool_header" src="images/coolwater.jpg"/>
 </header>
 
 <body>
@@ -30,26 +29,42 @@
     <a href="about/blog.html"> <moving> Blog </moving></a>
   </menubar>
   
-  <div class="bubbles_background"></div>
-
-  
-
-  <article>
-    <div class="article_text">
+  <article height="100%">
+    <div id="namecard">
+      <div>
+        <h1> Corentin Dumery </h1>
+        <h3> 3D R&D Engineer <br>
+          <a href="https://www.cea.fr/english/Pages/cea/the-cea-a-key-player-in-technological-research.aspx">CEA Paris-Saclay</a><br>
+          LGLS (Software Engineering for Simulation Lab)
+        </h3>
+        
+      </div>
+      <div><img id="circle_cv" src="images/circle_cv_photo.PNG" width="100%"></div>
+    </div>
+    <div>
+      I received a Master in Computer Science from the <a href="www.nus.edu.sg">National University of Singapore</a> in 2020, 
+      as well as a Master in Software Engineering from 
+      <a href="https://www.telecom-paris.fr/en/home">Télécom Paris (Institut Polytechnique de Paris). </a><br/>
       <p>
-      <h1>Welcome to my website !</h1>
-      My name is Corentin Dumery. I'm a Computer Graphics enthusiast and I just graduated from Télécom Paris / National
-      University of Singapore,
-      where I attended 3D graphics, complexity and data science courses.
-      My interests include computers, video games, science, writing, life, the universe, and everything.
-      On this page you will find information about some of the projects I've worked on.
-      <!--TODO rewrite-->
-      <br /> <br />
+        My primary research interests lie in 3D geometry processing and its applications, 
+        ranging from physics-based simulation to animation.
+        In the past, I have worked on several topics centered around discrete shape modelling, 
+        including mesh deformation using geometric energies, hexahedral meshing,
+        or semantic mesh segmentation. I'm also interested in data science techniques and how they
+        can be applied to 3D problems, such as machine learning & optimization, operations research,
+        extended Kalman filtering, or dimensionality reduction.
       </p>
     </div>
-    <img id="circle_cv" src="images/circle_cv_photo.PNG" width="33%" class="centered_pic">
-  </article>
 
+    <iconbar>
+      <a href="https://github.com/CorentinDumery/"><img class="icon" src="images/github.png"></a>
+      <a href="https://www.youtube.com/channel/UCEiDor6J3-FmC9I1Sv-AKtQ"><img class="icon" src="images/youtube.png"></a>
+      <a href="https://www.linkedin.com/in/corentin-dumery-2754281a0/"><img class="icon" src="images/linkedin.png"></a>
+    </iconbar>
+  </div>
+
+  </article>
+  
   <article>
     <div class="article_text" id="bmesh_article">
       <p>
@@ -120,7 +135,7 @@
       I wanted to see if I could transform a 3D mesh in a weaningful way to make 3D segmentation easier.
       To evaluate this transformation, I used
       <a href="https://segeval.cs.princeton.edu/">this awesome dataset</a></li> which includes human-generated ground
-      truth segmentation,
+      truth segmentations,
       and used simple clustering algorithms to generate a segmentation. By comparing results with the ground truth, I
       was able to measure the
       efficiency of this approach and identify the circumstances under which it's useful. For more detail, here is
@@ -198,29 +213,5 @@
       </p>
     </div>
   </article>
-
-  <article>
-    <div class="article_text">
-      <p>
-      <h1>Cool things that you should check out</h1>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=l0vrsO3_HpU">Plantasia, earth music for plants and the people who
-            love them</a></li>
-        <li><a href="https://en.wikipedia.org/wiki/List_of_sandwiches">Wikipedia's list of sandwiches</a></li>
-        <li><a href="https://radio.garden/listen/himal-radio-nepali-filmy/U5RVnP7G">A radio from Kathmandu</a></li>
-        <li><a href="https://www.youtube.com/watch?v=IBGsE6IammQ">Short stories</a></li>
-        <li><a href="https://www.youtube.com/watch?v=OrR1TGQY20Y">Cherry Pepsi</a></li>
-        <!--
-        <li><a
-            href="https://software.intel.com/sites/default/files/managed/39/c5/325462-sdm-vol-1-2abcd-3abcd.pdf">Intel
-            64 and IA-32 Architectures Software Developer’s Manual</a></li>
-        -->
-        <li><a href="http://www.cmls.polytechnique.fr/perso/tringali/documents/st_exupery_le_petit_prince.pdf">Le Petit
-            Prince</a></li>
-      </ul>
-      </p>
-    </div>
-  </article>
-
 </body>
 </html>
