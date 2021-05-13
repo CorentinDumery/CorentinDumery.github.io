@@ -69,6 +69,10 @@ h3 {
   line-height: 1.5em;
 }
 
+article img {
+  margin-top: 0.5em;
+}
+
 menubar {
   text-align: left;
   margin-top: 5%;
