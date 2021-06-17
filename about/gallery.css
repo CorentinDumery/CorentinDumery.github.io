@@ -6,3 +6,8 @@
   image-rendering: -webkit-optimize-contrast;
   image-rendering: pixelated;
 }
+
+.record {
+  text-align: center;
+  border: solid;
+}
