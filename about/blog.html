@@ -20,181 +20,35 @@
     <a href="resume.html"> <moving> Resume  </moving> </a>
     <a href="gallery.html"> <moving> Gallery </moving> </a>
     <a href="blog.html" class="current_menubar"> <moving> Blog </moving></a>
-    
+
   </menubar>
   <div class="bubbles_background"></div>
 
   <article>
-    <div class="article_text" id="cachou_article">
-      <p>
-      <h1>Tales of a computer graphics student</h1>
-	Every once in a while, I more or less accidentally stumble upon some weird or fascinating visualization of something.
-	Often I let them go to waste, and I go on with something else. But sometimes I save them, and
-	<a href="tales.html">I gathered some of my favorites here.</a> More often than not these are just bugs, and that just
-	makes them all the more interesting.
-      
-      </p>
+    <div class="article_text">
+
+      <h1>Some more stuff</h1>
+      <h4><i>
+        <ul>
+          <li><a href="blog/aestheticfunctions.html"> Aesthetic functions match </a> </br></li>
+          <li><a href="blog/avatar.html"> Making a 3D Avatar </a> </br></li>
+          <li><a href="blog/aliasing.html"> The non-existence of aliasing patterns </a></li>
+        </ul></h4>
+      </i>
     </div>
   </article>
 
-  <article>
-    <div class="article_text" id="cachou_article">
-      <p>
-      <h1>Making a 3D Avatar</h1>
 
-      After playing <a href="https://www.oculus.com/experiences/quest/3623167214470921/">Puzzling Places</a> for a while
-      and learning about <i>Structure From Motion</i> with 
-      <a href="https://www.comp.nus.edu.sg/cs/bio/leegh/">Prof Lee Gim Hee at NUS</a>,
-      I've taken an interest in photogrammetry, <i>i.e.</i> retrieving 3D shapes from a set of 2D pictures. 
-      It's a pretty complex process, because the program has to figure out by itself the exact locations 
-      from which each picture was taken. <br /> <br />
-      It turns out today there's some amazing free software that 
-      takes care of the whole 3D reconstruction for you. 
-      <a href="https://alicevision.org/#meshroom">Meshroom</a> in particular lets you see the whole process unfold 
-      on its interface. Even before the computation is complete, you can check the correspondences and the 
-      estimated camera positions to make sure the intermediate steps are not completely off 
-      (<i>and sometimes they are</i>).  
-
-      <img class="centered_pic" src="../images/blog/meshroom_sfm.png" width="100%">
-      <br />
-
-      After experimenting with cats and teapots, I thought
-      I'd try to make a 3D avatar of myself so I could use it instead of a dull 2D profile picture.
-      However, capturing one's face is especially challenging, because the subject must not move
-      the slightest for the reconstruction to work well.
-
-      </br>
-      <img class="centered_pic" src="../images/blog/meshroom.png" width="100%">
-      </br>
-
-      The resulting textured mesh is alright. Meshroom seems to have totally missed the torso and the hair,
-      but the face is recognizable and only <i>slightly</i> deformed. It also has over 300 thousand triangles,
-      so we'll need to remesh that.
-      </br></br>
-      After removing all of the background, I sculpted myself some approximate hair in Blender and smoothed 
-      the mesh. It's still ridiculously refined in some spots, so we'll do 
-      some quick remeshing using <a href="https://github.com/wjakob/instant-meshes">Instant Meshes</a>
-      to generate a regular and coarse triangle mesh. 
-      </br></br>
-      The texture has some issues. Most importantly, the room lighting combined with my camera's parameters
-      led to a strange white line and different shades on both cheeks. 
-      But before we actually get to it, it's really important to
-      bake a new texture in Blender. Meshroom generates messy textures with tiny patches, which
-      makes them very hard to edit.  Once this is done, we're able to photoshop away these white stains on the texture
-      and fix the eyes.
-
-      </br></br>
-      The final texture is somewhat terrifying, but that was to be expected. I'm just glad the real me is in 3D.
-      </br></br>
-      <img class="centered_pic" src="../images/blog/self_tex.png" width="40%">
-      </br>
-      And for the final presentation, we'll export the UV coordinates and visualize the mesh
-      in <a href="https://libigl.github.io/">libigl</a>:
-      </br></br>
-      <img id="photo_self" width="40%" class="centered_pic" src="../images/blog/photogrammetry_self.gif">
-      <br/> 
-
-      The final result is pretty convincing. There's definitely a bit of an 
-      <a href="https://en.wikipedia.org/wiki/Uncanny_valley">Uncanny Valley</a> feeling,
-      which means it's quite a success, I guess. 
-      If you want to make your own avatar, here are two videos I'd recommend to get started quickly:
-      <a href="https://www.youtube.com/watch?v=1D0EhSi-vvc">this one covering the basics of meshroom and photogrammetry</a>,
-      and <a href="https://www.youtube.com/watch?v=MrUVeV0wsH8">this one on how to clean-up your mesh and bake a new texture</a>.
-      
-      </li> </br></br>
-      13.05.21
-      </p>
-    </div>
-  </article>
 
   <article>
     <div class="article_text">
       <p>
-      <h1>The non-existence of aliasing patterns</h1>
+      <h1>Tales of a computer graphics student</h1>
+    	Every once in a while, I more or less accidentally stumble upon some weird or fascinating visualization of something.
+    	Often I let them go to waste, and I go on with something else. But sometimes I save them, and
+    	<a href="tales.html">I gathered some of my favorites here.</a> More often than not these are just bugs, and that just
+    	makes them all the more interesting.
 
-      <riddle>My kin is that of a mirage, invisible to lone humans,<br>
-      standing on the fickle edge, of existence and illusions.<br><br>
-      I can never be lonely, for I am a reinterpretation, <br>
-      merely a new body, born from another creation.<br><br>
-      I am the utter nonsense, the artefact that you see, <br>
-      the uncanny consequence, of your sampling frequency. <br><br>
-      What am I ?</riddle>
-      
-      Hover to see the answer : <hidden>An aliasing pattern ! (It was in the title !)
-      </hidden><br><br>
-
-      Now either you got the answer right, or you're just confused.
-      
-      Say we have a spiral, for example. Such as the one below, which, in 
-      <a href="../index.html#aesthetic_article">aesthetic-functions</a>
-      syntax, is written using the following formula:
-      <img class="formula" src="../images/blog/formula_spiral.png"> 
-
-      From there, let us consider the set of pixels (i,j) such that:
-      <img class="formula" src="../images/blog/spiral_area.png"> 
-
-      Where width is a parameter between 0 and 255. This formula yields the following:
-
-      <img class="illustration" src="../images/blog/spiral.png"> 
-
-      Notice how the lines are getting closer and closer as they get 
-      further away from the center. Eventually, the gap between two consecutive lines
-      will be less than a pixel. So if we zoom out, what will we see ? 
-      Apart from the center, the spiral will not be visible anymore, 
-      yet pixels will show <i>something</i>. Something that might not
-      look like the spiral, but should still be somewhat related to it.<br/><br/>
-      Here's the result:
-      <br />
-      <img class="illustration" src="../images/blog/alias_static.gif">
-
-      That's our aliasing pattern. A completely new figure that has close to nothing 
-      to do with the original spiral, yet is a represensation
-      of the exact same thing. 
-      In <a href="../index.html#aesthetic_article">aesthetic-functions</a>, 
-      each pixel evaluates the spiral function in it's top left corner, 
-      which is equivalent to a 2D sub-sampling of the <i>real</i> spiral.
-      <br/><br/>
-      In signal processing, it is well understood that undersampling a signal will lead
-      to artifacts. As a general rule, the signal should not contain information 
-      at more than half the sampling frequency. 
-
-
-      <a href="https://matthews.sites.wfu.edu/misc/DigPhotog/alias/">This picture</a> illustrates why:
-
-      <img width="50%" style="display:block; margin:auto; padding:0.8em;" src="../images/blog/sampling.png">
-
-      Undersampling a sine wave results in another sine wave with a completely different frequency.
-      Thanksfully, our spiral is a bit more complicated than a sine wave,
-      which explains why our aliasing looks so strange. It makes it pretty hard 
-      to predict what shape the aliasing pattern will be, which totally
-      contributes to how fascinating these can be. Let us play with our
-      spiral a bit, and see how it evolves:
-
-      <img class="illustration" src="../images/blog/alias_rotating.gif">
-
-      Hypnotic ! When we zoom in onto a corner, it seems completely unrelated
-      to our spiral. Even more surprisingly perhaps, the pattern repeats faster
-      than the spiral rotates:
-
-      <img class="pixel_art" src="../images/blog/cropped_alias.gif">
-
-      The undersampling phenomenon is heavily dependant on the sampling frequency.
-      In our case, if we play with the resolution, we're effectively changing
-      the sampling frequency. Quite interestingly, when we do just that on
-      our spiral, we get the same pattern but with varying size:
-      
-      <img class="illustration" src="../images/blog/alias_resolution.gif">
-
-      So remember, when visualizing something, the strangest things can sometimes 
-      happen. If a slight variation in the input leads to a very different 
-      visualization, you might not be seeing what you're trying to see.<br/><br/>
-      Anti-aliasing can easily be implemented by sampling multiple times per pixel, 
-      and it could be done in aesthetic-functions. But wouldn't that be a shame ?
-      These patterns add complexity and make seemingly simple figures surprisingly
-      unpredictable.
-
-      <br /> <br />
-      14.04.21
       </p>
     </div>
   </article>
@@ -223,7 +77,7 @@
       </p>
     </div>
   </article>
-  
+
 </body>
 
 </html>

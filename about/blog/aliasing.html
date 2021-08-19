@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Corentin Dumery</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../blog.css" />
+</head>
+
+
+<header>
+  <img id="cool_header" src="../../images/coolwater.jpg"/>
+</header>
+
+<body>
+  <menubar>
+    <a href="../../index.html"><moving>Corentin Dumery</moving></a>
+    <a href="../interests.html"> <moving> Research interests </moving></a>
+    <a href="../resume.html"> <moving> Resume  </moving> </a>
+    <a href="../gallery.html"> <moving> Gallery </moving> </a>
+    <a href="../blog.html" class="current_menubar"> <moving> Blog </moving></a>
+
+  </menubar>
+  <div class="bubbles_background"></div>
+
+  <article>
+    <div class="article_text">
+      <p>
+      <h1>The non-existence of aliasing patterns</h1>
+
+      <riddle>My kin is that of a mirage, invisible to lone humans,<br>
+      standing on the fickle edge, of existence and illusions.<br><br>
+      I can never be lonely, for I am a reinterpretation, <br>
+      merely a new body, born from another creation.<br><br>
+      I am the utter nonsense, the artefact that you see, <br>
+      the uncanny consequence, of your sampling frequency. <br><br>
+      What am I ?</riddle>
+
+      Hover to see the answer : <hidden>An aliasing pattern ! (It was in the title !)
+      </hidden><br><br>
+
+      Now either you got the answer right, or you're just confused.
+
+      Say we have a spiral, for example. Such as the one below, which, in
+      <a href="../../index.html#aesthetic_article">aesthetic-functions</a>
+      syntax, is written using the following formula:
+      <img class="formula" src="../../images/blog/formula_spiral.png">
+
+      From there, let us consider the set of pixels (i,j) such that:
+      <img class="formula" src="../../images/blog/spiral_area.png">
+
+      Where width is a parameter between 0 and 255. This formula yields the following:
+
+      <img class="illustration" src="../../images/blog/spiral.png">
+
+      Notice how the lines are getting closer and closer as they get
+      further away from the center. Eventually, the gap between two consecutive lines
+      will be less than a pixel. So if we zoom out, what will we see ?
+      Apart from the center, the spiral will not be visible anymore,
+      yet pixels will show <i>something</i>. Something that might not
+      look like the spiral, but should still be somewhat related to it.<br/><br/>
+      Here's the result:
+      <br />
+      <img class="illustration" src="../../images/blog/alias_static.gif">
+
+      That's our aliasing pattern. A completely new figure that has close to nothing
+      to do with the original spiral, yet is a represensation
+      of the exact same thing.
+      In <a href="../../index.html#aesthetic_article">aesthetic-functions</a>,
+      each pixel evaluates the spiral function in it's top left corner,
+      which is equivalent to a 2D sub-sampling of the <i>real</i> spiral.
+      <br/><br/>
+      In signal processing, it is well understood that undersampling a signal will lead
+      to artifacts. As a general rule, the signal should not contain information
+      at more than half the sampling frequency.
+
+
+      <a href="https://matthews.sites.wfu.edu/misc/DigPhotog/alias/">This picture</a> illustrates why:
+
+      <img width="50%" style="display:block; margin:auto; padding:0.8em;" src="../../images/blog/sampling.png">
+
+      Undersampling a sine wave results in another sine wave with a completely different frequency.
+      Thanksfully, our spiral is a bit more complicated than a sine wave,
+      which explains why our aliasing looks so strange. It makes it pretty hard
+      to predict what shape the aliasing pattern will be, which totally
+      contributes to how fascinating these can be. Let us play with our
+      spiral a bit, and see how it evolves:
+
+      <img class="illustration" src="../../images/blog/alias_rotating.gif">
+
+      Hypnotic ! When we zoom in onto a corner, it seems completely unrelated
+      to our spiral. Even more surprisingly perhaps, the pattern repeats faster
+      than the spiral rotates:
+
+      <img class="pixel_art" src="../../images/blog/cropped_alias.gif">
+
+      The undersampling phenomenon is heavily dependant on the sampling frequency.
+      In our case, if we play with the resolution, we're effectively changing
+      the sampling frequency. Quite interestingly, when we do just that on
+      our spiral, we get the same pattern but with varying size:
+
+      <img class="illustration" src="../../images/blog/alias_resolution.gif">
+
+      So remember, when visualizing something, the strangest things can sometimes
+      happen. If a slight variation in the input leads to a very different
+      visualization, you might not be seeing what you're trying to see.<br/><br/>
+      Anti-aliasing can easily be implemented by sampling multiple times per pixel,
+      and it could be done in aesthetic-functions. But wouldn't that be a shame ?
+      These patterns add complexity and make seemingly simple figures surprisingly
+      unpredictable.
+
+      <br /> <br />
+      14.04.21
+      </p>
+    </div>
+  </article>
+
+</body>
+
+</html>

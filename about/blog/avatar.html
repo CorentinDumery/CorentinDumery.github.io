@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Corentin Dumery</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link rel="stylesheet" href="../blog.css" />
+</head>
+
+
+<header>
+  <img id="cool_header" src="../../images/coolwater.jpg"/>
+</header>
+
+<body>
+  <menubar>
+    <a href="../../index.html"><moving>Corentin Dumery</moving></a>
+    <a href="../interests.html"> <moving> Research interests </moving></a>
+    <a href="../resume.html"> <moving> Resume  </moving> </a>
+    <a href="../gallery.html"> <moving> Gallery </moving> </a>
+    <a href="../blog.html" class="current_menubar"> <moving> Blog </moving></a>
+
+  </menubar>
+  <div class="bubbles_background"></div>
+
+  <article>
+    <div class="article_text">
+      <p>
+      <h1>Making a 3D Avatar</h1>
+
+      After playing <a href="https://www.oculus.com/experiences/quest/3623167214470921/">Puzzling Places</a> for a while
+      and learning about <i>Structure From Motion</i> with
+      <a href="https://www.comp.nus.edu.sg/cs/bio/leegh/">Prof Lee Gim Hee at NUS</a>,
+      I've taken an interest in photogrammetry, <i>i.e.</i> retrieving 3D shapes from a set of 2D pictures.
+      It's a pretty complex process, because the program has to figure out by itself the exact locations
+      from which each picture was taken. <br /> <br />
+      It turns out today there's some amazing free software that
+      takes care of the whole 3D reconstruction for you.
+      <a href="https://alicevision.org/#meshroom">Meshroom</a> in particular lets you see the whole process unfold
+      on its interface. Even before the computation is complete, you can check the correspondences and the
+      estimated camera positions to make sure the intermediate steps are not completely off
+      (<i>and sometimes they are</i>).
+
+      <img class="centered_pic" src="../../images/blog/meshroom_sfm.png" width="100%">
+      <br />
+
+      After experimenting with cats and teapots, I thought
+      I'd try to make a 3D avatar of myself so I could use it instead of a dull 2D profile picture.
+      However, capturing one's face is especially challenging, because the subject must not move
+      the slightest for the reconstruction to work well.
+
+      </br>
+      <img class="centered_pic" src="../../images/blog/meshroom.png" width="100%">
+      </br>
+
+      The resulting textured mesh is alright. Meshroom seems to have totally missed the torso and the hair,
+      but the face is recognizable and only <i>slightly</i> deformed. It also has over 300 thousand triangles,
+      so we'll need to remesh that.
+      </br></br>
+      After removing all of the background, I sculpted myself some approximate hair in Blender and smoothed
+      the mesh. It's still ridiculously refined in some spots, so we'll do
+      some quick remeshing using <a href="https://github.com/wjakob/instant-meshes">Instant Meshes</a>
+      to generate a regular and coarse triangle mesh.
+      </br></br>
+      The texture has some issues. Most importantly, the room lighting combined with my camera's parameters
+      led to a strange white line and different shades on both cheeks.
+      But before we actually get to it, it's really important to
+      bake a new texture in Blender. Meshroom generates messy textures with tiny patches, which
+      makes them very hard to edit.  Once this is done, we're able to photoshop away these white stains on the texture
+      and fix the eyes.
+
+      </br></br>
+      The final texture is somewhat terrifying, but that was to be expected. I'm just glad the real me is in 3D.
+      </br></br>
+      <img class="centered_pic" src="../../images/blog/self_tex.png" width="40%">
+      </br>
+      And for the final presentation, we'll export the UV coordinates and visualize the mesh
+      in <a href="https://libigl.github.io/">libigl</a>:
+      </br></br>
+      <img id="photo_self" width="40%" class="centered_pic" src="../../images/blog/photogrammetry_self.gif">
+      <br/>
+
+      The final result is pretty convincing. There's definitely a bit of an
+      <a href="https://en.wikipedia.org/wiki/Uncanny_valley">Uncanny Valley</a> feeling,
+      which means it's quite a success, I guess.
+      If you want to make your own avatar, here are two videos I'd recommend to get started quickly:
+      <a href="https://www.youtube.com/watch?v=1D0EhSi-vvc">this one covering the basics of meshroom and photogrammetry</a>,
+      and <a href="https://www.youtube.com/watch?v=MrUVeV0wsH8">this one on how to clean-up your mesh and bake a new texture</a>.
+
+      </li> </br></br>
+      13.05.21
+      </p>
+    </div>
+  </article>
+
+</body>
+
+</html>
