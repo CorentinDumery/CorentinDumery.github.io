@@ -20,6 +20,7 @@
   <menubar>
     <a href="index.html" class="current_menubar"><moving>Corentin Dumery</moving></a>
     <submenubar>
+      <a href="#pattern_article"> <moving> Pattern Making </moving></a>
       <a href="#bmesh_article"> <moving> B-Mesh Modeller </moving></a>
       <a href="#aesthetic_article"> <moving> Aesthetic functions </moving></a>
       <a href="#cow_article"> <moving> Cow texture generator </moving></a>
@@ -52,8 +53,8 @@
       <a href="https://www.telecom-paris.fr/en/home">Télécom Paris (Institut Polytechnique de Paris). </a>
       After graduating, I worked at
       <a href="https://www.cea.fr/english/Pages/cea/the-cea-a-key-player-in-technological-research.aspx">CEA Paris-Saclay</a>
-      on meshing under a fixed-term contract and later joined <a href="https://igl.ethz.ch/people/sorkine/index.php">Prof. Olga Sorkine-Hornung</a>'s
-      lab at ETH Zürich as a visiting researcher.
+      on polycube mapping and later joined <a href="https://igl.ethz.ch/people/sorkine/index.php">Prof. Olga Sorkine-Hornung</a>'s
+      lab at ETH Zürich as a visiting researcher on garment fabrication.
       <br/>
       <p>
         My primary research interests lie in 3D geometry processing and its applications,
@@ -75,6 +76,41 @@
     </iconbar>
   </div>
 
+  </article>
+
+
+
+  <article>
+    <div class="article_text" id="pattern_article">
+      <p>
+      <h1>Computational Pattern Making</h1>
+      <riddle>
+      Given a <b>3D garment</b> modeled by a tailor<!--and fitted to a 3D scan of their client-->,
+      how can we <b>generate 2D sewing patterns</b> that can effectively be used to manufacture it?
+      </riddle></br>
+      Our algorithm segments an input 3D shape into patches
+      and computes their 2D parameterization, while accounting for <b>the unique
+      properties and constraints of tailoring</b>, such as seam symmetry,
+      darts, fabric grain alignment, and a flattening distortion measure that models
+      woven fabric deformation, respecting its anisotropic behavior.
+      <!--We bootstrap
+      a recent patch layout approach developed for quadrilateral remeshing and
+      adapt it to the purpose of computational pattern making.-->
+      </br>
+
+      <ul>
+       <li><a href="projects/computational-pattern-making-compressed.pdf"> Paper (4 Mb)</a>, <a href="https://igl.ethz.ch/projects/computational-patternmaking/computational-pattern-making-paper.pdf"> high resolution (38 Mb)</a></li>
+       <!-- <a href="https://arxiv.org/abs/2202.10272"> arXiv </a> --->
+       <li><a href="https://github.com/CorentinDumery/garment-flattening"> Our anisotropic textile parameterization is open source</a>!</li>
+       <li><a href="https://github.com/nicopietroni/parafashion">... and so is our patch segmentation algorithm</a>!</li>
+       <li><a href="https://www.youtube.com/watch?v=7b27T8rh7SU">Supplemental video</a></li>
+       <li><a href="https://igl.ethz.ch/publications/igl-bibtex.php#ComputationalPatternmaking:2022">bibtex</a></li>
+      </ul>
+      <br><br><br>
+      <img id="parafashion_teaser" src="images/parafashion_teaser.jpg" align="middle" width="100%">
+      <br>
+      </p>
+    </div>
   </article>
 
   <article>

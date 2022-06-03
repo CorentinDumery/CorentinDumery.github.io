@@ -2,14 +2,6 @@ body {
     cursor: url('../images/cursor.png'), auto;
 }
 
-riddle {
-    display: block;
-    font-style: italic;
-    text-align: center;
-    margin: auto;
-    padding: 1.5em;
-}
-
 hidden {
     background-color: #000;
     color: #000;

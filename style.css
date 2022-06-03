@@ -268,3 +268,11 @@ iconbar {
 .icon {
   max-width: 48px;
 }
+
+riddle {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    margin: auto;
+    padding: 1.5em;
+}
