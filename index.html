@@ -20,14 +20,15 @@
   <menubar>
     <a href="index.html" class="current_menubar"><moving>Corentin Dumery</moving></a>
     <submenubar>
+      <a href="#evocube_article"> <moving> Evocube </moving></a>
       <a href="#pattern_article"> <moving> Pattern Making </moving></a>
       <a href="#bmesh_article"> <moving> B-Mesh Modeller </moving></a>
       <a href="#aesthetic_article"> <moving> Aesthetic functions </moving></a>
       <a href="#cow_article"> <moving> Cow texture generator </moving></a>
-      <a href="#transformation_article"> <moving> 3D Mesh Segmentation </moving></a>
+      <!--<a href="#transformation_article"> <moving> 3D Mesh Segmentation </moving></a>
       <a href="#skull_article"> <moving> Skull implants </moving></a>
       <a href="#potato_article"> <moving> Potato generator </moving></a>
-      <a href="#tipe_article"> <moving> Crop/Area allocation </moving></a>
+      <a href="#tipe_article"> <moving> Crop/Area allocation </moving></a>-->
     </submenubar>
     <a href="about/interests.html"> <moving> Research interests </moving></a>
     <a href="about/resume.html"> <moving> Resume  </moving> </a>
@@ -79,15 +80,44 @@
 
   </article>
 
+  <article>
+    <div class="article_text" id="evocube_article">
+      <p>
+      <h1>Evocube</h1>
+      <riddle> <!-- Let's assume  our reader has a very short attention span -->
+        Given an input 3D shape, how can we deform it into a similar
+        <b>polycube</b>?
+      </riddle>
+      Polycubes, i.e. aggregates of axis-aligned cubes, are most notably used for all-hex meshing, but
+      their constrained nature and topology conditions make polycube parameterization
+      a challenging task.
+      Previous work
+      has shown the feasibility of precomputing polycube orientation directly on the input mesh,
+      effectively <b>labeling</b> each boundary face in blue/white/red representing the XYZ axes.
+      </br>
+      How can we derive a fitting polycube topology from a triangle mesh? We propose the use of a
+      novel <b>genetic algorithm</b> in the context of polycube labeling optimization, defining fitness,
+      crossover, and mutations.
+      </br>
+      <ul>
+       <li>Read our preprint on <a href="https://arxiv.org/pdf/2205.00738.pdf"> arXiv </a></li>
+       <li><a href="https://github.com/LIHPC-Computational-Geometry/evocube">Our parallel implementation of Evocube is open-source!</a></li>
+       <!--<li><a href="">bibtex</a></li>-->
+      </ul>
 
+      <img id="evocube_teaser" src="images/teaser_evocube_lowres.png" align="middle" width="100%">
+      <br>
+      </p>
+    </div>
+  </article>
 
   <article>
     <div class="article_text" id="pattern_article">
       <p>
       <h1>Computational Pattern Making</h1>
       <riddle>
-      Given a <b>3D garment</b> modeled by a tailor<!--and fitted to a 3D scan of their client-->,
-      how can we <b>generate 2D sewing patterns</b> that can effectively be used to manufacture it?
+      Given a <b>3D garment</b>,
+      how can we generate a <b>2D sewing pattern</b> that can effectively be used to manufacture it?
       </riddle>
       Our algorithm segments an input 3D shape into patches
       and computes their 2D parameterization, while accounting for <b>the unique
@@ -102,7 +132,7 @@
       </br>
 
       <ul>
-       <li><a href="projects/computational-pattern-making-compressed.pdf"> Paper (4 Mb)</a>, <a href="https://igl.ethz.ch/projects/computational-patternmaking/computational-pattern-making-paper.pdf"> high resolution (38 Mb)</a></li>
+       <li><a href="projects/computational-pattern-making-compressed.pdf"> Paper (2 Mb)</a>, <a href="https://igl.ethz.ch/projects/computational-patternmaking/computational-pattern-making-paper.pdf"> high resolution (38 Mb)</a></li>
        <!-- <a href="https://arxiv.org/abs/2202.10272"> arXiv </a> --->
        <li>Our code is open source: <a href="https://github.com/CorentinDumery/garment-flattening">anisotropic textile parameterization</a>
           + <a href="https://github.com/nicopietroni/parafashion">patch segmentation (main project)</a></li>
