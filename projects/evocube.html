@@ -1,1 +1,86 @@
-coming soon...
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Corentin Dumery</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="project.css" />
+</head>
+
+
+<header>
+  <img id="header_background" src="../images/delaunay.png"/>
+</header>
+
+<body>
+  <!--
+  <menubar>
+    <a href="../index.html"><moving>Corentin Dumery</moving></a>
+    <a href="../about/interests.html"> <moving> Research interests </moving></a>
+    <a href="../about/resume.html"> <moving> Resume  </moving> </a>
+    <a href="../about/gallery.html"> <moving> Gallery </moving> </a>
+    <a href="../about/blog.html"> <moving> Blog </moving></a>
+  </menubar>
+-->
+
+  <article>
+    <div class="article_text">
+
+      <paper-title> Evocube: a Genetic Labeling Framework for Polycube-Maps </paper-title>
+      <paper-published> <a href='https://onlinelibrary.wiley.com/doi/10.1111/cgf.14649'>published in Computer Graphics Forum </a><br> (to be presented at Eurographics 2023)</paper-published>
+
+      <div class="horizontal-bar">
+        <a class="horizontal-bar-item" href="https://github.com/LIHPC-Computational-Geometry/evocube">
+          <img class="icon" src="../images/github.png">
+          <p>Code</p>
+        </a>
+        <a class="horizontal-bar-item" href=https://www.youtube.com/@corentindumery852>
+          <img class="icon" src="../images/youtube.png">
+          <p>Video </br> (coming soon)</p>
+        </a>
+        <a class="horizontal-bar-item" href="https://arxiv.org/abs/2205.00738">
+          <img class="icon" src="../images/paper.png">
+          <p>Paper</p>
+        </a>
+      </div>
+
+      <paper-teaser><img src="../images/teaser_evocube_lowres.png"></paper-teaser>
+
+      <paper-section> Abstract </paper-section>
+      Polycube-maps are used as base-complexes in various fields of computational geometry,
+      including the generation of regular <b>all-hexahedral meshes</b> free of internal singularities.
+      However, the strict alignment constraints behind polycube-based methods make their
+      computation challenging for CAD models used in numerical simulation via Finite Element Method (FEM).
+      We propose <b>a novel approach based on an evolutionary algorithm</b> to robustly compute polycube-maps in this context. </br></br>
+      We address <b>the labeling problem</b>, which aims to precompute polycube alignment
+      by assigning one of the base axes to each boundary face on the input.
+      Previous research has described ways to initialize and improve a labeling via greedy local fixes.
+      However, such algorithms lack robustness and often converge to inaccurate solutions for complex geometries.
+      Our proposed framework alleviates this issue by embedding labeling operations
+      in an evolutionary heuristic, defining <b>fitness, crossover, and mutations</b>
+      in the context of labeling optimization. We evaluate our method on a thousand smooth and CAD meshes,
+      showing Evocube converges to valid labelings on a wide range of shapes.
+      The limitations of our method are also discussed thoroughly.
+
+      <br><br>
+      <paper-section> Citation </paper-section>
+      <bibtex>
+      @article{dumery:evocube,<br>
+        <bibtex-body>
+        &nbsp;&nbsp;    TITLE = {{Evocube: a Genetic Labeling Framework for Polycube-Maps}},<br>
+        &nbsp;&nbsp;    AUTHOR = {Dumery, Corentin and Protais, Fran{\c c}ois and Mestrallet, S{\'e}bastien and Bourcier, Christophe and Ledoux, Franck},<br>
+        &nbsp;&nbsp;    URL = {https://hal.archives-ouvertes.fr/hal-03657779},<br>
+        &nbsp;&nbsp;    JOURNAL = {{Computer Graphics Forum}},<br>
+        &nbsp;&nbsp;    PUBLISHER = {{Wiley}},<br>
+        &nbsp;&nbsp;    YEAR = {2022},<br>
+        &nbsp;&nbsp;    MONTH = Aug,<br>
+        &nbsp;&nbsp;    DOI = {10.1111/cgf.14649},<br>
+        </bibtex-body>
+      }
+      </bibtex>
+    </div>
+  </article>
+
+</body>
+
+</html>
