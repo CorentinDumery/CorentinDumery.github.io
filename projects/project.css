@@ -4,7 +4,7 @@ paper-title {
   font-size: 2.5em;
   line-height: 1.3em;
   margin: 0.67em;
-  margin-top: 2em;
+  margin-top: 1em;
   text-align:center;
   font-weight: bold;
   display:block;
@@ -40,7 +40,8 @@ bibtex {
 article {
   width: 70%;
   margin: 13%;
-  margin-top: -2%;
+  margin-top: 2%;
+  padding-top: 4em;
 }
 
 paper-section {
@@ -82,4 +83,14 @@ paper-section {
 .horizontal-bar-item img {
   display: block;
   margin: 0 auto;
+}
+
+backbutton {
+  padding: 0.75em;
+  border-radius: 0.25em;
+  background-color: #f6f6f6;
+}
+
+backbutton:hover {
+  background-color: #ccc;
 }
