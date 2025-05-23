@@ -1,412 +1,585 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Corentin Dumery</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/favicon.png">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/flower.png" />
-  <meta property="og:description" content="Personal website and portfolio" />
-  <meta property="og:title" content="Corentin Dumery" />
-
-  <meta property="twitter:card" content="summary">
-  <meta property="twitter:title" content="Corentin Dumery">
-  <meta property="twitter:description" content="Personal website and portfolio">
-  <meta property="twitter:image" content="images/flower.png">
-
-</head>
-
-
-<header>
-  <img id="header_background" src="images/delaunay.png"/>
-</header>
-
-<body>
-
-  <menubar>
-    <a href="index.html" class="current_menubar"><moving>Corentin Dumery</moving></a>
-    <submenubar>
-      <a href="#evocube_article"> <moving> Evocube </moving></a>
-      <a href="#pattern_article"> <moving> Pattern Making </moving></a>
-      <a href="#bmesh_article"> <moving> B-Mesh Modeller </moving></a>
-      <a href="#aesthetic_article"> <moving> Aesthetic functions </moving></a>
-      <a href="#cow_article"> <moving> Cow texture generator </moving></a>
-      <!--<a href="#transformation_article"> <moving> 3D Mesh Segmentation </moving></a>
-      <a href="#skull_article"> <moving> Skull implants </moving></a>
-      <a href="#potato_article"> <moving> Potato generator </moving></a>
-      <a href="#tipe_article"> <moving> Crop/Area allocation </moving></a>-->
-    </submenubar>
-    <a href="about/resume.html"> <moving> Resume  </moving> </a>
-    <a href="about/gallery.html"> <moving> Gallery </moving> </a>
-    <a href="about/blog.html"> <moving> Blog </moving></a>
-  </menubar>
-
-  <article height="100%">
-    <div id="namecard">
-      <div>
-        <h1> Corentin Dumery </h1>
-        <h3> PhD student
-        at&nbsp;
-        <img src="images/epfl-black.png" height="16em" alt=" EPFL"/><br>
-        
-        <a href="https://www.epfl.ch/labs/cvlab/">CVLab</a>
-        </h3>
-        <h4> Contact: <br> first name dot last name at epfl dot ch </h4>
-
-      </div>
-      <div><img id="circle_cv" src="images/circle_cv_photo.PNG" width="100%"></div>
+<!DOCTYPE HTML>
+<html lang="en">
+    <div class="header-background">
+    <img id="header_background" src="images/delaunay.png"/>
     </div>
-    <div>
-      <p>
-        My research interests lie at the intersection of computer vision and computer graphics. 
-        I am dedicated to advancing machine perception through 3D scene reconstruction and understanding, enabling machines to not
-        only see their environment but also comprehend and interact with it. My work also emphasizes 3D content creation for digital
-        AR/VR environments, leveraging both real-world reconstruction and AI-assisted 3D generation.</br> 
-      </p>
-      I graduated from <a href="https://www.nus.edu.sg">NUS</a> and
-      <a href="https://www.telecom-paris.fr/en/home">Télécom Paris</a> in 2020.
-      After graduation, I worked at
-      <a href="https://www.cea.fr/english/Pages/cea/the-cea-a-key-player-in-technological-research.aspx">CEA Paris-Saclay</a>
-      on polycube mapping, and later joined <a href="https://igl.ethz.ch/people/sorkine/index.php">Prof. Olga Sorkine-Hornung</a>'s
-      lab at ETH Zürich as a visiting researcher on garment fabrication.
-      <br/>
-      <!--
-      <p>
-        My primary research interests are in 3D geometry processing and its applications,
-        which range from physics-based simulation to animation.
-        In the past, I have worked on a number of topics related to discrete shape modeling,
-        such as mesh deformation, hexahedral meshing, differentiable rendering,
-        or semantic mesh segmentation. I'm also interested in data science techniques and how they
-        can be applied to 3D problems, such as machine learning & optimization, operations research,
-        extended Kalman filtering, and dimensionality reduction.
-      </p>
-      -->
-      <p>
-      For those who are unsure, <a href="sound/corentindumery.mp3">here</a>'s how my name is pronounced in French.
-      </p>
 
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Corentin Dumery</title>
+
+    <meta name="author" content="Corentin Dumery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="images/favicon.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/flower.png" />
+    <meta property="og:description" content="Personal website and portfolio" />
+    <meta property="og:title" content="Corentin Dumery" />
       
-      <p>
-        <span>&#10230;</span> Students interested in a <b>semester project or master thesis</b>, please consult our lab's <a href="https://www.epfl.ch/labs/cvlab/projects/">project page</a>.</br>
-        <span>&#10230;</span> Master/Bachelor <b>summer interns</b>, please apply to the <a href="https://summer.epfl.ch/">Summer@EPFL</a> program.</br>
-        <span>&#10230;</span> <b>PhD applicants</b>, please refer to the <a href="https://www.epfl.ch/education/phd/edic-computer-and-communication-sciences/">doctoral program page</a> or our 
-        <a href="https://epic-guide.github.io/">student-wiki</a>.</br>
-      </p>
-      If you would like to contact me, please make it clear you have had a look at these resourses and avoid sending a generic email.
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Corentin Dumery">
+    <meta property="twitter:description" content="Personal website and portfolio">
+    <meta property="twitter:image" content="images/flower.png">
+  </head>    
+    
+
+  <body>
+
+    <div class="navbar">
+      <a href="index.html" class="current_navbar">Corentin Dumery</a>
+      <a href="about/gallery.html">Projects</a>
+      <a href="about/gallery.html">Gallery</a>
+      <a href="about/blog.html">Blog</a>
     </div>
+  
 
-    <iconbar>
-      <a href="https://github.com/CorentinDumery/"><img class="icon" src="images/github.png"></a>
-      <a href="https://www.youtube.com/channel/UCEiDor6J3-FmC9I1Sv-AKtQ"><img class="icon" src="images/youtube.png"></a>
-      <a href="https://www.linkedin.com/in/corentin-dumery-2754281a0/"><img class="icon" src="images/linkedin.png"></a>
-      <a href="https://scholar.google.com/citations?hl=fr&user=lUXqyiMAAAAJ"><img class="icon" src="images/scholar.png"></a>
-    </iconbar>
+    <div style="height: 5vh; width: 100%; max-width: 1000px; background-color: white; margin: 0 auto;"></div>
 
-  </article>
 
-  <article>
-    <div class="article_text" id="disconerf_article">
-      <p> 
-        <h1>Enforcing View-Consistency in Class-Agnostic 3D Segmentation Fields 
-          [<a href="projects/disconerf.html">CVPRW 2025</a>]</h1>
-      <riddle>
-        How to produce a consistent 3D radiance field segmentation from a set of inconsistent 2D masks?<br>
-      </riddle>
+    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top:0%;" ><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" bgcolor="#ffffff"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;padding-bottom:1.5%;width:63%;vertical-align:middle;">
 
-      Given as input a set of class-agnostic 2D masks generated by a foundation model, we aim to
-      <b>learn a meaningful 3D object field</b> that segments the different instances in the scene. However, 
-      these masks tend to have <b>little consistency</b> across views, making this task challenging.
-      </br>
-      We propose to <b>match the 2D masks with the channels of a rendered object field</b>, and introduce
-      a <b>3D spatial-consistency regularizer</b>. This allows us to produce consistent 3D segmentations,
-      which can then be used to extract 3D assets for AR/VR or other digital environments.
-      <ul>
-        <li><a href="projects/disconerf.html"> Project page </a>
-          <li><a href="https://arxiv.org/abs/2408.09928"> Paper </a>
-        <li><a href="https://opensun3d.github.io/">Workshop website</a></li>
-        <li><a href="https://drive.google.com/file/d/1qq8o9axqqxhiVmdxQxuH8GpawV0Bel7Y/view?usp=sharing">Ground-Truth Mip-NeRF360 Segmentations</a></li>
-      </ul>
+                <h1> Corentin Dumery </h1>
+                <h3> PhD student
+                at&nbsp;
+                <img src="images/epfl-black.png" height="16em" alt=" EPFL"/> / Intern at Meta Redmond<br>
+                
+                <a href="https://www.epfl.ch/labs/cvlab/">CVLab</a>
+                </h3>
+                <h4> Contact: <br> first name dot last name at epfl dot ch </h4>
 
-      <br><br>
-      <img id="evocube_teaser" src="images/disconerf.png" align="middle" width="100%">
-      <br>
-    </div>
-  </article>
+                I graduated from <a href="https://www.nus.edu.sg">NUS</a> and
+                <a href="https://www.telecom-paris.fr/en/home">Télécom Paris</a> in 2020.
+                After graduation, I worked at
+                <a href="https://www.cea.fr/english/Pages/cea/the-cea-a-key-player-in-technological-research.aspx">CEA Paris-Saclay</a>
+                on polycube mapping, and later joined <a href="https://igl.ethz.ch/people/sorkine/index.php">Prof. Olga Sorkine-Hornung</a>'s
+                lab at ETH Zürich as a visiting researcher on garment fabrication. Since 2023, I am supervised by <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Prof. Pascal Fua</a> at EPFL's CVLab, where I am working on 3D Computer Vision.
+                <br/>
+                <p>
+                For those who are unsure, <a href="sound/corentindumery.mp3">here</a>'s how my name is pronounced in French.
+                </p>
 
-  <article>
-    <div class="article_text" id="garment_recon_article">
-      <p> 
-        <h1>3D Garment Reconstruction 
-          [<a href="https://liren2515.github.io/page/prior/prior.html">CVPR24</a>, <a href="https://liren2515.github.io/page/folding/folding.html">NeurIPS24</a> , <a href="https://liren2515.github.io/page/dmap/dmap.html">SIGGRAPH25</a>]</h1>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/circle_cv_photo.PNG"><img style="width:80%;max-width:80%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/circle_cv_photo.PNG" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+            
+          </tbody></table>
+          <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" bgcolor="#ffffff"><tbody>
+              <tr>
+              <td style="padding-left:2.5%;padding-right:2.5%;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                    My research interests lie at the intersection of computer vision and computer graphics. 
+                    I am dedicated to advancing machine perception through 3D scene reconstruction and understanding, enabling machines to not
+                    only see their environment but also comprehend and interact with it. My work also emphasizes 3D content creation for digital
+                    AR/VR environments, leveraging both real-world reconstruction and AI-assisted 3D generation.
+                    <br/><br/>
+                    
+                    <span>&#10230;</span> Students interested in a <b>semester project or master thesis</b>, please consult our lab's <a href="https://www.epfl.ch/labs/cvlab/projects/">project page</a>.</br>
+                    <span>&#10230;</span> Master/Bachelor <b>summer interns</b>, please apply to the <a href="https://summer.epfl.ch/">Summer@EPFL</a> program.</br>
+                    <span>&#10230;</span> <b>PhD applicants</b>, please refer to the <a href="https://www.epfl.ch/education/phd/edic-computer-and-communication-sciences/">doctoral program page</a> or our 
+                    <a href="https://epic-guide.github.io/">student-wiki</a>.</br>
+                    <span class="half-line"></span>
+                    Feel free to contact me! Please make it clear you have had a look at these resourses and avoid sending a generic email.
+                </p>
+
+                <iconbar>
+                  <a href="https://github.com/CorentinDumery/"><img class="icon" src="images/github.png"></a>
+                  <a href="https://www.youtube.com/channel/UCEiDor6J3-FmC9I1Sv-AKtQ"><img class="icon" src="images/youtube.png"></a>
+                  <a href="https://www.linkedin.com/in/corentin-dumery-2754281a0/"><img class="icon" src="images/linkedin.png"></a>
+                  <a href="https://scholar.google.com/citations?hl=fr&user=lUXqyiMAAAAJ"><img class="icon" src="images/scholar.png"></a>
+              </iconbar>
+              </td>
+            </tr>
+
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+    <!-- TEMPLATE:
+    <tr class="project-entry" onmouseout="XXX_stop()" onmouseover="XXX_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='XXX_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/XXX.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/XXX.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function XXX_start() {
+                document.getElementById('XXX_image').style.opacity = "1";
+            }
+    
+            function XXX_stop() {
+                document.getElementById('XXX_image').style.opacity = "0";
+            }
+            XXX_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="projects/XXX">
+            <span class="papertitle">XXX: xxx</span>
+            </a>
+            <span class="half-line"></span>
+            <strong>Corentin Dumery</strong>,
+            <a href="...">author</a>,
+            <a href="...">author</a>,
+            <a href="...">author</a>
+            <br>
+            Venue YEAR
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="projects/XXX">Project page</a>
+            | <a href="projects/XXX">Paper</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> XXX description
+            </short-desc>
+        </td>
+    </tr>
+    -->
+
+    <tr class="project-entry" onmouseout="stacks_stop()" onmouseover="stacks_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='stacks_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/stacks.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/stacks.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function stacks_start() {
+                document.getElementById('stacks_image').style.opacity = "1";
+            }
+    
+            function stacks_stop() {
+                document.getElementById('stacks_image').style.opacity = "0";
+            }
+            stacks_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="projects/stacks.html">
+            <span class="papertitle">Counting Stacked Objects</span>
+            </a>
+            <span class="half-line"></span>
+            <strong>Corentin Dumery</strong>,
+            <a href="https://emien.ch/">Noa Etté</a>,
+            <a href="https://aoxiangfan.github.io/">Aoxiang Fan</a>,
+            <a href="https://liren2515.github.io/page/">Ren Li</a>,
+            <a href="https://jingyixu.net/">Jingyi Xu</a>,
+            <a href="https://hieulem.github.io/">Hieu Le</a>,
+            <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
+            <br>
+            arXiv 2025
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="projects/stacks.html">Project page</a>
+            | <a href="https://arxiv.org/abs/2411.19149">Paper</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> We predict the total count of stacked objects, including hidden instances, by <b>estimating the volume</b> through 3D reconstruction and the <b>packing density</b> with a neural network. 
+            </short-desc>
+        </td>
+    </tr>
+
+    <tr class="project-entry" onmouseout="dmap_stop()" onmouseover="dmap_start()">
+      <td class="project-thumb">
+          <div class="one">
+          <div class="two" id='dmap_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/papers/dmap.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/papers/dmap.png' width="200">
+          </div>
+          <script type="text/javascript">
+          function dmap_start() {
+              document.getElementById('dmap_image').style.opacity = "1";
+          }
+  
+          function dmap_stop() {
+              document.getElementById('dmap_image').style.opacity = "0";
+          }
+          dmap_stop()
+          </script>
+      </td>
+      <td class="project-cell">
+          <a href="https://liren2515.github.io/page/dmap/dmap.html">
+          <span class="papertitle">Single View Garment Reconstruction Using Diffusion Mapping Via Pattern Coordinates</span>
+          </a>
+          <span class="half-line"></span>
+          <a href="https://liren2515.github.io/page/">Ren Li</a>,
+          <a href="https://www.linkedin.com/in/cong-cao-28582722b/">Cong Cao</a>,
+          <strong>Corentin Dumery</strong>,
+          <a href="https://kasvii.github.io/">Yingxuan You</a>,
+          <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html">Hao Li</a>,
+          <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
+          <br>
+          SIGGRAPH 2025
+          <br>
+
+          <span class="half-line"></span>
+          | <a href="https://liren2515.github.io/page/dmap/dmap.html">Project page</a>
+          | <a href="https://arxiv.org/abs/2504.08353">Paper</a>
+          | <a href="https://github.com/liren2515/DMap">Code</a>
+          |
+          <span class="half-line"></span>
+          <short-desc> Given an image, we first compute a <b>mapping between garment pixels, 3D points, and <i>pattern space</i></b>. Then, we use a <b>diffusion model as a prior on the space of deformed garments</b> in this pattern space to fill the partial observation into a complete garment.
+          </short-desc>
+      </td>
+  </tr>
+
+    <tr class="project-entry" onmouseout="disconerf_stop()" onmouseover="disconerf_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='disconerf_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/disconerf.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/disconerf.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function disconerf_start() {
+                document.getElementById('disconerf_image').style.opacity = "1";
+            }
+    
+            function disconerf_stop() {
+                document.getElementById('disconerf_image').style.opacity = "0";
+            }
+            disconerf_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="projects/disconerf.html">
+            <span class="papertitle">Enforcing View-Consistency in Class-Agnostic 3D Segmentation Fields</span>
+            </a>
+            <span class="half-line"></span>
+            <strong>Corentin Dumery</strong>,
+            <a href="https://aoxiangfan.github.io/">Aoxiang Fan</a>,
+            <a href="https://liren2515.github.io/page/">Ren Li</a>,
+            <a href="https://ntalabot.github.io/">Nicolas Talabot</a>,
+            <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
+            <br>
+            CVPRW 2025, 4th Workshop on Open-World 3D Scene Understanding with Foundation Models
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="projects/disconerf.html">Project page</a>
+            | <a href="https://arxiv.org/abs/2408.09928">Paper</a>
+            | <a href="https://opensun3d.github.io/">Workshop website</a>
+            | <a href="https://drive.google.com/file/d/1qq8o9axqqxhiVmdxQxuH8GpawV0Bel7Y/view?usp=sharing">Ground-Truth Mip-NeRF360 Segmentations</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> We train a 3D object field along with a radiance field, and show how <b>spatial regularization can help obtain a consistent segmentation</b> from inconsistent 2D signal.
+            </short-desc>
+        </td>
+    </tr>
+
+    <tr class="project-entry" onmouseout="manipulated_stop()" onmouseover="manipulated_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='manipulated_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/manipulated.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/manipulated.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function manipulated_start() {
+                document.getElementById('manipulated_image').style.opacity = "1";
+            }
+    
+            function manipulated_stop() {
+                document.getElementById('manipulated_image').style.opacity = "0";
+            }
+            manipulated_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="https://liren2515.github.io/page/folding/folding.html">
+            <span class="papertitle">Reconstruction of Manipulated Garment with Guided Deformation Prior</span>
+            </a>
+            <span class="half-line"></span>
+            <a href="https://liren2515.github.io/page/">Ren Li</a>,
+            <strong>Corentin Dumery</strong>,
+            <a href="https://scholar.google.com/citations?user=XDfK4f8AAAAJ">Zhantao Deng</a>,
+            <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
+            <br>
+            NeurIPS 2024
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="https://liren2515.github.io/page/folding/folding.html">Project page</a>
+            | <a href="https://arxiv.org/abs/2405.10934">Paper</a>
+            | <a href="https://github.com/liren2515/GarmentFolding">Code</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> From a partial point cloud of a garment being <b>folded or manipulated</b>, we <b>map points to 2D and recover complete patterns</b>, allowing us to retrieve a full garment.
+            </short-desc>
+        </td>
+    </tr>
+
+    <tr class="project-entry" onmouseout="garment_stop()" onmouseover="garment_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='garment_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/garment.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/garment.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function garment_start() {
+                document.getElementById('garment_image').style.opacity = "1";
+            }
+    
+            function garment_stop() {
+                document.getElementById('garment_image').style.opacity = "0";
+            }
+            garment_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="https://liren2515.github.io/page/prior/prior.html">
+            <span class="papertitle">Garment Recovery with Shape and Deformation Priors</span>
+            </a>
+            <span class="half-line"></span>
+            <a href="https://liren2515.github.io/page/">Ren Li</a>,
+            <strong>Corentin Dumery</strong>,
+            <a href="https://bguillard.github.io/">Benoit Guillard</a>,
+            <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
+            <br>
+            CVPR 2024
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="https://liren2515.github.io/page/prior/prior.html">Project page</a>
+            | <a href="https://arxiv.org/abs/2311.10356">Paper</a>
+            | <a href="https://github.com/liren2515/GarmentRecovery">Code</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> We train a model to <b>learn the space of deformed garments</b>, and fit this prior to single view images to recover a complete garment mesh even though only half of it is invisible.
+            </short-desc>
+        </td>
+    </tr>
+    
+    <tr class="project-entry" onmouseout="evocube_stop()" onmouseover="evocube_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='evocube_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/evocube.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/evocube.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function evocube_start() {
+                document.getElementById('evocube_image').style.opacity = "1";
+            }
+    
+            function evocube_stop() {
+                document.getElementById('evocube_image').style.opacity = "0";
+            }
+            evocube_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="projects/evocube.html">
+            <span class="papertitle">Evocube: a Genetic Labeling Framework for Polycube-Maps</span>
+            </a>
+            <span class="half-line"></span>
+            <strong>Corentin Dumery</strong>,
+            <a href="https://fprotais.github.io/">François Protais</a>,
+            <a href="https://sebastienmestrallet.fr/">Sébastien Mestrallet</a>,
+            <a href="https://cv.hal.science/cbourcier">Christophe Bourcier</a>,
+            <a href="https://www-lihpc.cea.fr/fr/team/permanents/ledoux.html">Franck Ledoux</a>
+            <br>
+            Computer Graphics Forum (Eurographics) 2023
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="projects/evocube.html">Project page</a>
+            | <a href="https://arxiv.org/abs/2205.00738">Paper</a>
+            | <a href="https://github.com/LIHPC-Computational-Geometry/evocube"">Code</a>
+            | <a href="https://www.youtube.com/watch?v=vjxIBLl6Td4">Video</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> To morph an arbitrary 3D shape into a <b><i>polycube</i></b>, i.e. an aggregate of axis-aligned cubes, we design a <b>genetic algorithm to produce valid polycube labelings</b> after multiple generations of crossovers and mutations. These polycubes are then used to produce <b>hexahedral meshes</b> for finite-element simulation.
+            </short-desc>
+        </td>
+    </tr>
+
+
+    <tr class="project-entry" onmouseout="patterns_stop()" onmouseover="patterns_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='patterns_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/patterns.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/patterns.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function patterns_start() {
+                document.getElementById('patterns_image').style.opacity = "1";
+            }
+    
+            function patterns_stop() {
+                document.getElementById('patterns_image').style.opacity = "0";
+            }
+            patterns_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="projects/patterns">
+            <span class="papertitle">Computational pattern making from 3D garment models</span>
+            </a>
+            <span class="half-line"></span>
+            <a href="https://www.nicopietroni.com/">Nico Pietroni</a>,
+            <strong>Corentin Dumery</strong>,
+            <a href="https://profiles.uts.edu.au/raphael.falque">Raphael Falque</a>,
+            <a href="https://profiles.uts.edu.au/Teresa.VidalCalleja">Teresa Vidal-Calleja</a>,
+            <a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>
+            <br>
+            SIGGRAPH 2022
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="https://igl.ethz.ch/projects/computational-patternmaking/">Project page</a>
+            | <a href="https://igl.ethz.ch/projects/computational-patternmaking/computational-pattern-making-paper.pdf">Paper (38 Mb)</a>
+            | <a href="projects/computational-pattern-making-compressed.pdf">Paper (2 Mb)</a>
+            | <a href="https://github.com/CorentinDumery/garment-flattening">Code (Garment Flattening)</a>
+            | <a href="https://github.com/nicopietroni/parafashion">Code (Patch Segmentation)</a>
+            | <a href="https://www.youtube.com/watch?v=7b27T8rh7SU">Supplemental Video</a>
+            | <a href="https://igl.ethz.ch/publications/igl-bibtex.php#ComputationalPatternmaking:2022">bibtex</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> Given a 3D garment, we compute 2D patterns that can be directly manufactured. To this end, we optimize a <b>cross field</b> that generates good cutting lines, and propose a <b>mesh flattening</b> method tailored to woven materials.
+            </short-desc>
+        </td>
+    </tr>
+
+
+          </tbody></table>
+
+          <!--
+					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
+            <tr>
+              <td>
+                <h2>Miscellanea</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            
+           
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #fcb97d;">
+								 <h2>Micropapers</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+                <br>
+                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+                <br>
+                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+                <br>
+                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #aaba9e;">
+								 <h2>Recorded Talks</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="https://www.youtube.com/watch?v=hFlF33JZbA0">Radiance Fields and the Future of Generative Media, 2025</a><br>				  
+                <a href="https://www.youtube.com/watch?v=h9vq_65eDas">View Dependent Podcast, 2024</a><br>
+                <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo">Bay Area Robotics Symposium, 2023
+</a><br>
+                <a href="https://youtu.be/TvWkwDYtBP4?t=7604">EGSR Keynote, 2021</a><br>
+				<a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q">TUM AI Lecture Series, 2020</a><br>
+				<a href="https://www.youtube.com/watch?v=HfJpQCBTqZs">Vision & Graphics Seminar at MIT, 2020</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #c6b89e;">
+								 <h2>Academic Service</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="https://iccv.thecvf.com/">Lead Area Chair, ICCV 2025</a>
+                <br>
+                <a href="https://cvpr.thecvf.com/Conferences/2025/Organizers">Lead Area Chair, CVPR 2025</a>
+                <br>
+                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
+                <br>
+                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
+                <br>
+                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
+                <br>
+                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
+                <br>
+                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
+                <br>
+                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
+              </td>
+            </tr>
+						
+						
+           
+            <tr>
+              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
+						     <div class="colored-box" style="background-color: #edd892;">
+								 <h2>Teaching</h2>
+								 </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:center">
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
+                <br>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
+                <br>
+                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
+              </td>
+            </tr>
+            
+          </tbody></table>
 
           
-      <riddle>
-        From a single 2D image or from a partial point cloud, how can we recover a full 3D garment? <br>
-      </riddle>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                  A nice message...
+                </p>
+              </td>
+            </tr>
+          </tbody></table>-->
+        </td>
+      </tr>
+    </table>
 
-      Recovering a full 3D model of a garment from just a single image, 
-      especially when it's being worn or handled, can be a complex task due to partial visibility.
-      To achieve this, we leverage garment-specific geometric priors 
-      to accurately reconstruct the visible parts of garments 
-      while inferring the unseen areas to recover a complete and realistic 3D model.
-
-      <ul>
-        <li><a href="https://liren2515.github.io/page/prior/prior.html">Garment Recovery with Shape and Deformation Priors</a></li>
-        <li><a href="https://liren2515.github.io/page/folding/folding.html">Reconstruction of Manipulated Garment with Guided Deformation Prior</a></li>
-        <li><a href="https://liren2515.github.io/page/dmap/dmap.html">Single View Garment Reconstruction Using Diffusion Mapping Via Pattern Coordinates</a></li>
-       </ul>
-
-      <br>
-      <video autoplay muted loop width="70%" class="centered_pic">
-        <source src="images/CVPR24.mp4" type="video/mp4" >
-        Your browser does not support the video tag.
-      </video>
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <div class="article_text" id="evocube_article">
-      <p>
-      <a href="projects/evocube.html"><h1>Evocube [CGF22]</h1></a>
-      <riddle> <!-- Let's assume  our reader has a very short attention span -->
-        Given an input 3D shape, how can we deform it into a similar
-        <b>polycube</b>? <br>
-        → check out the <a href="projects/evocube.html"> Project page</a>.
-      </riddle>
-
-
-      Polycubes, i.e. aggregates of axis-aligned cubes, are most notably used for all-hex meshing, but
-      their constrained nature and topology conditions make polycube parameterization
-      a challenging task.
-      Previous work
-      has shown the feasibility of precomputing polycube orientation directly on the input mesh,
-      effectively <b>labeling</b> each boundary face in blue/white/red representing the XYZ axes.
-      </br>
-      How can we derive a fitting polycube topology from a triangle mesh? We propose the use of a
-      novel <b>genetic algorithm</b> in the context of polycube labeling optimization, defining fitness,
-      crossover, and mutations.
-      </br>
-
-
-
-      <img id="evocube_teaser" src="images/teaser_evocube_simple.png" align="middle" width="100%">
-      <br>
-      </p>
-    </div>
-  </article>
-
-
-
-  <article>
-    <div class="article_text" id="pattern_article">
-      <p>
-      <h1><a href="https://igl.ethz.ch/projects/computational-patternmaking/">Computational Pattern Making [SIGGRAPH22]</a></h1>
-      <riddle>
-      Given a <b>3D garment</b>,
-      how can we generate a <b>2D sewing pattern</b> that can effectively be used to manufacture it?
-      </riddle>
-      Our algorithm segments an input 3D shape into patches
-      and computes their 2D parameterization, while accounting for <b>the unique
-      properties and constraints of tailoring</b>, such as seam symmetry,
-      darts, fabric grain alignment, and a flattening distortion measure that models
-      woven fabric deformation, respecting its anisotropic behavior.
-      <!--We bootstrap
-      a recent patch layout approach developed for quadrilateral remeshing and
-      adapt it to the purpose of computational pattern making.-->
-      </br>
-
-      <ul>
-       <li><a href="projects/computational-pattern-making-compressed.pdf"> Paper (2 Mb)</a>, <a href="https://igl.ethz.ch/projects/computational-patternmaking/computational-pattern-making-paper.pdf"> high resolution (38 Mb)</a></li>
-       <li><a href="https://www.youtube.com/watch?v=wsrQiH3zyuI">15mn presentation</a></li>
-       <!-- <a href="https://arxiv.org/abs/2202.10272"> arXiv </a> --->
-       <li>Our code is open source: <a href="https://github.com/CorentinDumery/garment-flattening">anisotropic textile parameterization</a>
-          + <a href="https://github.com/nicopietroni/parafashion">patch segmentation (main project)</a></li>
-       <li><a href="https://www.youtube.com/watch?v=7b27T8rh7SU">Supplemental video</a></li>
-       <li><a href="https://igl.ethz.ch/publications/igl-bibtex.php#ComputationalPatternmaking:2022">bibtex</a></li>
-      </ul>
-      <img id="parafashion_teaser" src="images/parafashion_teaser.jpg" align="middle" width="100%">
-      <br>
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <div class="article_text" id="bmesh_article">
-      <p>
-      <h1>B-Mesh Modeller</h1>
-      With two friends from Télécom Paris, we created a 3D modelling software based on a novel approach described in <a
-        href="https://pdfs.semanticscholar.org/2009/3aea25b50e59c63998ba0377371c59bf007f.pdf">a research paper</a>.
-      The idea is to create an initial mesh in only a few minutes by placing spheres in 3D to represent
-      the skeleton of the modelled object. The user can freely create and customize the mesh. It can be
-      modified in real-time.
-      (<a href="https://github.com/CorentinDumery/Bmesh">link to the project</a></li>) <br /> <br />
-
-      <img id="bmesh_ex" src="images/bmesh_example.PNG" align="middle" width="100%">
-      <br><br><br>
-      <div class="video_container">
-        <iframe class="video" src="https://www.youtube.com/embed/_TSeF4pfgXs" frameborder="0" allowfullscreen></iframe>
-      </div>
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <div class="article_text" id="aesthetic_article">
-      <p>
-      <h1>Aesthetic functions</h1>
-      This is a fun little project to explore the artistic side of two-dimensional functions. All you have to do is
-      enter a
-      math function and play with the sliders to generate some stunning artworks.
-      Any function works, no matter how complex, but even on simpler ones the results are often surprising.
-      If you do try it out, please send me your creations!
-      (<a href="https://github.com/CorentinDumery/aesthetic-functions">link to the project</a></li>) <br /> <br />
-
-      <table>
-        <tr align="middle" >
-          <td width="50%"><img id="color_ex0" src="images/aesthetic/blackhole.png" align="middle" width="95%"></td>
-          <td width="50%"><img id="color_ex1" src="images/aesthetic/sea_floor.png" align="middle" width="95%"></td>
-        </tr>
-        <tr>
-          <th>Black hole of odd dimension</th>
-          <th>Sea floor</th>
-        </tr>
-        <tr align="middle">
-          <td width="50%"><img id="color_ex1" src="images/aesthetic/color_dance.png" align="middle" width="95%"></td>
-          <td width="50%"><img id="color_ex0" src="images/aesthetic/miracle_of_life.png" align="middle" width="95%"></td>
-        </tr>
-        <tr>
-          <th>Color dance</th>
-          <th>Miracle of Life</th>
-        </tr>
-      </table>
-
-      <br><br>
-
-      And some of them move, too! There's plenty more
-      <a href="https://github.com/CorentinDumery/aesthetic-functions">where these come from</a>,
-      <a href="about/blog/aestheticfunctions.html"> some moving here</a>,
-      <a href="about/blog/aliasing.html">some surprising there</a>,
-      and they all have something that all the others don't have.
-      I always love receiving creations from other people, so feel free to send me an email
-      if you find inspiration!
-      <br>
-
-      </p>
-    </div>
-  </article>
-
-
-  <article>
-    <div class="article_text" id="cow_article">
-      <p>
-      <h1>Cow Texture generator</h1>
-      Ever felt the need to have an infinite supply of cow pattern textures? <br /><br />
-
-      This project was inspired by <a href="https://mgmalheiros.github.io/research/leopard/"><i>The leopard never
-          changes
-          its spots</i></a>, a SIGGRAPH 2020 paper by Malheiros, Marcelo de G. and Fensterseifer, Henrique and Walter,
-      Marcelo. This paper uses a reaction-diffusion model to approximate
-      tissue growth, and successfully generates a few 2D patterns matching real species. This project aims to adapt
-      this model to generate cow patterns, which were not covered in the original article.
-      (<a href="https://github.com/CorentinDumery/cow-tex-generator">link to the project</a></li>) <br/> <br />
-
-      <img class="centered_pic" src="images/textures_pres.png" width="100%">
-      <br/>
-      <video autoplay muted loop width="100%" class="centered_pic">
-        <source src="images/cowanim.mp4" type="video/mp4" >
-        Your browser does not support the video tag.
-      </video>
-      
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <div class="article_text"  id="transformation_article">
-      <p>
-      <h1>Evaluation of a Spectral Data Transformation Method for Meaningful Mesh Segmentation</h1>
-      I wanted to see if I could transform a 3D mesh in a weaningful way to make 3D segmentation easier.
-      To evaluate this transformation, I used
-      <a href="https://segeval.cs.princeton.edu/">this awesome dataset</a></li> which includes human-generated ground
-      truth segmentations,
-      and used simple clustering algorithms to generate a segmentation. By comparing results with the ground truth, I
-      was able to measure the
-      efficiency of this approach and identify the circumstances under which it's useful. For more detail, here is
-      <a
-        href="https://github.com/CorentinDumery/3DTransformation/blob/master/Evaluation%20of%20a%20Spectral%20Data%20Transformation%20Method%20for%20Meaningful%20Mesh%20Segmentation.pdf">a
-        link to the complete study</a></li>.
-      You can also take a look at
-      <a href="https://github.com/CorentinDumery/3DTransformation">the project on github</a></li>. <br /> <br />
-      <img id="glassesSeg" src="images/glassesCl.png" align="middle" width="100%">
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <div class="article_text" id="skull_article">
-      <p>
-      <h1>Design of Implants for Skull Reconstructive Surgery</h1>
-      This project aims to make 3D skull implant generation as easy as possible. The idea is to input a mesh derived
-      from a CT scan and use two edge loops
-      to specify the part of the skull where an implant should be generated. The skull layer is then reconstructed to
-      make a perfect-fit implant. Then, a
-      flattening algorithm is used to flatten each layer of the implant to make it suitable for implant 3D printing.
-      Cutting path are added to release some
-      flattening constraints. This work was done for the National University of
-      Singapore in collaboration with
-      <a href="https://www.osteopore.com/">Osteopore</a></li>,
-      and uses a patented software from NUS to reconstruct the outer layer of the skull using symmetry constraints.
-      <br /> <br />
-      <img id="defectS" class="centered_pic" src="images/defectSkull.png" width="80%">
-      <img id="implant" class="centered_pic" src="images/implant.png" width="80%">
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <div class="article_text" id="potato_article">
-      <p>
-      <h1>Potato Generator</h1>
-      Simple project that generates a 3D potatoïd based on input parameters. Perturbations with a given frequency,
-      amplitude and
-      direction are applied to a sphere to create the illusion of a natural object.
-      (<a href="https://github.com/CorentinDumery/potato-generator">link to the project</a></li>) <br /> <br />
-      <video autoplay muted loop width="40%" class="centered_pic">
-        <source src="images/potato.mp4" type="video/mp4" >
-        Your browser does not support the video tag.
-      </video>
-      </p>
-    </div>
-  </article>
-
-  <article>
-    <div class="article_text" id="tipe_article">
-      <p>
-      <h1>[FRENCH] Modélisation agricole et optimisation de la répartition des surfaces</h1>
-      Here's a video I made when I was 19 showing the different steps in my research trying to optimize the area
-      allocation of an agricultural exploitation. It's in French and quite simple since this was done very early during
-      my studies, but if you have any questions I'd be more than willing to speak about it with you. It was a fun
-      experience and I enjoyed the freedom that I was given on this project.<br /> <br />
-
-      <div class="video_container">
-      <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YgApnVLuq7c" frameborder="0"
-        allowfullscreen></iframe>
-      </div>
-      </p>
-    </div>
-  </article>
-
-
-  <article>
-    <div class="article_text">
-      <p>
-      <h1>More information</h1>
-      For more information, feel free to contact me at corentin.dumery at gmail.com.
-      You can also download my resume <a href="CV_DUMERY.pdf" download>here</a>.
-      </p>
-    </div>
-  </article>
-</body>
+  </body>
 </html>
