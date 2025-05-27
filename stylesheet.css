@@ -222,6 +222,12 @@ short-desc {
   transform: rotate(90deg);
 }
 
+.project-cell-other {
+  padding: 8px;
+  width: 80%;
+  vertical-align: middle;
+}
+
 
 /* ABOUT */
 
