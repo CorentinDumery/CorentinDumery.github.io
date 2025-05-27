@@ -518,6 +518,160 @@
             </tr>
           </tbody></table>
 
+          <table style="width:100%; margin:0 auto; margin-top: 10px; border:0; border-spacing:0; padding:16px;" bgcolor="#fff"><tbody>
+          <tr class="project-entry">
+
+            <td colspan="2" class="project-cell">
+              <h2>Additional projects</h2>
+              <br>
+              My favorite creations from back when I was a student, most of these projects are from before 2020.
+
+
+
+              <br><br><br>
+              <span class="papertitle">B-Mesh Modeller</span>
+              <span class="half-line"></span>
+              With two friends from Télécom Paris, we created a 3D modelling software based on a novel approach described in 
+              <a href="https://pdfs.semanticscholar.org/2009/3aea25b50e59c63998ba0377371c59bf007f.pdf">a research paper</a>.
+              <br><br>
+              The idea is to create an initial mesh in only a few minutes by placing spheres in 3D to represent the skeleton of the modelled object.
+              The user can freely create and customize the mesh, and it can be modified in real-time. (<a href="https://github.com/CorentinDumery/Bmesh">link to the project</a>)
+              <br><br>
+              <img src="images/bmesh_example.PNG" style="width:100%; max-width:800px; display:block; margin:auto;">
+              <br><br>
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: auto;">
+                <iframe class="video" src="https://www.youtube.com/embed/_TSeF4pfgXs" frameborder="0" allowfullscreen 
+                        style="position: absolute; top:0; left:0; width:100%; height:100%;">
+                </iframe>
+              </div>
+
+              <br><br><br><br>
+
+              <span class="papertitle">Aesthetic functions</span>
+              <span class="half-line"></span>
+              
+              This is a fun little project to explore the artistic side of two-dimensional functions. All you have to do is enter a math function and play with the sliders to generate some stunning artworks. Any function works, no matter how complex, but even on simpler ones the results are often surprising. (<a href="https://github.com/CorentinDumery/aesthetic-functions">link to the project</a></li>) 
+
+
+              <br><br>
+              <div style="margin: auto; max-width: 1000px;">
+                <table style="width: 100%; border-collapse: collapse;">
+                  <tr align="center">
+                    <td width="50%"><img id="color_ex0" src="images/aesthetic/blackhole.png" width="95%"></td>
+                    <td width="50%"><img id="color_ex1" src="images/aesthetic/sea_floor.png" width="95%"></td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: center;">Black hole of odd dimension</th>
+                    <th style="text-align: center;">Sea floor</th>
+                  </tr>
+              
+                  <!-- Blank line spacer -->
+                  <tr><td colspan="2"><div style="height: 20px;"></div></td></tr>
+              
+                  <tr align="center">
+                    <td width="50%"><img id="color_ex2" src="images/aesthetic/color_dance.png" width="95%"></td>
+                    <td width="50%"><img id="color_ex3" src="images/aesthetic/miracle_of_life.png" width="95%"></td>
+                  </tr>
+                  <tr>
+                    <th style="text-align: center;">Color dance</th>
+                    <th style="text-align: center;">Miracle of Life</th>
+                  </tr>
+                </table>
+              </div>
+              
+              <br>
+              And some of them move, too! There's plenty more
+              <a href="https://github.com/CorentinDumery/aesthetic-functions">where these come from</a>,
+              <a href="about/blog/aestheticfunctions.html"> some moving here</a>,
+              <a href="about/blog/aliasing.html">some surprising there</a>,
+              and they all have something that all the others don't have.
+              I always love receiving creations from other people, so feel free to send me an email
+              if you find inspiration!
+
+
+              <br><br><br>
+              <span class="papertitle">Cow Texture generator</span>
+              <span class="half-line"></span>
+
+              Ever felt the need to have an infinite supply of cow pattern textures? <br /><br />
+
+              This project was inspired by <a href="https://mgmalheiros.github.io/research/leopard/"><i>The leopard never
+                  changes
+                  its spots</i></a>, a SIGGRAPH 2020 paper by Malheiros, Marcelo de G. and Fensterseifer, Henrique and Walter,
+              Marcelo. This paper uses a reaction-diffusion model to approximate
+              tissue growth, and successfully generates a few 2D patterns matching real species. This project aims to adapt
+              this model to generate cow patterns, which were not covered in the original article.
+              (<a href="https://github.com/CorentinDumery/cow-tex-generator">link to the project</a></li>) <br/> <br />
+
+              <img class="centered_pic" src="images/textures_pres.png" width="100%">
+              <br/>
+              <video autoplay muted loop width="100%" class="centered_pic">
+                <source src="images/cowanim.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+              </video>
+
+
+              <br><br><br>
+              <span class="papertitle">Evaluation of a Spectral Data Transformation Method for Meaningful Mesh Segmentation</span>
+              <span class="half-line"></span>
+
+              I wanted to see if I could transform a 3D mesh in a weaningful way to make 3D segmentation easier.
+              To evaluate this transformation, I used
+              <a href="https://segeval.cs.princeton.edu/">this awesome dataset</a></li> which includes human-generated ground truth segmentations, and used simple clustering algorithms to generate a segmentation. By comparing results with the ground truth, I
+              was able to measure the efficiency of this approach and identify the circumstances under which it's useful. For more detail, here is
+              <a
+                href="https://github.com/CorentinDumery/3DTransformation/blob/master/Evaluation%20of%20a%20Spectral%20Data%20Transformation%20Method%20for%20Meaningful%20Mesh%20Segmentation.pdf">a link to the complete study</a></li>.
+              You can also take a look at
+              <a href="https://github.com/CorentinDumery/3DTransformation">the project on github</a></li>. <br /> <br />
+              <img id="glassesSeg" src="images/glassesCl.png" align="middle" width="100%">
+              
+
+
+              <br><br><br>
+              <span class="papertitle">Potato Generator</span>
+              <span class="half-line"></span>
+
+              Simple project that generates a 3D potatoïd based on input parameters. Perturbations with a given frequency, amplitude and direction are applied to a sphere to create the illusion of a natural object.
+              (<a href="https://github.com/CorentinDumery/potato-generator">link to the project</a></li>) 
+              <video autoplay muted loop width="40%" class="centered_pic" style="transform:rotate(-90deg);">
+                <source src="images/potato.mp4" type="video/mp4" >
+                Your browser does not support the video tag.
+              </video>
+
+
+
+
+              <span class="papertitle">Design of Implants for Skull Reconstructive Surgery</span>
+              <span class="half-line"></span>
+
+              This project aims to make 3D skull implant generation as easy as possible. The idea is to input a mesh derived from a CT scan and use two edge loops to specify the part of the skull where an implant should be generated. The skull layer is then reconstructed to
+              make a perfect-fit implant. Then, a flattening algorithm is used to flatten each layer of the implant to make it suitable for implant 3D printing.
+              Cutting path are added to release some flattening constraints. This work was done for the National University of Singapore in collaboration with
+              <a href="https://www.osteopore.com/">Osteopore</a></li>,
+              and uses a patented software from NUS to reconstruct the outer layer of the skull using symmetry constraints.
+              <br /> <br />
+              <img id="defectS" class="centered_pic" src="images/defectSkull.png" width="80%">
+              <img id="implant" class="centered_pic" src="images/implant.png" width="80%">
+              
+              
+              <br><br><br>
+              <span class="papertitle">[FRENCH] Modélisation agricole et optimisation de la répartition des surfaces</span>
+              <span class="half-line"></span>
+
+              Here's a video I made when I was 19 showing the different steps in my research trying to optimize the area allocation of an agricultural exploitation. It's in French and quite simple since this was done very early during my studies, but if you have any questions I'd be more than willing to speak about it with you. It was a fun experience and I enjoyed the freedom that I was given on this project.<br /> <br />
+
+              <div class="video_container">
+              <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YgApnVLuq7c" frameborder="0"
+                allowfullscreen></iframe>
+              </div>
+                      
+
+
+            </td>
+          </tr>
+
+          </tbody></table>
+
           <!--
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             

@@ -188,6 +188,41 @@ short-desc {
 }
 
 
+/* PROJECTS */
+
+.centered_pic {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.video_container {
+  position: relative;
+  width: 90%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rotate90 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+
 /* ABOUT */
 
 .experience-block {
