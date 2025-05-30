@@ -144,6 +144,9 @@ short-desc {
   font-size: 14px;
 }
 
+li {
+  margin-bottom: 5px; /* Adjust value as needed */
+}
 
 
 /* NAV BAR */
