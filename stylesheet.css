@@ -338,3 +338,7 @@ project-page-section {
   vertical-align: middle;
   line-height: 1.2em;
 }
+
+sup {
+  font-size: 0.65em;
+}
