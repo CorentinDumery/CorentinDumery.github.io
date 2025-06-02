@@ -157,7 +157,7 @@ li {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   background-color: white;
   z-index: 1000;
   display: flex;
@@ -191,7 +191,7 @@ li {
 }
 
 
-/* PROJECTS */
+/* PROJECT LIST */
 
 .centered_pic {
   margin-left: auto;
@@ -236,8 +236,105 @@ li {
 
 .experience-block {
   width:100%;
-  max-width:1000px;
+  max-width:900px;
   background-color: rgba(255, 255, 255, 1);
   margin: auto;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* PROJECT PAGES */
+
+bibtex {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  background-color: #333;
+  color: white;
+  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  font-size: 0.85em;
+  line-height: 1.2em;
+  display:block;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.project-page-header {
+  text-align: center;
+}
+
+paper-teaser img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+project-page-section {
+  border-bottom: 2px solid #222;
+  width: 80%;
+  display: block;
+  font-size: 1.5em;
+  line-height: 1.3em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  padding-top: 0.5em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.horizontal-bar {
+  display: flex;
+  justify-content: center;
+  margin: 1em auto;
+  width: 40%;
+}
+
+.horizontal-bar-item {
+  text-align: center;
+  padding: 0.5em;
+  background-color: #f6f6f6;
+  margin: 0.25em;
+  border-radius: 0.25em;
+  flex: 1;
+  margin-bottom: 0.0em;
+}
+
+.horizontal-bar-item p {
+  margin: 0;
+}
+
+.horizontal-bar-item:hover {
+  background-color: #ccc;
+}
+
+.horizontal-bar-item img {
+  margin: 0 auto;
+}
+
+.horizontal-bar-item {
+  padding: 0.5em;
+  background-color: #f6f6f6;
+  margin: 0.25em;
+  border-radius: 0.25em;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.icon-text span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.2em;
 }

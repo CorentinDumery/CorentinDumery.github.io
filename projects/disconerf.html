@@ -1,75 +1,154 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Corentin Dumery</title>
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="project.css" />
-</head>
-
-
-<header>
-  <img id="header_background" src="../images/delaunay.png"/>
-</header>
-
-<body>
-  <!--
-  <menubar>
-    <a href="../index.html"><moving>Corentin Dumery</moving></a>
-    <a href="../about/resume.html"> <moving> Resume  </moving> </a>
-    <a href="../about/gallery.html"> <moving> Gallery </moving> </a>
-    <a href="../about/blog.html"> <moving> Blog </moving></a>
-  </menubar>
--->
-
-  <article>
-    <div class="article_text">
-
-      <a href="../index.html"> <backbutton> <i> ← Back to my website </i></backbutton></a>
-
-      <paper-title> Enforcing View-Consistency in Class-Agnostic 3D Segmentation Fields </paper-title>
-      <paper-published> CVPRW 2025<br><a href='https://opensun3d.github.io/'> (4th Workshop on Open-World 3D Scene Understanding with Foundation Models)</a> </paper-published>
-
-      <div class="horizontal-bar">
-        <a class="horizontal-bar-item" href="https://arxiv.org/abs/2408.09928">
-          <img class="icon" src="../images/paper.png">
-          <p>Paper</p>
-        </a>
-        <a class="horizontal-bar-item" href="https://drive.google.com/file/d/1qq8o9axqqxhiVmdxQxuH8GpawV0Bel7Y/view?usp=sharing">
-          <img class="icon" src="../images/dataset.png">
-          <p>Mip-NeRF360 </br>Ground-Truth Segmentations</p>
-        </a>
-      </div>
-
-      <paper-teaser><img src="../images/disconerf.png"></paper-teaser>
-
-      <div style="width: 75%; margin: auto;"><b><i>Given as input a set of class-agnostic 2D masks with little consistency across views, we aim to
-      learn a meaningful 3D object field that segments the different instances in the scene. The discovered objects can then be extracted and
-      rendered independently.</i></b></div><br>
-
-      <paper-section> Abstract </paper-section>
-      Radiance Fields have become a powerful tool for modeling 3D scenes from multiple images. However, they remain difficult to segment into semantically meaningful regions. 
-      Some methods work well using 2D semantic masks, but they <b>generalize poorly to class-agnostic segmentations</b>. More recent methods circumvent this issue by using contrastive learning to optimize a high-dimensional 3D feature field instead. However, recovering a segmentation then requires clustering and fine-tuning the associated hyperparameters.
-      In contrast, we aim to <b>identify the necessary changes in segmentation field methods to directly learn a segmentation field while being robust to inconsistent class-agnostic masks</b>, successfully decomposing the scene into a set of objects of any class.
-      </br>
-      By introducing an additional <b>spatial regularization term</b> and restricting the field to <b>a limited number of competing object slots against which masks are matched</b>, a meaningful object representation emerges that best explains the 2D supervision.
-      Our experiments demonstrate the ability of our method to generate 3D panoptic segmentations on complex scenes, and extract high-quality 3D assets from radiance fields that can then be used in virtual 3D environments.
-
-      <br><br>
-      <paper-section> Citation </paper-section>
-      <bibtex>
-      @article{dumery25enforcing,<br>
-        <bibtex-body>
-        &nbsp;&nbsp;    title = {{Enforcing View-Consistency in Class-Agnostic 3D Segmentation Fields}},<br>
-        &nbsp;&nbsp;    author = {Dumery, Corentin and Fan, Aoxiang and Li, Ren and Talabot, Nicolas and Fua, Pascal},<br>
-        &nbsp;&nbsp;    journal = {{CVPRW}},<br>
-        &nbsp;&nbsp;    year = {2025},<br>
-        </bibtex-body>
-      }
-      </bibtex>
+<!DOCTYPE HTML>
+<html lang="en">
+    <div class="header-background">
+    <img id="header_background" src="../images/delaunay.png"/>
     </div>
-  </article>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Corentin Dumery</title>
+
+    <meta name="author" content="Corentin Dumery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="icon" href="../images/favicon.png">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/flower.png" />
+    <meta property="og:description" content="Personal website and portfolio" />
+    <meta property="og:title" content="Corentin Dumery" />
+      
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Corentin Dumery">
+    <meta property="twitter:description" content="Personal website and portfolio">
+    <meta property="twitter:image" content="../images/flower.png">
+  </head>    
+    
+
+  <body>
+
+    <div class="navbar">
+      <a href="../index.html">Corentin Dumery</a>
+      <a href="../about/experience.html">Experience</a>
+      <a href="../about/gallery.html">Gallery</a>
+      <a href="../about/blog.html">Blog</a>
+    </div>
+
+    <div style="height: 40px;"></div>
+
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top:0.3%;" ><tbody>
+        <tr style="padding:0px">
+          <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" bgcolor="#ffffff"><tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;padding-bottom:1.5%;width:100%;vertical-align:middle;">
+  
+                  <div class="project-page-header">
+                  <h1> Enforcing View-Consistency in <br> Class-Agnostic 3D Segmentation Fields </h1>
+                  <h2> CVPRW 2025<br><a href='https://opensun3d.github.io/'> (4th Workshop on Open-World 3D Scene Understanding with Foundation Models)</a>  </h2>
+                  <h4>
+
+                  <strong>Corentin Dumery</strong>,
+                  <a href="https://aoxiangfan.github.io/">Aoxiang Fan</a>,
+                  <a href="https://liren2515.github.io/page/">Ren Li</a>,
+                  <a href="https://ntalabot.github.io/">Nicolas Talabot</a>,
+                  <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
+                  <br>
+                  <br>
+                  <img src="../images/epfl-red.png" style="height: 30px; vertical-align: middle; padding: 5px;">
+                   <br></h4>
+                  </div>
+
+                  <div class="horizontal-bar" style="width: 66%; margin: auto;">
+                    <a class="horizontal-bar-item" href="https://arxiv.org/abs/2408.09928">
+                      <div class="icon-text">
+                        <img src="../images/paper.png" style="height: 30px;">
+                        <span>Paper</span>
+                      </div>
+                    </a>
+                    <a class="horizontal-bar-item" href="https://drive.google.com/file/d/1qq8o9axqqxhiVmdxQxuH8GpawV0Bel7Y/view?usp=sharing">
+                      <div class="icon-text">
+                        <img src="../images/dataset.png" style="height: 30px;">
+                        <span>Mip-NeRF360<br>Segmentations</span>
+                      </div>
+                    </a>
+                    <a class="horizontal-bar-item" href="../images/disconerf/CVPRW_DiscoNeRF_poster.pdf">
+                      <div class="icon-text">
+                        <img src="../images/poster.png" style="height: 30px;">
+                        <span>Poster</span>
+                      </div>
+                    </a>
+                  </div>
+                  <br>
+                  <paper-teaser><img src="../images/disconerf.png"></paper-teaser>
+
+                  <br>
+                  <div style="width: 75%; margin: auto;"><b><i>Given as input a set of class-agnostic 2D masks with little consistency across views, we aim to learn a meaningful 3D object field that segments the different instances in the scene. The discovered objects can then be extracted and rendered independently.</i></b></div><br>
+                
+                  
+                  <project-page-section> Abstract </project-page-section>
+                  <div style="width: 80%; margin: auto;">                    
+                    Radiance Fields have become a powerful tool for modeling 3D scenes from multiple images. However, they remain difficult to segment into semantically meaningful regions. Some methods work well using 2D semantic masks, but they <b>generalize poorly to class-agnostic segmentations</b>. More recent methods circumvent this issue by using contrastive learning to optimize a high-dimensional 3D feature field instead. However, recovering a segmentation then requires clustering and fine-tuning the associated hyperparameters. In contrast, we aim to <b>identify the necessary changes in segmentation field methods to directly learn a segmentation field while being robust to inconsistent class-agnostic masks</b>, successfully decomposing the scene into a set of objects of any class. </br> 
+                    <span class="half-line"></span>
+                    By introducing an additional <b>spatial regularization term</b> and restricting the field to <b>a limited number of competing object slots against which masks are matched</b>, a meaningful object representation emerges that best explains the 2D supervision. Our experiments demonstrate the ability of our method to generate 3D panoptic segmentations on complex scenes, and extract high-quality 3D assets from radiance fields that can then be used in virtual 3D environments.
+
+                  </div>
+
+
+                  <project-page-section> Method </project-page-section>
+                  <div style="width: 80%; margin-left: auto; margin-right: auto;">
+                    <img src="../images/disconerf/disconerf_pipeline.png" style="width: 100%; max-width: 900px;">
+                    
+                      <br><br> 
+                      In this work, we propose <b>DiscoNeRF</b>, an approach to discover 3D objects in an open-world environment. DiscoNeRF segments 3D radiance fields without a preset number of classes or user-interaction while still producing sharp segmentations.
+                      Our key insight is that we can efficiently constrain the training of an object field to produce a view-consistent 3D segmentation despite the noisiness of the supervisory signal. <br> 
+                      <span class="half-line"></span>
+                      
+                      In addition to the density and color that a standard radiance field predicts at each point in a volume, ours predicts a vector of probabilities of belonging to a particular object. These vectors are then used to render images whose pixels are the probabilities to belong to each class. Note that these object classes are not assigned a semantic meaning, they simply correspond to a channel in the probability vector. To enforce consistency across views between probability images and 2D segmentation masks, we introduce a robust loss function that generalizes the traditional Intersection over Union (IoU) measure to floating point values and relies on the Hungarian algorithm to establish correspondences between regions in the probability images and 2D masks in the segmentations. Minimizing this loss function using the appropriate regularization constraints yields the desired result.
+                    
+                  </div>
+                  
+                  <project-page-section> Results </project-page-section>
+                  <div style="display: flex; justify-content: space-between; align-items: center; width: 80%;margin-left: auto; margin-right: auto;">
+                    <div style="width: 30%;">
+                      <video width="100%" muted autoplay loop>
+                        <source src="../images/papers/disconerf.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div style="width: 70%; padding-left: 20px;">
+                      <p>
+                        Since our method can segment 3D scenes into individual objects, the 3D reconstructions can be used in downstream applications. An object can be extracted by conditioning the rendering of the model to only render the associated slot. 
+                        In our experiments, we also compare both quantitatively and qualitatively with several state-of-the-art radiance field segmentation methods. To this end, we released <a href="https://drive.google.com/file/d/1qq8o9axqqxhiVmdxQxuH8GpawV0Bel7Y/view?usp=sharing"> ground-truth segmentation masks for two frames of each scene in the Mip-NeRF360 dataset
+                        </a>.<br> 
+                        <span class="half-line"></span>
+
+                        
+
+                        <b>Limitations</b>: 
+                        One current limitation is that non-contiguous objects may, in rare occasions, be assigned the same label. This is mitigated by our regularization and in practice, such objects can trivially be separated. Although our method is class agnostic, we observe a drop in quality for transparent objects, highly-reflective surfaces, or particularly small objects.
+
+                      </p>
+                    </div>
+                  </div>
+
+                  <project-page-section> Citation </project-page-section>
+                  <bibtex>
+                    @article{dumery25enforcing,<br>
+                      <bibtex-body>
+                      &nbsp;&nbsp;    title = {{Enforcing View-Consistency in Class-Agnostic 3D Segmentation Fields}},<br>
+                      &nbsp;&nbsp;    author = {Dumery, Corentin and Fan, Aoxiang and Li, Ren and Talabot, Nicolas and Fua, Pascal},<br>
+                      &nbsp;&nbsp;    journal = {{CVPRW}},<br>
+                      &nbsp;&nbsp;    year = {2025},<br>
+                      </bibtex-body>
+                    }
+                    </bibtex>
+                </td>
+              </tr>
+              
+            </tbody></table>
 
 </body>
-
 </html>
