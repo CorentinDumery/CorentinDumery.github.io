@@ -199,6 +199,51 @@
         </td>
     </tr>
 
+    <tr class="project-entry" onmouseout="sampling_stop()" onmouseover="sampling_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='sampling_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/sampling.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/sampling.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function sampling_start() {
+                document.getElementById('sampling_image').style.opacity = "1";
+            }
+    
+            function sampling_stop() {
+                document.getElementById('sampling_image').style.opacity = "0";
+            }
+            sampling_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="projects/TODO.html">
+            <span class="papertitle">A View-Consistent Sampling Method for Regularized Training of Neural Radiance Fields</span>
+            </a>
+            <span class="half-line"></span>
+            <a href="https://aoxiangfan.github.io/">Aoxiang Fan</a>,
+            <strong>Corentin Dumery</strong>,
+            <a href="https://ntalabot.github.io/">Nicolas Talabot</a>,
+            <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
+            <br>
+            ICCV 2025
+            <br>
+
+            <span class="half-line"></span>
+            <!--
+            | <a href="projects/TODO.html">Project page</a>
+            | <a href="TODO">Paper</a>
+            |
+            <span class="half-line"></span> -->
+            <short-desc> We fine-tune a foundation model to make its features <b>depend only on geometry</b>,
+              and leverage these features to <b>guide NeRF sampling</b> along rays.
+            </short-desc>
+        </td>
+    </tr>
+
     <tr class="project-entry" onmouseout="dmap_stop()" onmouseover="dmap_start()">
       <td class="project-thumb">
           <div class="one">
@@ -488,7 +533,7 @@
                 <b>Academic Service</b>:
                 <ul>
                   <li> <a href="https://cvpr.thecvf.com/Conferences/2025/ProgramCommittee">Outstanding reviewer</a> at CVPR25 (top 5.6%). 
-                  <li>Reviewer for major Vision (CVPR, BMVC) and Graphics (SIGGRAPH, CGF, PG) conferences.
+                  <li>Reviewer for major Vision (CVPR, BMVC, WACV) and Graphics (SIGGRAPH, CGF, PG) conferences.
                 </ul>
                 <br>
                 <b>Head Teaching Assitant</b> for:
