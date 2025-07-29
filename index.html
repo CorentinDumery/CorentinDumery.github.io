@@ -234,12 +234,59 @@
 
             <span class="half-line"></span>
             | <a href="https://aoxiangfan.github.io/projects/nerf_sampling/index.html">Project page</a>
-            | <a href="https://aoxiangfan.github.io/projects/nerf_sampling/index.html">Paper</a>
+            | <a href="https://www.arxiv.org/abs/2507.04408">Paper</a>
             | <a href="https://aoxiangfan.github.io/projects/nerf_sampling/index.html">Code</a>
             |
             <span class="half-line"></span>
             <short-desc> We fine-tune a foundation model to make its features <b>depend only on geometry</b>,
               and leverage these features to <b>guide NeRF sampling</b> along rays.
+            </short-desc>
+        </td>
+    </tr>
+
+    <tr class="project-entry" onmouseout="tc3dgs_stop()" onmouseover="tc3dgs_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='tc3dgs_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/tc3dgs.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/tc3dgs.jpg' width="200">
+            </div>
+            <script type="text/javascript">
+            function tc3dgs_start() {
+                document.getElementById('tc3dgs_image').style.opacity = "1";
+            }
+    
+            function tc3dgs_stop() {
+                document.getElementById('tc3dgs_image').style.opacity = "0";
+            }
+            tc3dgs_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="https://ahmad-jarrar.github.io/tc-3dgs/">
+            <span class="papertitle">Temporally Compressed 3D Gaussian Splatting for Dynamic Scenes</span>
+            </a>
+            <span class="half-line"></span>
+            <a href="https://saqibjaved1.github.io/">Saqib Javed*</a>,
+            <a href="https://ahmad-jarrar.github.io/">Ahmad Jarrar Khan*</a>,
+            <strong>Corentin Dumery</strong>, 
+            <a href="https://sailor-z.github.io/">Chen Zhao</a>,
+            <a href="https://people.epfl.ch/mathieu.salzmann">Mathieu Salzmann</a>
+            <br>
+            BMVC 2025
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="https://ahmad-jarrar.github.io/tc-3dgs/">Project page</a>
+            | <a href="https://arxiv.org/pdf/2412.05700">Paper</a>
+            | <a href="https://github.com/saqibjaved1/TC3DGS">Code</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> 
+            We greatly <b>reduce the memory footprint of dynamic 3D Gaussian Splatting</b> with little to no cost in visual accurracy
+            by <b>pruning</b> gaussians based on their temporal relevance and by applying a <b>gradient-aware mixed-precision quantization</b>. 
             </short-desc>
         </td>
     </tr>
