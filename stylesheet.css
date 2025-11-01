@@ -1,11 +1,13 @@
 :root {
-  background-color: rgba(168, 237, 255, 1.0); /* Match triangles: rgba(118, 217, 252, 1.0); */
-  --text-color: rgba(20, 40, 40, 1.0);
+  background-color: rgba(168, 237, 255, 1); /* Match triangles: rgba(118, 217, 252, 1.0); */
+  --text-color: rgba(20, 40, 40, 1);
   color: var(--text-color);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
   text-align: justify;
 }
-  
+
 a {
   color: #1772d0;
   text-decoration: none;
@@ -51,32 +53,28 @@ h2 {
   width: 200px;
   height: 200px;
   position: absolute;
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
 }
 
 .fade {
-  transition: opacity .2s ease-in-out;
-  -moz-transition: opacity .2s ease-in-out;
-  -webkit-transition: opacity .2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
 }
-
 
 /* MISC */
 
 .colored-box {
-    color: black;
-    padding: 20px;
-    display: inline-block;
-    border-radius: 10px;
+  color: black;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
 }
-  
-
-
 
 /* BACKGROUND */
- 
+
 .header-background {
   position: absolute;
   top: 0;
@@ -88,9 +86,8 @@ h2 {
 #header_background {
   width: 100%;
   height: auto;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
-    from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 /* ICON BAR */
@@ -100,7 +97,7 @@ iconbar {
   justify-content: space-evenly;
   align-items: center;
   width: 40%;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding-top: 2em;
   padding-bottom: 1.5em;
 }
@@ -108,7 +105,6 @@ iconbar {
 .icon {
   max-width: 48px;
 }
-
 
 /* PAPER ENTRIES */
 
@@ -119,7 +115,7 @@ iconbar {
 
 .project-entry {
   background-color: rgba(255, 255, 255, 1);
-}  
+}
 
 .project-cell {
   padding: 8px;
@@ -148,7 +144,6 @@ li {
   margin-bottom: 5px; /* Adjust value as needed */
 }
 
-
 /* NAV BAR */
 
 .navbar {
@@ -162,7 +157,7 @@ li {
   z-index: 1000;
   display: flex;
   /* border-bottom: 2px solid #eee;*/
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
 .navbar a {
@@ -189,7 +184,6 @@ li {
   background-color: #ddd;
   background-color: #fff;
 }
-
 
 /* PROJECT LIST */
 
@@ -231,15 +225,14 @@ li {
   vertical-align: middle;
 }
 
-
 /* ABOUT */
 
 .experience-block {
-  width:100%;
-  max-width:900px;
+  width: 100%;
+  max-width: 900px;
   background-color: rgba(255, 255, 255, 1);
   margin: auto;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* PROJECT PAGES */
@@ -248,13 +241,20 @@ bibtex {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  
+
   background-color: #333;
   color: white;
-  font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+  font-family:
+    Consolas,
+    Monaco,
+    Lucida Console,
+    Liberation Mono,
+    DejaVu Sans Mono,
+    Bitstream Vera Sans Mono,
+    Courier New;
   font-size: 0.85em;
   line-height: 1.2em;
-  display:block;
+  display: block;
   padding: 0.5em;
   border-radius: 5px;
 }
@@ -298,7 +298,7 @@ project-page-section {
   margin: 0.25em;
   border-radius: 0.25em;
   flex: 1;
-  margin-bottom: 0.0em;
+  margin-bottom: 0em;
 }
 
 .horizontal-bar-item p {
