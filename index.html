@@ -153,6 +153,48 @@
     </tr>
     -->
 
+    <tr class="project-entry" onmouseout="sewing_lfm_stop()" onmouseover="sewing_lfm_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='sewing_lfm_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/sewing_lfm.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/sewing_lfm.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function sewing_lfm_start() {
+                document.getElementById('sewing_lfm_image').style.opacity = "1";
+            }
+
+            function sewing_lfm_stop() {
+                document.getElementById('sewing_lfm_image').style.opacity = "0";
+            }
+            sewing_lfm_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="https://arxiv.org/abs/2601.17740">
+            <span class="papertitle">Learning Sewing Patterns via Latent Flow Matching of Implicit Fields</span>
+            </a>
+            <span class="half-line"></span>
+            <a href="https://www.linkedin.com/in/cong-cao-28582722b/">Cong Cao*</a>,
+            <a href="https://liren2515.github.io/">Ren Li*</a>,
+            <strong>Corentin Dumery</strong>,
+            <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html">Hao Li</a>
+            <br>
+            SIGGRAPH 2026
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="https://arxiv.org/abs/2601.17740">Paper</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> We model sewing panels with <b>signed and unsigned distance fields</b> and learn their distribution with a <b>latent flow matching model</b>. This representation enables generative modeling of 2D patterns and 3D garments, such as pattern estimation, completion and refitting.
+            </short-desc>
+        </td>
+    </tr>
+
     <tr class="project-entry" onmouseout="stacks_stop()" onmouseover="stacks_start()">
         <td class="project-thumb">
             <div class="one">
@@ -181,7 +223,7 @@
             <strong>Corentin Dumery</strong>,
             <a href="https://emien.ch/">Noa Etté</a>,
             <a href="https://aoxiangfan.github.io/">Aoxiang Fan</a>,
-            <a href="https://liren2515.github.io/page/">Ren Li</a>,
+            <a href="https://liren2515.github.io/">Ren Li</a>,
             <a href="https://jingyixu.net/">Jingyi Xu</a>,
             <a href="https://hieulem.github.io/">Hieu Le</a>,
             <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
@@ -319,11 +361,11 @@
           </script>
       </td>
       <td class="project-cell">
-          <a href="https://liren2515.github.io/page/dmap/dmap.html">
+          <a href="https://liren2515.github.io/dmap/dmap.html">
           <span class="papertitle">Single View Garment Reconstruction Using Diffusion Mapping Via Pattern Coordinates</span>
           </a>
           <span class="half-line"></span>
-          <a href="https://liren2515.github.io/page/">Ren Li</a>,
+          <a href="https://liren2515.github.io/">Ren Li</a>,
           <a href="https://www.linkedin.com/in/cong-cao-28582722b/">Cong Cao</a>,
           <strong>Corentin Dumery</strong>,
           <a href="https://kasvii.github.io/">Yingxuan You</a>,
@@ -334,7 +376,7 @@
           <br>
 
           <span class="half-line"></span>
-          | <a href="https://liren2515.github.io/page/dmap/dmap.html">Project page</a>
+          | <a href="https://liren2515.github.io/dmap/dmap.html">Project page</a>
           | <a href="https://arxiv.org/abs/2504.08353">Paper</a>
           | <a href="https://github.com/liren2515/DMap">Code</a>
           |
@@ -371,7 +413,7 @@
             <span class="half-line"></span>
             <strong>Corentin Dumery</strong>,
             <a href="https://aoxiangfan.github.io/">Aoxiang Fan</a>,
-            <a href="https://liren2515.github.io/page/">Ren Li</a>,
+            <a href="https://liren2515.github.io/">Ren Li</a>,
             <a href="https://ntalabot.github.io/">Nicolas Talabot</a>,
             <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
             <br>
@@ -412,11 +454,11 @@
             </script>
         </td>
         <td class="project-cell">
-            <a href="https://liren2515.github.io/page/folding/folding.html">
+            <a href="https://liren2515.github.io/folding/folding.html">
             <span class="papertitle">Reconstruction of Manipulated Garment with Guided Deformation Prior</span>
             </a>
             <span class="half-line"></span>
-            <a href="https://liren2515.github.io/page/">Ren Li</a>,
+            <a href="https://liren2515.github.io/">Ren Li</a>,
             <strong>Corentin Dumery</strong>,
             <a href="https://scholar.google.com/citations?user=XDfK4f8AAAAJ">Zhantao Deng</a>,
             <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
@@ -425,7 +467,7 @@
             <br>
 
             <span class="half-line"></span>
-            | <a href="https://liren2515.github.io/page/folding/folding.html">Project page</a>
+            | <a href="https://liren2515.github.io/folding/folding.html">Project page</a>
             | <a href="https://arxiv.org/abs/2405.10934">Paper</a>
             | <a href="projects/neurips24_garment_folding_poster.pdf">Poster</a>
             |
@@ -456,11 +498,11 @@
             </script>
         </td>
         <td class="project-cell">
-            <a href="https://liren2515.github.io/page/prior/prior.html">
+            <a href="https://liren2515.github.io/prior/prior.html">
             <span class="papertitle">Garment Recovery with Shape and Deformation Priors</span>
             </a>
             <span class="half-line"></span>
-            <a href="https://liren2515.github.io/page/">Ren Li</a>,
+            <a href="https://liren2515.github.io/">Ren Li</a>,
             <strong>Corentin Dumery</strong>,
             <a href="https://bguillard.github.io/">Benoit Guillard</a>,
             <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
@@ -469,7 +511,7 @@
             <br>
 
             <span class="half-line"></span>
-            | <a href="https://liren2515.github.io/page/prior/prior.html">Project page</a>
+            | <a href="https://liren2515.github.io/prior/prior.html">Project page</a>
             | <a href="https://arxiv.org/abs/2311.10356">Paper</a>
             | <a href="https://github.com/liren2515/GarmentRecovery">Code</a>
             |
@@ -557,7 +599,7 @@
             <a href="https://profiles.uts.edu.au/Teresa.VidalCalleja">Teresa Vidal-Calleja</a>,
             <a href="https://igl.ethz.ch/people/sorkine/">Olga Sorkine-Hornung</a>
             <br>
-            SIGGRAPH 2022
+            SIGGRAPH 2022 (journal)
             <br>
 
             <span class="half-line"></span>
