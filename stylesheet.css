@@ -342,3 +342,111 @@ project-page-section {
 sup {
   font-size: 0.65em;
 }
+
+
+/* --- Mobile / narrow viewports --- */
+
+@media (max-width: 720px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  iconbar {
+    width: 100%;
+    max-width: 360px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  /* Home: photo above bio */
+  table.home-intro-wrap,
+  table.home-intro-wrap tbody {
+    display: block;
+    width: 100%;
+  }
+
+  tr.home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  tr.home-intro > td:first-child {
+    order: 2;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  tr.home-intro > td:last-child {
+    order: 1;
+    width: 100% !important;
+    max-width: 100% !important;
+    text-align: center;
+    padding-bottom: 0.25rem;
+  }
+
+  tr.home-intro > td:last-child img {
+    width: min(55vw, 220px);
+    max-width: 220px;
+  }
+
+  /* Research / experience rows: thumbnail above text */
+  table.project-list,
+  table:has(> tbody > tr.project-entry) {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Homepage: first paper sat flush under Research once table layout (border-spacing) was removed */
+  table.project-list {
+    padding-top: 1.25rem;
+  }
+
+  table.project-list tbody,
+  table:has(> tbody > tr.project-entry) > tbody {
+    display: block;
+    width: 100%;
+  }
+
+  tr.project-entry {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.25rem;
+    box-sizing: border-box;
+  }
+
+  tr.project-entry td.project-thumb,
+  tr.project-entry td.project-cell {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  tr.project-entry td.project-thumb {
+    text-align: center;
+    padding: 12px 8px 4px;
+  }
+
+  tr.project-entry td.project-cell {
+    padding: 4px 12px 16px;
+    text-align: left;
+  }
+
+  tr.project-entry .one {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  tr.project-entry td.project-cell-other {
+    display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
