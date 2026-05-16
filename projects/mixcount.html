@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <div class="header-background">
+    <img id="header_background" src="../images/delaunay.png"/>
+    </div>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>MixCount | Corentin Dumery</title>
+
+    <meta name="author" content="Corentin Dumery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="mixcount.css">
+    <link rel="icon" href="../images/favicon.png">
+  </head>
+
+
+  <body>
+
+    <div class="navbar">
+      <a href="../index.html">Corentin Dumery</a>
+      <a href="../about/experience.html">Experience</a>
+      <a href="../about/gallery.html">Gallery</a>
+      <a href="../about/blog.html">Blog</a>
+    </div>
+
+    <div style="height: 40px;"></div>
+
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top:0.3%;" ><tbody>
+        <tr style="padding:0px">
+          <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" bgcolor="#ffffff"><tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;padding-bottom:1.5%;width:100%;vertical-align:middle;">
+
+                  <div class="project-page-header">
+                  <h1> The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting </h1>
+                  <h4>
+                  <strong>Corentin Dumery*</strong><sup>1</sup>,
+                  <a href="https://reuben.ox.ac.uk/people/niki-amini-naieni">Niki Amini-Naieni*</a><sup>2</sup>,
+                  <a href="https://www.linkedin.com/in/shervin-n">Shervin Naini</a><sup>3</sup>,
+                  <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a><sup>1</sup>
+                  <br>
+                  <br>
+                  <sup>1</sup><img src="../images/epfl-red.png" style="height: 30px; vertical-align: middle; padding: 5px; padding-right: 20px;">
+                  <sup>2</sup><img src="../images/oxford.png" style="height: 30px; vertical-align: middle; padding: 5px; padding-right: 20px;">
+                  <sup>3</sup><img src="../images/northwestern.png" style="height: 30px; vertical-align: middle;">
+                   <br></h4>
+                  </div>
+
+                  <div class="horizontal-bar" style="width: 66%; margin: auto;">
+                    <a class="horizontal-bar-item" href="#">
+                      <div class="icon-text">
+                        <img src="../images/paper.png" style="height: 30px;">
+                        <span>Paper</span>
+                      </div>
+                    </a>
+                    <a class="horizontal-bar-item" href="#">
+                      <div class="icon-text">
+                        <img src="../images/github.png" style="height: 30px;">
+                        <span>Code</span>
+                      </div>
+                    </a>
+                    <a class="horizontal-bar-item" href="#">
+                      <div class="icon-text">
+                        <img src="../images/dataset.png" style="height: 30px;">
+                        <span>Dataset</span>
+                      </div>
+                    </a>
+                  </div>
+                  <br>
+
+                  <div class="mixcount-teaser-wrap">
+                    <div class="mixcount-teaser-row">
+                      <div class="mixcount-teaser-track">
+                        <img src="../images/mixcount/teaser/scene_0067.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3v-scene_0467.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3t-scene_0602.jpg" alt="">
+                        <img src="../images/mixcount/teaser/scene_0550.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3t-scene_0438.jpg" alt="">
+                        <img src="../images/mixcount/teaser/scene_0290.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3t-scene_0351.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p5t-scene_0028.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p5t-scene_0565.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3t-scene_0512.jpg" alt="">
+                        <img src="../images/mixcount/teaser/scene_0067.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3v-scene_0467.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3t-scene_0602.jpg" alt="">
+                        <img src="../images/mixcount/teaser/scene_0550.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3t-scene_0438.jpg" alt="">
+                        <img src="../images/mixcount/teaser/scene_0290.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3t-scene_0351.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p5t-scene_0028.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p5t-scene_0565.jpg" alt="">
+                        <img src="../images/mixcount/teaser/p3t-scene_0512.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+
+                  <project-page-section> Abstract </project-page-section>
+                  <div style="width: 80%; margin: auto;">
+                    Object counting is a foundational vision task with over a decade of dedicated research, yet state-of-the-art models still fail systematically in the <b>mixed-object setting</b> that dominates real-world applications such as industrial inspection and product sorting. We show that this gap is strongly driven by limitations in existing training and evaluation data: real counting datasets are prohibitively expensive to annotate and suffer from labeling noise, while existing synthetic alternatives lack diversity and realism.
+                    <br><span class="half-line"></span>
+                    We address this with <b>MixCount</b>, a dataset and benchmark for mixed-object counting designed to target the failure modes of current counting models. To overcome the high cost of constructing and labeling such data, we develop an <b>automatic generation pipeline</b> that synthesizes images, fine-grained textual descriptions, and pixel-perfect counting annotations at scale, eliminating the labeling ambiguity that plagues prior datasets. Evaluating state-of-the-art counting models on MixCount exposes severe degradation in the mixed-object setting. More importantly, training these models on our synthesized data yields substantial gains on real-world benchmarks, reducing MAE by <b>20.14%</b> on FSC-147 (single-object-type) and by <b>18.3%</b> on PairTally (mixed-objects). These results establish MixCount as both a benchmark and a training dataset for fine-grained counting, and demonstrate that our pipeline, which produces effectively unlimited labeled data, helps address a long-standing bottleneck in counting models.
+                  </div>
+
+                  <project-page-section> Bridging the data gap </project-page-section>
+                  <figure class="mixcount-figure">
+                    <img src="../images/mixcount/bridging.png" alt="Bridging the data gap: MixCount training improves CountGD++ on PairTally, FSC-147, and MixCount">
+                  </figure>
+                  <div style="width: 80%; margin: 0.5em auto 1.5em; font-size: 0.95em;">
+                    Visual counting models often struggle to distinguish similar objects (a), fail to recognize self-similar components as a single entity (b), and are easily distracted by repetitive background patterns (c). Targeted training on MixCount substantially reduces these failure modes, with about <b>20% lower error</b> on recent benchmarks.
+                  </div>
+
+                  <project-page-section> Dataset features </project-page-section>
+                  <figure class="mixcount-figure">
+                    <img src="../images/mixcount/features.png" alt="MixCount exemplars and tiered text descriptions">
+                  </figure>
+                  <div style="width: 80%; margin: 0 auto 1.5em;">
+                    Each sample provides multiple visual exemplars per object (external crops and in-scene crops at different scales) together with <b>short, concise, and detailed</b> text descriptions, enabling flexible open-vocabulary counting prompts.
+                  </div>
+
+                  <project-page-section> Annotations </project-page-section>
+                  <figure class="mixcount-figure">
+                    <img src="../images/mixcount/annotations.png" alt="MixCount dense annotations">
+                  </figure>
+                  <div style="width: 80%; margin: 0 auto 1.5em;">
+                    Every image comes with pixel-perfect counting supervision plus dense labels including instance and class segmentation, bounding boxes, depth, and surface normals.
+                  </div>
+
+                  <project-page-section> Data generator </project-page-section>
+                  <figure class="mixcount-figure">
+                    <img src="../images/mixcount/data_generator.png" alt="MixCount automatic data generation pipeline">
+                  </figure>
+                  <div style="width: 80%; margin: 0 auto 1.5em;">
+                    Our generator samples objects, distractors, environment, and camera placement to procedurally create photorealistic training samples. All assets are built from high-quality captures of real-world objects, materials, and lighting.
+                  </div>
+
+                  <project-page-section> Citation </project-page-section>
+                  <bibtex>
+                    @article{dumery2026mixcount,<br>
+                      <bibtex-body>
+                      &nbsp;&nbsp;    title = {{The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting}},<br>
+                      &nbsp;&nbsp;    author = {Dumery, Corentin and Amini-Naieni, Niki and Naini, Shervin and Fua, Pascal},<br>
+                      &nbsp;&nbsp;    journal = {TODO},<br>
+                      &nbsp;&nbsp;    year = {2026}<br>
+                      </bibtex-body>
+                    }
+                    </bibtex>
+
+                <br><br>
+                </td>
+              </tr>
+
+
+            </tbody></table>
+
+</body>
+</html>

@@ -153,6 +153,49 @@
     </tr>
     -->
 
+    <tr class="project-entry" onmouseout="mixcount_stop()" onmouseover="mixcount_start()">
+        <td class="project-thumb">
+            <div class="one">
+            <div class="two" id='mixcount_image'><video  width=100% height=100% muted autoplay loop>
+            <source src="images/papers/mixcount.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/papers/mixcount.png' width="200">
+            </div>
+            <script type="text/javascript">
+            function mixcount_start() {
+                document.getElementById('mixcount_image').style.opacity = "1";
+            }
+
+            function mixcount_stop() {
+                document.getElementById('mixcount_image').style.opacity = "0";
+            }
+            mixcount_stop()
+            </script>
+        </td>
+        <td class="project-cell">
+            <a href="projects/mixcount.html">
+            <span class="papertitle">The MixCount Dataset: Bridging the Data Gap for Open-Vocabulary Object Counting</span>
+            </a>
+            <span class="half-line"></span>
+            <strong>Corentin Dumery*</strong>,
+            <a href="https://reuben.ox.ac.uk/people/niki-amini-naieni">Niki Amini-Naieni*</a>,
+            <a href="https://www.linkedin.com/in/shervin-n">Shervin Naini</a>,
+            <a href="https://people.epfl.ch/pascal.fua/bio?lang=en">Pascal Fua</a>
+            <br>
+
+            <span class="half-line"></span>
+            | <a href="projects/mixcount.html">Project page</a>
+            | <a href="#">Paper</a>
+            | <a href="#">Code</a>
+            | <a href="#">Dataset</a>
+            |
+            <span class="half-line"></span>
+            <short-desc> We introduce <b>MixCount</b>, a photorealistic mixed-object counting dataset built with an automatic generation pipeline. Training on MixCount cuts counting error by about <b>20%</b> on FSC-147 and PairTally while exposing failure modes of current models.
+            </short-desc>
+        </td>
+    </tr>
+
     <tr class="project-entry" onmouseout="sewing_lfm_stop()" onmouseover="sewing_lfm_start()">
         <td class="project-thumb">
             <div class="one">
