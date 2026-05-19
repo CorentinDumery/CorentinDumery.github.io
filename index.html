@@ -36,16 +36,16 @@
       <a href="about/blog.html">Blog</a>
     </div>
 
-    <div style="height: 40px;"></div>
+    <div class="navbar-spacer"></div>
   
     <!--
     <div style="height: 5vh; width: 100%; max-width: 900px; background-color: white; margin: 0 auto;"></div>-->
 
 
-    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;padding-top:0.3%;" ><tbody>
+    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" ><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table class="home-intro-wrap" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" bgcolor="#ffffff"><tbody>
+          <table class="home-intro-wrap page-first-section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" bgcolor="#ffffff"><tbody>
             <tr class="home-intro" style="padding:0px">
               <td style="padding:2.5%;padding-bottom:1.5%;width:63%;vertical-align:middle;">
 
@@ -74,11 +74,8 @@
                 <a href="images/circle_cv_photo.PNG"><img style="width:80%;max-width:80%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/circle_cv_photo.PNG" class="hoverZoomLink"></a>
               </td>
             </tr>
-            
-          </tbody></table>
-          <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" bgcolor="#ffffff"><tbody>
-              <tr>
-              <td style="padding-left:2.5%;padding-right:2.5%;width:100%;vertical-align:middle">
+            <tr>
+              <td colspan="2" style="padding:0 2.5% 2.5%;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
                     My research interests lie at the intersection of computer vision and computer graphics. 
@@ -103,10 +100,9 @@
               </iconbar>
               </td>
             </tr>
-
             
           </tbody></table>
-          <table class="project-list" style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="project-list" style="width:100%;border:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
     <!-- TEMPLATE:
     <tr class="project-entry" onmouseout="XXX_stop()" onmouseover="XXX_start()">
@@ -186,12 +182,12 @@
 
             <span class="half-line"></span>
             | <a href="projects/mixcount.html">Project page</a>
-            | <a href="#">Paper</a>
-            | <a href="#">Code</a>
-            | <a href="#">Dataset</a>
+            | <a href="https://arxiv.org/abs/2605.18063">Paper</a>
+            <!-- | <a href="#">Code</a> -->
+            | <a href="https://huggingface.co/datasets/CorentinDumery/MixCount">Dataset</a>
             |
             <span class="half-line"></span>
-            <short-desc> We introduce <b>MixCount</b>, a photorealistic mixed-object counting dataset built with an automatic generation pipeline. Training on MixCount cuts counting error by about <b>20%</b> on FSC-147 and PairTally while exposing failure modes of current models.
+            <short-desc> We introduce <b>MixCount</b>, a photorealistic mixed-object counting dataset built with an automatic generation pipeline and real-world objects. Training on MixCount cuts counting error by about <b>20%</b> on FSC-147 and PairTally, while exposing failure modes of current counting models.
             </short-desc>
         </td>
     </tr>

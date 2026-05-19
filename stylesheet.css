@@ -1,6 +1,8 @@
 :root {
   background-color: rgba(168, 237, 255, 1.0); /* Match triangles: rgba(118, 217, 252, 1.0); */
   --text-color: rgba(20, 40, 40, 1.0);
+  --navbar-height: calc(2em + 1.25em);
+  --section-gap: 10px;
   color: var(--text-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: justify;
@@ -23,21 +25,21 @@ th,
 tr,
 p,
 a {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 strong {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .papertitle {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -119,7 +121,12 @@ iconbar {
 
 .project-entry {
   background-color: rgba(255, 255, 255, 1);
-}  
+}
+
+table.project-list {
+  border-collapse: separate;
+  border-spacing: 0 var(--section-gap);
+}
 
 .project-cell {
   padding: 8px;
@@ -136,12 +143,12 @@ iconbar {
 }
 
 .project-title {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 short-desc {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 li {
@@ -171,10 +178,23 @@ li {
   text-decoration: none;
   color: black;
   font-weight: bold;
+  line-height: 1.25;
   padding: 1em 0;
   border-left: 1px solid #ccc;
   background-color: white;
   background-color: #ddd;
+}
+
+.navbar-spacer {
+  height: var(--navbar-height);
+}
+
+.page-first-section {
+  margin-top: var(--section-gap);
+}
+
+.experience-block + .experience-block {
+  margin-top: var(--section-gap);
 }
 
 .navbar a:first-child {
@@ -238,7 +258,8 @@ li {
   width:100%;
   max-width:900px;
   background-color: rgba(255, 255, 255, 1);
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
@@ -401,7 +422,7 @@ sup {
 
   /* Homepage: first paper sat flush under Research once table layout (border-spacing) was removed */
   table.project-list {
-    padding-top: 1.25rem;
+    padding-top: var(--section-gap);
   }
 
   table.project-list tbody,
@@ -413,7 +434,7 @@ sup {
   tr.project-entry {
     display: block;
     width: 100%;
-    margin-bottom: 1.25rem;
+    margin-bottom: var(--section-gap);
     box-sizing: border-box;
   }
 
