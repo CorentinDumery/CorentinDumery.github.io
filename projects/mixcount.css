@@ -29,7 +29,7 @@
 }
 
 .mixcount-teaser-track-reverse.mixcount-teaser-track-ready {
-  animation: mixcount-scroll-right var(--marquee-duration, 75s) linear infinite;
+  animation: mixcount-scroll-right var(--marquee-duration, 70s) linear infinite;
 }
 
 .mixcount-teaser-track a {
