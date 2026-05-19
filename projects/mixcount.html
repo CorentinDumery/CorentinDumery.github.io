@@ -11,10 +11,9 @@
 
     <meta name="author" content="Corentin Dumery">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../stylesheet.css">
     <link rel="stylesheet" type="text/css" href="mixcount.css">
-    <link rel="icon" href="../images/favicon.png">
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon">
   </head>
 
 
@@ -60,14 +59,6 @@
                         <span>Paper</span>
                       </div>
                     </a>
-                    <!--
-                    <a class="horizontal-bar-item" href="#">
-                      <div class="icon-text">
-                        <img src="../images/github.png" style="height: 30px;">
-                        <span>Code</span>
-                      </div>
-                    </a>
-                    -->
                     <a class="horizontal-bar-item" href="https://huggingface.co/datasets/CorentinDumery/MixCount">
                       <div class="icon-text">
                         <img src="../images/dataset.png" style="height: 30px;">
@@ -174,19 +165,105 @@
                     </div>
                   </div>
 
-                  <project-page-section> Abstract </project-page-section>
-                  <div style="width: 80%; margin: auto;">
-                    Object counting is a foundational vision task with over a decade of dedicated research, yet state-of-the-art models still fail systematically in the <b>mixed-object setting</b> that dominates real-world applications such as industrial inspection and product sorting. We show that this gap is strongly driven by limitations in existing training and evaluation data: real counting datasets are prohibitively expensive to annotate and suffer from labeling noise, while existing synthetic alternatives lack diversity and realism.
-                    <br><span class="half-line"></span>
-                    We address this with <b>MixCount</b>, a dataset and benchmark for mixed-object counting designed to target the failure modes of current counting models. To overcome the high cost of constructing and labeling such data, we develop an <b>automatic generation pipeline</b> that synthesizes images, fine-grained textual descriptions, and pixel-perfect counting annotations at scale, eliminating the labeling ambiguity that plagues prior datasets. Evaluating state-of-the-art counting models on MixCount exposes severe degradation in the mixed-object setting. More importantly, training these models on our synthesized data yields substantial gains on real-world benchmarks, reducing MAE by <b>20.14%</b> on FSC-147 (single-object-type) and by <b>18.3%</b> on PairTally (mixed-objects). These results establish MixCount as both a benchmark and a training dataset for fine-grained counting, and demonstrate that our pipeline, which produces effectively unlimited labeled data, helps address a long-standing bottleneck in counting models.
+                  <div class="mixcount-lead">
+                    MixCount is a large-scale synthetic dataset for <b>mixed-object, open-vocabulary counting</b>, the setting that dominates industrial inspection and sorting, but breaks current counting models. Our automatic generation pipeline produces pixel-perfect labels, text prompts at several levels of detail, and visual exemplars at scale.
+                  </div>
+
+                  <div class="mixcount-highlights">
+                    <div class="mixcount-stat">
+                      <span class="mixcount-stat-value">58K</span>
+                      <span class="mixcount-stat-label">counting scenes</span>
+                    </div>
+                    <div class="mixcount-stat">
+                      <span class="mixcount-stat-value">1,522</span>
+                      <span class="mixcount-stat-label">object classes</span>
+                    </div>
+                    <div class="mixcount-stat">
+                      <span class="mixcount-stat-value">4M+</span>
+                      <span class="mixcount-stat-label">counting instances</span>
+                    </div>
+                    <div class="mixcount-stat">
+                      <span class="mixcount-stat-value">-18.3%</span>
+                      <span class="mixcount-stat-label">MAE on PairTally</span>
+                    </div>
+                    <div class="mixcount-stat">
+                      <span class="mixcount-stat-value">-20.14%</span>
+                      <span class="mixcount-stat-label">MAE on FSC-147</span>
+                    </div>
                   </div>
 
                   <project-page-section> Bridging the data gap </project-page-section>
-                  <figure class="mixcount-figure">
+                  <div class="mixcount-prose">
+                    <p>Visual counting models often struggle in mixed-object scenes. Common failure modes include:</p>
+                    <p class="mixcount-indented"><b>(a)</b> Distinguishing <b>visually similar objects</b>, e.g. <i>big marbles</i> in PairTally.</p>
+                    <p class="mixcount-indented"><b>(b)</b> Recognizing <b>self-similar components</b> as a single entity, e.g. counting pairs of sunglasses rather than lenses.</p>
+                    <p class="mixcount-indented"><b>(c)</b> Ignoring <b>repetitive background patterns</b> and focusing on the queried object class.</p>
+                    <p>MixCount combines the scale of synthetic datasets with the photorealism of real-world 3D captures, while targeting these failure modes. As a result, training on MixCount yields about <b>20% lower error</b> on recent open-vocabulary counting benchmarks.</p>
+                  </div>
+                  <figure class="mixcount-figure mixcount-figure-framed">
                     <img src="../images/mixcount/bridging.png" alt="Bridging the data gap: MixCount training improves CountGD++ on PairTally, FSC-147, and MixCount">
                   </figure>
-                  <div style="width: 80%; margin: 0.5em auto 1.5em; font-size: 0.95em;">
-                    Visual counting models often struggle to distinguish similar objects (a), fail to recognize self-similar components as a single entity (b), and are easily distracted by repetitive background patterns (c). Targeted training on MixCount substantially reduces these failure modes, with about <b>20% lower error</b> on recent benchmarks.
+
+
+
+                  <project-page-section> Dataset </project-page-section>
+
+                  <div class="mixcount-table-wrap">
+                    <table class="mixcount-compare-table">
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>FSC-147</th>
+                          <th>PairTally</th>
+                          <th>MCAC / SITUATE</th>
+                          <th>MixCount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Multiple object types per image</td>
+                          <td></td>
+                          <td class="mixcount-yes">✓</td>
+                          <td class="mixcount-yes">✓</td>
+                          <td class="mixcount-yes">✓</td>
+                        </tr>
+                        <tr>
+                          <td>Fine-grained text prompts</td>
+                          <td></td>
+                          <td class="mixcount-yes">✓</td>
+                          <td></td>
+                          <td class="mixcount-yes">✓</td>
+                        </tr>
+                        <tr>
+                          <td>External visual exemplars</td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td class="mixcount-yes">✓</td>
+                        </tr>
+                        <tr>
+                          <td>Segmentation &amp; bounding boxes</td>
+                          <td></td>
+                          <td></td>
+                          <td class="mixcount-yes">✓</td>
+                          <td class="mixcount-yes">✓</td>
+                        </tr>
+                        <tr>
+                          <td># images</td>
+                          <td>6,135</td>
+                          <td>681</td>
+                          <td>6.9K–20K</td>
+                          <td><b>58,000</b></td>
+                        </tr>
+                        <tr>
+                          <td># object classes</td>
+                          <td>147</td>
+                          <td>98</td>
+                          <td>4–343</td>
+                          <td><b>1,522</b></td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
 
                   <div class="mixcount-inline-section">
@@ -222,6 +299,18 @@
                     }
                     </bibtex>
 
+
+                  <project-page-section> Acknowledgements </project-page-section>
+                  <div class="mixcount-prose">
+                    <p>We thank the following datasets and resources:
+                    <a href="https://www.projectaria.com/datasets/dtc/">DTC</a>,
+                    <a href="https://sites.google.com/view/infinitexture/home">VasTextures</a>,
+                    <a href="http://hdrdb.com/indoor/">LavalIndoor</a>, and
+                    <a href="https://polyhaven.com/">PolyHaven</a>,
+                    as well as the <a href="https://www.blender.org/">Blender Foundation</a>.
+                    We also thank Andrew Zisserman for insightful discussions. This work is partially funded by the Swiss National Science Foundation.</p>
+                  </div>
+
                 <br><br>
                 </td>
               </tr>
@@ -231,13 +320,6 @@
 
 <script>
 (function () {
-  function itemWidth(item) {
-    var style = window.getComputedStyle(item);
-    return item.getBoundingClientRect().width
-      + parseFloat(style.marginLeft)
-      + parseFloat(style.marginRight);
-  }
-
   function setupTrack(track) {
     var items = track.children;
     if (!items.length || items.length % 2 !== 0) {
@@ -245,10 +327,7 @@
     }
 
     var half = items.length / 2;
-    var distance = 0;
-    for (var i = 0; i < half; i++) {
-      distance += itemWidth(items[i]);
-    }
+    var distance = items[half].offsetLeft;
 
     track.style.setProperty('--marquee-distance', '-' + distance + 'px');
     track.classList.add('mixcount-teaser-track-ready');
