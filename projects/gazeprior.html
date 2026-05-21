@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <div class="header-background">
+    <img id="header_background" src="../images/delaunay.png"/>
+    </div>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>GazePrior | Corentin Dumery</title>
+
+    <meta name="author" content="Corentin Dumery">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="gazeprior.css">
+    <link rel="icon" href="../images/favicon.png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../images/papers/gazeprior.png" />
+    <meta property="og:description" content="Zero-Shot AR/VR Eye Tracking via Learned 3D Gaze Reconstruction" />
+    <meta property="og:title" content="GazePrior" />
+
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="GazePrior">
+    <meta property="twitter:description" content="Zero-Shot AR/VR Eye Tracking via Learned 3D Gaze Reconstruction">
+    <meta property="twitter:image" content="../images/papers/gazeprior.png">
+  </head>
+
+
+  <body>
+
+    <div class="navbar">
+      <a href="../index.html">Corentin Dumery</a>
+      <a href="../about/experience.html">Experience</a>
+      <a href="../about/gallery.html">Gallery</a>
+      <a href="../about/blog.html">Blog</a>
+    </div>
+
+    <div class="navbar-spacer"></div>
+
+    <table class="page-first-section" style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" ><tbody>
+        <tr style="padding:0px">
+          <td style="padding:0px">
+            <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;" bgcolor="#ffffff"><tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;padding-bottom:1.5%;width:100%;vertical-align:middle;">
+
+                  <div class="project-page-header">
+                  <h1> GazePrior: Zero-Shot AR/VR Eye Tracking <br>via Learned 3D Gaze Reconstruction </h1>
+                  <h4>
+                  <strong>Corentin Dumery*</strong><sup>1,2</sup>,
+                  <a href="https://www.linkedin.com/in/dcolmena/">David Colmenares</a><sup>1</sup>,
+                  <a href="https://scholar.google.com/citations?user=MpnoKWcAAAAJ&hl=en">Alexander Fix</a><sup>1</sup>,
+                  <a href="https://people.epfl.ch/pascal.fua">Pascal Fua</a><sup>2</sup>,
+                  <a href="https://www.linkedin.com/in/alibehrooz/">Ali Behrooz</a><sup>1</sup>,
+                  <a href="https://sites.google.com/view/jogendra/">Jogendra Kundu</a><sup>1</sup>
+                  <br>
+                  <br>
+                  <sup>1</sup><img src="../images/resume/meta.svg" style="height: 30px; vertical-align: middle; padding: 5px; padding-right: 20px;">
+                  <sup>2</sup><img src="../images/epfl-red.png" style="height: 30px; vertical-align: middle;">
+                  <br><br>
+                  <span style="font-size: 0.9em;">(* work done during an internship at Meta)</span>
+                   <br></h4>
+                  </div>
+
+                  <div class="horizontal-bar" style="width: 33%; margin: auto;">
+                    <a class="horizontal-bar-item" href="#">
+                      <div class="icon-text">
+                        <img src="../images/paper.png" style="height: 30px;">
+                        <span>Paper</span>
+                      </div>
+                    </a>
+                  </div>
+                  <br>
+
+                  <div class="gazeprior-teaser-row">
+                    <video muted autoplay loop playsinline src="../images/gazeprior/teaser/subject0.mp4" title="GazePrior"></video>
+                    <video muted autoplay loop playsinline src="../images/gazeprior/teaser/subject2.mp4"></video>
+                    <video muted autoplay loop playsinline src="../images/gazeprior/teaser/subject4.mp4"></video>
+                  </div>
+
+                  <div class="gazeprior-lead">
+                    <b>GazePrior</b> is a learned 3D prior for human eyes that disentangles identity, gaze, and lighting to reconstruct high-fidelity views from sparse headset captures. We retarget annotated data from legacy devices onto any new camera layout, producing synthetic training images realistic enough for <b>zero-shot AR/VR eye tracking</b> without collecting a single frame on the target hardware.
+                  </div>
+
+                  <project-page-section> GazePrior: disentangled gaze, subject and light model </project-page-section>
+                  <div class="gazeprior-prose">
+                    <p>Although eye images vary widely across people, gaze, and light conditions, they share strong structural similarities. We model this structure as a <b>conditional radiance field</b> driven by disentangled latent codes for <b>subject identity</b>, <b>gaze direction</b>, and <b>illumination</b>. Identity and gaze affect geometry, while lighting influences appearance only, which keeps reconstructions stable under the dark, infrared-like conditions common in head-mounted displays.</p>
+                    <p>Gaze is encoded with fixed sinusoidal features, such that the ground-truth gaze from existing ET datasets can be directly used as a strong prior. Subject and light use learned codebooks over hundreds of identities and lighting conditions, giving a compact prior that regularizes sparse-view reconstruction and supports smooth interpolation.</p>
+                  </div>
+                  <figure class="gazeprior-figure gazeprior-figure">
+                    <img src="../images/gazeprior/model.png" alt="GazePrior model: pretraining, latent optimization, and finetuning">
+                  </figure>
+                  <div class="gazeprior-prose">
+                    <p>When the number of input views drops to as few as two, a generic per-subject NeRF collapses. GazePrior closes that gap. At 17 views we are only slightly ahead of <a href="https://arxiv.org/abs/2503.16742">Lin <i>et al.</i></a>, but at <b>two views</b> the margin grows to nearly <b>10 dB</b>, with far fewer floaters and sharper eyelid detail.</p>
+                  </div>
+                  <figure class="gazeprior-figure gazeprior-figure-framed">
+                    <img src="../images/gazeprior/view_sparsif.png" alt="Novel-view synthesis vs. view count">
+                  </figure>
+
+                  <p class="gazeprior-prose" style="margin-top: -0.5em;">This representation enables <b>disentangled latent-space interpolation</b> on the pretrained model, with precise control over identity, gaze direction and light. We render low-frequency interpolations in latent space below by interpolating the latent codes independently and rendering the result.</p>
+                  <div class="gazeprior-interp-grid">
+                    <div class="gazeprior-interp-item">
+                      <video class="gazeprior-interp-video" muted autoplay loop playsinline src="../images/gazeprior/interpolations/gaze.mp4"></video>
+                      <div class="gazeprior-interp-caption">Gaze interpolation</div>
+                    </div>
+                    <div class="gazeprior-interp-item">
+                      <video class="gazeprior-interp-video" muted autoplay loop playsinline src="../images/gazeprior/interpolations/light.mp4"></video>
+                      <div class="gazeprior-interp-caption">Light interpolation</div>
+                    </div>
+                    <div class="gazeprior-interp-item">
+                      <video class="gazeprior-interp-video" muted autoplay loop playsinline src="../images/gazeprior/interpolations/subject.mp4"></video>
+                      <div class="gazeprior-interp-caption">Subject interpolation</div>
+                    </div>
+                    <div class="gazeprior-interp-item">
+                      <video class="gazeprior-interp-video" muted autoplay loop playsinline src="../images/gazeprior/interpolations/all.mp4"></video>
+                      <div class="gazeprior-interp-caption">Gaze, light, and subject</div>
+                    </div>
+                  </div>
+
+                  <project-page-section> Retargeting data for zero-shot eye tracking </project-page-section>
+                  <div class="gazeprior-prose">
+                    <p>Our retargeting pipeline reuses high-quality annotated sessions from earlier headsets. Given sparse source views, typically 2-5 cameras, and a target camera, we first optimize identity and light latents, then finetune a subject-specific field. The result renders arbitrary target viewpoints while preserving ground-truth gaze and pupil labels.</p>
+                    <p>Eye tracking models for new hardware can therefore be trained <b>before the device exists</b>, using only existing captures and retargeting them for the new device. Training directly on non-retargeted data fails on the target domain, which shows that view-consistent synthesis is essential.</p>
+                  </div>
+                  <figure class="gazeprior-figure gazeprior-figure">
+                    <img src="../images/gazeprior/zeroshot.png" alt="Zero-shot eye tracking pipeline overview">
+                  </figure>
+
+                  <project-page-section> Results </project-page-section>
+                  <div class="gazeprior-prose">
+                    <p><b>Qualitative synthesis.</b> Compared to <a href="https://github.com/ATinyBites/ControllableGaze">ControllableGaze</a> and <a href="https://arxiv.org/abs/2503.16742">Lin <i>et al.</i></a>, our <a href="https://www.projectaria.com/">Aria</a> samples retain high-fidelity details and have a greatly reduced domain gap to real headset captures.</p>
+                  </div>
+                  <figure class="gazeprior-figure gazeprior-figure-framed">
+                    <img src="../images/gazeprior/qualitative_results.png" alt="Qualitative comparison to baselines and real Aria images">
+                  </figure>
+
+                  <div class="gazeprior-prose">
+                    <p><b>Sparse-view reconstruction.</b> On 4-view finetuning from headset captures, GazePrior reaches 22.10 dB PSNR vs. 15.31 dB for <a href="https://arxiv.org/abs/2503.16742">Lin <i>et al.</i></a></p>
+                  </div>
+                  <figure class="gazeprior-figure gazeprior-figure">
+                    <img src="../images/gazeprior/reconstruction_results.png" alt="Reconstruction and ablation results">
+                  </figure>
+
+                  <div class="gazeprior-prose">
+                    <p><b>Eye tracking.</b> We train the public <a href="https://github.com/facebookresearch/projectaria_eyetracking">Aria eye tracking</a> model from scratch on the generated data only. GazePrior data cuts average gaze error to <b>5.85&deg;</b> compared with 12.5&deg; for other baselines without any target-device collection, and nearly matches training on real <a href="https://www.projectaria.com/">Aria</a> annotations at 4.35&deg;.</p>
+                  </div>
+                  <figure class="gazeprior-figure gazeprior-figure">
+                    <img src="../images/gazeprior/et_results.png" alt="Eye tracking quantitative results">
+                  </figure>
+
+                  <project-page-section> Citation </project-page-section>
+                  <bibtex>
+                    @article{dumery2026gazeprior,<br>
+                      <bibtex-body>
+                      &nbsp;&nbsp;    title = {{GazePrior: Zero-Shot AR/VR Eye Tracking via Learned 3D Gaze Reconstruction}},<br>
+                      &nbsp;&nbsp;    author = {Dumery, Corentin and Colmenares, David and Fix, Alexander and Fua, Pascal and Behrooz, Ali and Kundu, Jogendra},<br>
+                      &nbsp;&nbsp;    journal = {arXiv preprint arXiv:TODO},<br>
+                      &nbsp;&nbsp;    year = {2026}<br>
+                      </bibtex-body>
+                    }
+                    </bibtex>
+
+                <br><br>
+                </td>
+              </tr>
+
+            </tbody></table>
+
+<script>
+document.querySelectorAll(".gazeprior-interp-video").forEach(function (video) {
+  function setRate() { video.playbackRate = 3; }
+  video.addEventListener("loadedmetadata", setRate);
+  setRate();
+});
+</script>
+
+</body>
+</html>

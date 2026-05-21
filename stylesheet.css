@@ -43,6 +43,11 @@ h2 {
   font-weight: 700;
 }
 
+.project-list .project-cell > a:first-child {
+  display: block;
+  text-align: left;
+}
+
 .one {
   width: 200px;
   height: 200px;
